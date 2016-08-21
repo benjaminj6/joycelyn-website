@@ -1,11 +1,14 @@
 let assemble = require('assemble');
 let app = assemble();
 
-var body = require('../../templates/header');
+// var body = require('../../templates/header');
 
 // Calls body data to create the full html
-var template = require('../../templates/doc.js')(body);
+// var template = require('../../templates/doc.js')(body);
+let template = require('./home');
 var data = require('../../data/home-data');
+
+// console.log(data.home_href);
 
 app.page('index.html', {content: template})
 	.render(data, function(err, view) {

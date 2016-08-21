@@ -4,11 +4,15 @@
   "description": "Joycelyn Choo's portfolio site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:home",
+
+    "build:home": "assemble --cwd=pages/home"
   },
   "author": "Benjamin Johnson",
   "license": "ISC",
   "dependencies": {
+    "font-awesome": "^4.6.3",
     "fontawesome": "^4.5.0",
     "jquery": "^3.1.0",
     "normalize.css": "^4.2.0"

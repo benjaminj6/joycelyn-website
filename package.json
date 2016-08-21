@@ -1,0 +1,19 @@
+{
+  "name": "joycelyn-website",
+  "version": "1.0.0",
+  "description": "Joycelyn Choo's portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "fontawesome": "^4.5.0",
+    "jquery": "^3.1.0",
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "assemble": "^0.17.1"
+  }
+}

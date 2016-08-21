@@ -1,12 +1,14 @@
 let assemble = require('assemble');
 let app = assemble();
 
-var template = require('./templates/page.js');
+var template = require('./templates/doc.js');
+var body = '<h1>Just an h1 tag</h1>';
 var data = {
 	pageTitle: 'Joycelyn Choo',
 	jQueryPath: 'PATHTOJQUERY',
 	fontAwesomePath: 'PATHTOFONTAWESOME',
-	cssPath: 'PATHTOCSS'
+	cssPath: 'PATHTOCSS',
+	body: body
 };
 
 app.page('home.html', {content: template})
@@ -15,9 +17,9 @@ app.page('home.html', {content: template})
 	});
 
 app.task('default', function() {
-	return app.toStream('pages')
+	return app.toStream('home.html')
 		.pipe(app.renderFile())
-		.pipe(app.dest('public'));
+		.pipe(app.dest('public/home'));
 });
 
 module.exports = app;

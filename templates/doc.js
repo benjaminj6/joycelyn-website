@@ -1,6 +1,13 @@
-body = `
-	<h1>This is the body</h1>
-`;
+/*
+ *	Data to be inserted:
+ *	
+ *	pageTitle
+ *	jQueryPath
+ *	fontAwesomePath
+ *	cssPath
+ *	body -- must be another string of html!
+ * 	
+ */
 
 var html = `
 <!DOCTYPE html>
@@ -14,7 +21,7 @@ var html = `
 	<link rel="stylesheet" href="{{cssPath}}" />
 </head>
 <body>
-	${body}	
+	{{{body}}}	
 </body>
 </html>
 `;

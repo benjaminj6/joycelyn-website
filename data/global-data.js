@@ -1,9 +1,12 @@
 let globalData = {
 	// Links for external libraries
 	normalize_css: '../assets/normalize.css',
+	css: 'style.css',
+	js: 'app.js',
 	jQuery: 'https://code.jquery.com/jquery-3.1.0.min.js',
 	font_awesome: '../assets/font-awesome/css/font-awesome.min.css',
 	
+
 	// Links for the header
 	home_href: '../home',
 	bio_href: '../bio',

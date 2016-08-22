@@ -1,7 +1,7 @@
-var assembleFile = require('../../assemble');
-let template = require('./home');
+let assembleFile = require('../../assemble-file-template');
+let html = require('./home');
 let data = require('../../data/home-data');
 
-var app = assembleFile(template, data, '../../public/home'); 
+var app = assembleFile(html, data, '../../public/home'); 
 
 module.exports = app;	

@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:home",
-
-    "build:home": "assemble --cwd=pages/home"
+    "build": "npm run build:home && npm run build:bio",
+    
+    "build:home": "assemble --cwd=pages/home",
+    "build:bio": "assemble --cwd=pages/bio"
   },
   "author": "Benjamin Johnson",
   "license": "ISC",
@@ -15,7 +16,8 @@
     "font-awesome": "^4.6.3",
     "fontawesome": "^4.5.0",
     "jquery": "^3.1.0",
-    "normalize.css": "^4.2.0"
+    "normalize.css": "^4.2.0",
+    "pretty": "^1.0.0"
   },
   "devDependencies": {
     "assemble": "^0.17.1"

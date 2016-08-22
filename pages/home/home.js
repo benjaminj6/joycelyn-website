@@ -1,8 +1,9 @@
-let header = require('../../templates/header');
-let footer = require('../../templates/footer');
+// let header = require('../../templates/header');
+// let footer = require('../../templates/footer');
+let body = require('./home-main-section');
 
-let body = header;
+// let body = header + main + footer;
 
-let template = require('../../templates/doc')(body);
+let html = require('../../templates/doc')(body);
 
-module.exports = template;
+module.exports = html;

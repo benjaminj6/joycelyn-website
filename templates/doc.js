@@ -11,6 +11,8 @@
  *	
  */
 
+let header = require('./header');
+let footer = require('./footer');
 
 function createDoc(bodyHtml) {
 	let body = bodyHtml;
@@ -27,7 +29,9 @@ function createDoc(bodyHtml) {
 		<link rel="stylesheet" href="{{css}}" />
 	</head>
 	<body>
+		${header}
 		${body}
+		${footer}
 		<script src="{{jQuery}}"></script>
 		<script src="{{js}}"></script>
 	</body>

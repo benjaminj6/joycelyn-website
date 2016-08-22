@@ -5,8 +5,10 @@ let globalData = require('./global-data');
 let data = Object.create(globalData);
 
 data.page_title = 'Joycelyn Choo | Home';
-data.css = 'PATH TO CSS';
-data.js = 'PATH TO JS';
+data.image_1_path = 'http://placehold.it/3000x2000',
+data.image_2_path = 'PATH TO IMAGE',
+data.image_3_path = 'PATH TO IMAGE',
+
 
 // Change href for 'home' link inside header
 data.changeHref('home_href', '.');

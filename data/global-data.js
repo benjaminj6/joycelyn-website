@@ -4,7 +4,7 @@ let globalData = {
 	css: 'style.css',
 	js: 'app.js',
 	jQuery: 'https://code.jquery.com/jquery-3.1.0.min.js',
-	font_awesome: '../assets/font-awesome/css/font-awesome.min.css',
+	font_awesome: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css',
 	
 
 	// Links for the header

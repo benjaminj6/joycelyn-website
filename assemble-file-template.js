@@ -9,11 +9,11 @@
  *
  *	MAYBE USE THIS FILE AS A FUNCTION THAT CREATES THE ASSEMBLEFILE?
  */
+let pretty = require('pretty');
+let assemble = require('assemble');
 
 function assembleFile(template, data, destination) {
 
-	let assemble = require('assemble');
-	let pretty = require('pretty');
 	let app = assemble();
 
 	template = pretty(template);

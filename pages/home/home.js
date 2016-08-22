@@ -1,4 +1,5 @@
 let header = require('../../templates/header');
+let footer = require('../../templates/footer');
 
 let body = header;
 

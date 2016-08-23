@@ -32,7 +32,7 @@ let html =
 			<select name="{{lessons.previous_suzuki_teacher.name}}">
 				<option value="{{lessons.dropdown_dafault.val}}">{{lessons.dropdown_default.text}}</option>
 				<option value="{{lessons.previous_suzuki_teacher.option_1.val}}">{{lessons.previous_suzuki_teacher.option_1.text}}</option>
-				<option value="{{lessons.previous_suzuki_teacher.option_2.val}}">{{lessons.previous_suzuki_teacher.option_1.text}}</option>
+				<option value="{{lessons.previous_suzuki_teacher.option_2.val}}">{{lessons.previous_suzuki_teacher.option_2.text}}</option>
 			</select>
 		</fieldset>
 		<fieldset>

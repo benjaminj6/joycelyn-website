@@ -17,7 +17,7 @@ data.weekly_lessons = {
 };
 
 data.group_classes = {
-	h2: 'GROUP classes',
+	h2: 'GROUP CLASSES',
 	img: {
 		src: 'http://placehold.it/500x300',
 		alt: 'Group Classes Photo'

@@ -5,7 +5,12 @@ let data = Object.create(globalData);
 data.page_title = 'Joycelyn Choo | Suzuki Method';
 
 data.heading = 'SUZUKI METHOD';
-data.par_1 = `The Suzuki Method is a very popular method of teaching the violin.  If you are a prospective student, please read briefly about the Suzuki Method (https://suzukiassociation.org/about/suzuki-method/) before contacting me.  I am a product of the Suzuki method and I can confidently say that Suzuki allowed me to learn the fundamentals of violin positioning and ear training which allowed me to be more “free” as a musician.  I have taken training courses with the Suzuki Associations of America in order to bring this method to my students.  I wholeheartedly believe in the fundamental core pillars of the Suzuki Method which include:`;
+data.par_1 = {
+	text_before_link: `The Suzuki Method is a very popular method of teaching the violin.  If you are a prospective student, `, 
+	suzuki_href: `https://suzukiassociation.org/about/suzuki-method/`,
+	text_in_link: 'please read briefly about the Suzuki Method ',
+	text_after_link: `before contacting me.  I am a product of the Suzuki method and I can confidently say that Suzuki allowed me to learn the fundamentals of violin positioning and ear training which allowed me to be more “free” as a musician.  I have taken training courses with the Suzuki Associations of America in order to bring this method to my students.  I wholeheartedly believe in the fundamental core pillars of the Suzuki Method which include: `
+};
 
 data.list_1 = {
 	h3: `1. Love is essential to Growth`,

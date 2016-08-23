@@ -5,7 +5,7 @@ let globalData = require('./global-data');
 let data = Object.create(globalData);
 
 data.page_title = 'Joycelyn Choo | Home';
-data.image_1_path = 'http://placehold.it/3000x2000',
+data.image_1_path = 'http://placehold.it/300x200',
 data.image_2_path = 'PATH TO IMAGE',
 data.image_3_path = 'PATH TO IMAGE',
 

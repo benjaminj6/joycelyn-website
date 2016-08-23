@@ -6,7 +6,7 @@ let html =
 `
 	<main>
 		${heading}
-		<p>{{par_1}}</p>
+		<p>{{par_1.text_before_link}}<a href="{{par_1.suzuki_href}}">{{par_1.text_in_link}}</a>{{par_1.text_after_link}}</p>
 		<ul>
 			<li>
 				<h3>{{list_1.h3}}</h3>

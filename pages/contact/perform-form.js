@@ -32,16 +32,19 @@ let html =
 		</fieldset>
 		<fieldset>
 			<legend>{{perform.budget.legend}}</legend>
-			<input type="text">
+			<input type="text" required="true">
 		</fieldset>
 		<fieldset>
 			<legend>{{perform.musicians.legend}}</legend>
+			<input type="text" required="true">
 		</fieldset>
 		<fieldset>
 			<legend>{{perform.special_requests.legend}}</legend>
+			<input type="text">
 		</fieldset>
 		<fieldset>
 			<legend>{{perform.extra_questions.legend}}</legend>
+			<input type="text">
 		</fieldset>
 		<button type="submit">Submit</button>
 	</form>

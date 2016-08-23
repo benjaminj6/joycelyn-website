@@ -109,6 +109,7 @@
           <fieldset>
             <legend>If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?</legend>
             <select name="">
+              <option value="">Select</option>
               <option value="suzuki">Suzuki</option>
               <option value="traditional">Suzuki</option>
             </select>
@@ -120,6 +121,7 @@
           <fieldset>
             <legend>Are you interested in lessons in Walnut or in La Mirada?*</legend>
             <select name="location" required="true">
+              <option value="">Select</option>
               <option value="walnut">Walnut</option>
               <option value="la mirada">La Mirada</option>
             </select>
@@ -164,6 +166,7 @@
           <fieldset>
             <legend>All students are required to enroll in a mandatory group class that meets once a week in addition to weekly lessons is this a commitment that your family is willing to make?</legend>
             <select>
+              <option value="">Select</option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
@@ -211,16 +214,19 @@
           </fieldset>
           <fieldset>
             <legend>Budget (Please expect at least $100 per person)*</legend>
-            <input type="text">
+            <input type="text" required="true">
           </fieldset>
           <fieldset>
             <legend>Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*</legend>
+            <input type="text" required="true">
           </fieldset>
           <fieldset>
             <legend>Special Requests for music selection (I will be sending you some selections to choose from, but let me know if you have a request).</legend>
+            <input type="text">
           </fieldset>
           <fieldset>
             <legend>Please add any additional questions or concerns here.</legend>
+            <input type="text">
           </fieldset>
           <button type="submit">Submit</button>
         </form>

@@ -30,6 +30,7 @@ let html =
 		<fieldset>
 			<legend>{{lessons.previous_suzuki_teacher.legend}}</legend>
 			<select name="{{lessons.previous_suzuki_teacher.name}}">
+				<option value="{{lessons.dropdown_dafault.val}}">{{lessons.dropdown_default.text}}</option>
 				<option value="{{lessons.previous_suzuki_teacher.option_1.val}}">{{lessons.previous_suzuki_teacher.option_1.text}}</option>
 				<option value="{{lessons.previous_suzuki_teacher.option_2.val}}">{{lessons.previous_suzuki_teacher.option_1.text}}</option>
 			</select>
@@ -41,6 +42,7 @@ let html =
 		<fieldset>
 			<legend>{{lessons.location.legend}}</legend>
 			<select name="{{lessons.location.name}}" required="true">
+				<option value="{{lessons.dropdown_dafault.val}}">{{lessons.dropdown_default.text}}</option>
 				<option value="{{lessons.location.option_1.val}}">{{lessons.location.option_1.text}}</option>
 				<option value="{{lessons.location.option_2.val}}">{{lessons.location.option_2.text}}</option>
 			</select>
@@ -85,6 +87,7 @@ let html =
 		<fieldset>
 			<legend>{{lessons.group_classes.legend}}</legend>
 			<select>
+				<option value="{{lessons.dropdown_dafault.val}}">{{lessons.dropdown_default.text}}</option>
 				<option value="{{lessons.group_classes.option_1.val}}">{{lessons.group_classes.option_1.text}}</option>
 				<option value="{{lessons.group_classes.option_2.val}}">{{lessons.group_classes.option_2.text}}</option>
 			</select>

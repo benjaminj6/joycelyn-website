@@ -23,6 +23,11 @@ data.lessons = {
 		par_2: `Please fill out the form below and I will get back to you within the day.  I am very quick to respond to my emails!`,
 	},
 
+	dropdown_default: {
+		val: 'default',
+		text: 'Select',
+	},
+
 	form_id: 'lessons-form',
 	parent_name: {
 		legend: 'Name (Parent or Guardian)*'

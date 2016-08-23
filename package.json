@@ -20,7 +20,7 @@
     "build:suzuki-method": "assemble --cwd=pages/suzuki-method",
     "build:parent-education": "assemble --cwd=pages/parent-education",
 
-    "build:performing": "assemble --cwd=pages/performing",
+    "build:performing": "assemble --cwd=pages/performing"
   },
 
   "author": "Benjamin Johnson",

@@ -24,7 +24,7 @@ data.lessons = {
 	},
 
 	dropdown_default: {
-		val: 'default',
+		val: null,
 		text: 'Select',
 	},
 

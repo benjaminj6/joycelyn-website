@@ -43,6 +43,7 @@ let html =
 		<fieldset>
 			<legend>{{perform.extra_questions.legend}}</legend>
 		</fieldset>
+		<button type="submit">Submit</button>
 	</form>
 </section>	
 `;

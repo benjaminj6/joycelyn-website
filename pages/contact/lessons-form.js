@@ -97,6 +97,7 @@ let html =
 			<legend>{{lessons.email.legend}}</legend>
 			<input type="email" required="true">
 		</fieldset>
+		<button type="submit">Submit</button>
 	</form>
 </section>
 `;

@@ -105,7 +105,7 @@ data.lessons = {
 		},
 	},
 	group_classes: {
-		legend: `All students are required to enroll in a mandatory group class that meets once a week in addition to weekly lessons is this a commitment that your family is willing to make?`,
+		legend: `All students are required to enroll in a mandatory group class that meets once a week in addition to weekly lessons. Is this a commitment that your family is willing to make?`,
 		option_1: {
 			val: 'yes',
 			text: 'Yes',

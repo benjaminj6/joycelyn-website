@@ -9,7 +9,7 @@
     
     "build:home": "assemble --cwd=pages/home",
     
-    "build:about-pages": "npm run build:bo && npm run build:teaching-philosophy",
+    "build:about-pages": "npm run build:bio && npm run build:teaching-philosophy",
     "build:bio": "assemble --cwd=pages/bio",
     "build:teaching-philosophy": "assemble --cwd=pages/teaching-philosophy",
 

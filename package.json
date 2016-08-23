@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:home && npm run build:about-pages && npm run build:teaching-pages",
+    "build": "npm run build:home && npm run build:about-pages && npm run build:teaching-pages && npm run build:performing",
     
     "build:home": "assemble --cwd=pages/home",
     
@@ -18,7 +18,9 @@
     "build:student-opportunities": "assemble --cwd=pages/student-opportunities",
     "build:studio-policies": "assemble --cwd=pages/studio-policies",
     "build:suzuki-method": "assemble --cwd=pages/suzuki-method",
-    "build:parent-education": "assemble --cwd=pages/parent-education"
+    "build:parent-education": "assemble --cwd=pages/parent-education",
+
+    "build:performing": "assemble --cwd=pages/performing",
   },
 
   "author": "Benjamin Johnson",

@@ -1,4 +1,4 @@
-let body = require('./home-main-section');
+let body = require('./parent-education-main-section');
 
 let html = require('../../templates/doc')(body);
 

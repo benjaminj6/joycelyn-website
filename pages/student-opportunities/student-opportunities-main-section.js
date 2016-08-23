@@ -1,29 +1,3 @@
-/*
-	Required data items
-
-	heading
-	intro_par
-
-	weekly_lessons
-		h2
-		img
-			src
-			alt
-		par_1
-	group_classes
-		h2
-		img
-			src
-			alt
-		par_1
-	recitals
-		h2
-		img
-			src
-			alt
-		par_1
-*/
-
 let createSectionHeading = require('../../templates/section-heading');
 
 let heading = createSectionHeading('heading', 'heading_classes');

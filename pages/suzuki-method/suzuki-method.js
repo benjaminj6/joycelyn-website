@@ -1,4 +1,4 @@
-let body = require('./bio-main-section');
+let body = require('./suzuki-method-main-section');
 
 let html = require('../../templates/doc')(body);
 

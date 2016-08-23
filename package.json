@@ -13,10 +13,14 @@
     "build:bio": "assemble --cwd=pages/bio",
     "build:teaching-philosophy": "assemble --cwd=pages/teaching-philosophy",
 
-    "build:teaching-pages": "npm run build:why-private-lessons && npm run build:student-opportunities",
+    "build:teaching-pages": "npm run build:why-private-lessons && npm run build:student-opportunities && npm run build:studio-policies && npm run build:suzuki-method && npm run build:parent-education",
     "build:why-private-lessons": "assemble --cwd=pages/why-private-lessons",
-    "build:student-opportunities": "assemble --cwd=pages/student-opportunities"
+    "build:student-opportunities": "assemble --cwd=pages/student-opportunities",
+    "build:studio-policies": "assemble --cwd=pages/studio-policies",
+    "build:suzuki-method": "assemble --cwd=pages/suzuki-method",
+    "build:parent-education": "assemble --cwd=pages/parent-education"
   },
+
   "author": "Benjamin Johnson",
   "license": "ISC",
   "dependencies": {

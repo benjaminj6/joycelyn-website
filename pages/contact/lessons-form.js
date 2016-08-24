@@ -2,9 +2,9 @@ let html =
 `
 <section id={{lessons.section_id}}>
 	<div class="intro">
-		<h2>{{lessons.intro.h2}}</h2>
-		<p>{{{lessons.intro.par_1}}}</p>
-		<p>{{lessons.intro.par_2}}</p>
+		<h2>{{lessons.intro.content.h2}}</h2>
+		<p>{{{lessons.intro.content.par_1}}}</p>
+		<p>{{lessons.intro.content.par_2}}</p>
 	</div>
 	<form id="{{lessons.form_id}}">
 		<fieldset>

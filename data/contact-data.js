@@ -17,7 +17,7 @@ data.lessons = {
 		text: 'Select',
 	},
 
-		form_id: 'lessons-form',
+	form_id: 'lessons-form',
 	parent_name: {
 		legend: 'Name (Parent or Guardian)*'
 	},
@@ -64,6 +64,13 @@ data.lessons = {
 	},
 	trial_lesson: {
 		legend: 'What days would you be available for a free trial lesson? (Select all that apply)',
+		
+		times: {
+			all_day: 'All day',
+			am: 'AM',
+			pm: 'PM',
+		},
+
 		monday: {
 			id: 'monday',
 			label: 'Monday',
@@ -121,6 +128,7 @@ data.lessons.intro = {
 };
 
 let introLinks = data.lessons.intro.links;
+
 data.lessons.intro.content = {
 	h2: 'Prospective Student Application',
 	// Uses the links from lessons.intro.links to generate <a> tags
@@ -133,7 +141,7 @@ data.perform = {
 	
 	intro: {
 		h2: 'Performance Request',
-		par_1: 'When she is not teaching, Joycelyn loves to perform with her musical colleagues.  If you are interested in contracting Joycelyn to play for your special event (wedding, funeral, birthday party etc.) please fill out the form below to get a free quote.  If you are looking for a specific group of musicians (String quartet, String Trio, Piano Trio, String Duo etc.)  please indicate it below in the options and Joycelyn will be able to arrange a group for you.',
+		par_1: 'When I am not teaching, I love to perform with my musical colleagues. If you are interested in contracting me to play for your special event (wedding, funeral, birthday party etc.) please fill out the form below to get a free quote. If you are looking for a specific group of musicians (String quartet, String Trio, Piano Trio, String Duo etc.) please indicate it below in the options and I will be able to arrange a group for you.',
 	},
 
 	name: {

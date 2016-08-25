@@ -57,30 +57,65 @@ let html =
 				<li>
 					<input type="radio" id="{{lessons.trial_lesson.monday.id}}" value="{{lessons.trial_lesson.monday.id}}">
 					<label for="{{lessons.trial_lesson.monday.id}}">{{lessons.trial_lesson.monday.label}}</label>
+					<select name="{{lessons.trial_lesson.monday.id}}-time">
+						<option value="{{lessons.trial_lesson.times.all_day}}">{{lessons.trial_lesson.times.all_day}}</option>
+						<option value="{{lessons.trial_lesson.times.am}}">{{lessons.trial_lesson.times.am}}</option>
+						<option value="{{lessons.trial_lesson.times.pm}}">{{lessons.trial_lesson.times.pm}}</option>
+					</select>
 				</li>
 				<li>
 					<input type="radio" id="{{lessons.trial_lesson.tuesday.id}}" value="{{lessons.trial_lesson.tuesday.id}}">
 					<label for="{{lessons.trial_lesson.tuesday.id}}">{{lessons.trial_lesson.tuesday.label}}</label>
+					<select name="{{lessons.trial_lesson.tuesday.id}}-time">
+						<option value="{{lessons.trial_lesson.times.all_day}}">{{lessons.trial_lesson.times.all_day}}</option>
+						<option value="{{lessons.trial_lesson.times.am}}">{{lessons.trial_lesson.times.am}}</option>
+						<option value="{{lessons.trial_lesson.times.pm}}">{{lessons.trial_lesson.times.pm}}</option>
+					</select>
 				</li>
 				<li>
 					<input type="radio" id="{{lessons.trial_lesson.wednesday.id}}" value="{{lessons.trial_lesson.wednesday.id}}">
 					<label for="{{lessons.trial_lesson.wednesday.id}}">{{lessons.trial_lesson.wednesday.label}}</label>
+					<select name="{{lessons.trial_lesson.wednesday.id}}-time">
+						<option value="{{lessons.trial_lesson.times.all_day}}">{{lessons.trial_lesson.times.all_day}}</option>
+						<option value="{{lessons.trial_lesson.times.am}}">{{lessons.trial_lesson.times.am}}</option>
+						<option value="{{lessons.trial_lesson.times.pm}}">{{lessons.trial_lesson.times.pm}}</option>
+					</select>
 				</li>
 				<li>
 					<input type="radio" id="{{lessons.trial_lesson.thursday.id}}" value="{{lessons.trial_lesson.thursday.id}}">
 					<label for="{{lessons.trial_lesson.thursday.id}}">{{lessons.trial_lesson.thursday.label}}</label>
+					<select name="{{lessons.trial_lesson.thursday.id}}-time">
+						<option value="{{lessons.trial_lesson.times.all_day}}">{{lessons.trial_lesson.times.all_day}}</option>
+						<option value="{{lessons.trial_lesson.times.am}}">{{lessons.trial_lesson.times.am}}</option>
+						<option value="{{lessons.trial_lesson.times.pm}}">{{lessons.trial_lesson.times.pm}}</option>
+					</select>
 				</li>
 				<li>
 					<input type="radio" id="{{lessons.trial_lesson.friday.id}}" value="{{lessons.trial_lesson.friday.id}}">
 					<label for="{{lessons.trial_lesson.friday.id}}">{{lessons.trial_lesson.friday.label}}</label>
+					<select name="{{lessons.trial_lesson.friday.id}}-time">
+						<option value="{{lessons.trial_lesson.times.all_day}}">{{lessons.trial_lesson.times.all_day}}</option>
+						<option value="{{lessons.trial_lesson.times.am}}">{{lessons.trial_lesson.times.am}}</option>
+						<option value="{{lessons.trial_lesson.times.pm}}">{{lessons.trial_lesson.times.pm}}</option>
+					</select>
 				</li>
 				<li>
 					<input type="radio" id="{{lessons.trial_lesson.saturday.id}}" value="{{lessons.trial_lesson.saturday.id}}">
 					<label for="{{lessons.trial_lesson.saturday.id}}">{{lessons.trial_lesson.saturday.label}}</label>
+					<select name="{{lessons.trial_lesson.saturday.id}}-time">
+						<option value="{{lessons.trial_lesson.times.all_day}}">{{lessons.trial_lesson.times.all_day}}</option>
+						<option value="{{lessons.trial_lesson.times.am}}">{{lessons.trial_lesson.times.am}}</option>
+						<option value="{{lessons.trial_lesson.times.pm}}">{{lessons.trial_lesson.times.pm}}</option>
+					</select>
 				</li>
 				<li>
 					<input type="radio" id="{{lessons.trial_lesson.sunday.id}}" value="{{lessons.trial_lesson.sunday.id}}">
 					<label for="{{lessons.trial_lesson.sunday.id}}">{{lessons.trial_lesson.sunday.label}}</label>
+					<select name="{{lessons.trial_lesson.sunday.id}}-time">
+						<option value="{{lessons.trial_lesson.times.all_day}}">{{lessons.trial_lesson.times.all_day}}</option>
+						<option value="{{lessons.trial_lesson.times.am}}">{{lessons.trial_lesson.times.am}}</option>
+						<option value="{{lessons.trial_lesson.times.pm}}">{{lessons.trial_lesson.times.pm}}</option>
+					</select>
 				</li>
 			</ul>
 		</fieldset>

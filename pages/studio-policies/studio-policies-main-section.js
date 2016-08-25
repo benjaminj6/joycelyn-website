@@ -41,8 +41,8 @@ let html =
 			</div>
 			<div class="payment">
 				<h3>{{parents.payment.h3}}</h3>
-				<p>{{parents.payment.par_1}}</p>
-				<p>{{parents.payment.par_2}}</p>
+				<p>{{{parents.payment.par_1}}}</p>
+				<p>{{{parents.payment.par_2}}}</p>
 			</div>
 			<div class="instruments">
 				<h3>{{parents.instruments.h3}}</h3>
@@ -57,7 +57,7 @@ let html =
 			</div>
 			<div class="listening">
 				<h3>{{students.listening.h3}}</h3>
-				<p>{{students.listening.par_1}}</p>
+				<p>{{{students.listening.par_1}}}</p>
 			</div>
 			<div class="practicing">
 				<h3>{{students.practicing.h3}}</h3>

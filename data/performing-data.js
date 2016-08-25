@@ -8,7 +8,7 @@ data.heading = 'PERFORMING';
 data.intro = {
 	par_1: 'I have been performing for over 17 years in orchestral, chamber, and solo settings.',
 	par_2: {
-		text_part_1: 'You can view samples of my work below. Also, feel free to ',
+		text_part_1: 'You can view samples of my work below. Also, for more information about me, please ',
 		bio_href: '../bio',
 		text_in_link: 'check out my bio.',
 	}

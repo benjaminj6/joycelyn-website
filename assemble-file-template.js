@@ -31,6 +31,10 @@ function assembleFile(template, data, destination) {
 			.pipe(app.dest(destination));
 	});
 
+	app.task('watch', function() {
+			app.watch('./*.js', ['default']);
+	});
+
 	return app;
 }
 

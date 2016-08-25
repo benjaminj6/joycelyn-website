@@ -14,7 +14,6 @@ let globalData = {
 	why_private_lessons_href: '../why-private-lessons',
 	student_opportunities_href: '../student-opportunities',
 	studio_policies_href: '../studio-policies',
-	parent_education_href: '../parent-education',
 	suzuki_method_href: '../suzuki-method',
 	performing_href: '../performing',
 	blog_href: '../blog',

@@ -32,7 +32,7 @@ var html =
 						<a href="{{home_href}}">Home</a>
 					</li>
 					<li class="menu-item">
-						About <i class="fa fa-angle-down"></i>
+						About Me <i class="fa fa-angle-down"></i>
 						<ul class="submenu">
 							<li class="submenu-item">
 								<a href="{{bio_href}}">Bio</a>
@@ -53,9 +53,6 @@ var html =
 							</li>
 							<li class="submenu-item">
 								<a href="{{studio_policies_href}}">Studio Policies</a>
-							</li>
-							<li class="submenu-item">
-								<a href="{{parent_education_href}}">Parent Education</a>
 							</li>
 							<li class="submenu-item">
 								<a href="{{suzuki_method_href}}">Suzuki Method</a>

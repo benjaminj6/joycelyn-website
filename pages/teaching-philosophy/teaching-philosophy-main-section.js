@@ -8,6 +8,8 @@ let html =
 		${heading}
 		<p>{{par_1}}</p>
 		<p>{{par_2}}</p>
+		<p>{{par_3}}</p>
+		<p>{{par_4}}</p>
 		<div class="mp3-player">
 			<!-- The mp3 Player code will be inserted here -->
 			<p>MP3 PLAYER WITH SOUNDCLOUD LINK</p>

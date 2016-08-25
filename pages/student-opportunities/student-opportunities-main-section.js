@@ -24,6 +24,13 @@ let html =
 			<img src="{{recitals.img.src}}" alt="{{recitals.img.alt}}">
 			<p>{{recitals.par_1}}</p>
 		</section>
+		<section class="parents">
+			<h2>{{parents.h2}}</h2>
+			<img src="{{parents.img.src}}" alt="{{parents.img.alt}}">
+			<p>{{parents.par_1}}</p>	
+			<p>{{parents.par_2}}</p>
+			<p>{{parents.par_3}}</p>
+		</section>
 	</main>
 `;
 

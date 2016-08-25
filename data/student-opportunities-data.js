@@ -34,6 +34,17 @@ data.recitals = {
 	par_1: `Every semester, my students perform in a recital.  Recitals are an exciting time for students to get to show off their hard work.  After each recital, the kids are rewarded with a potluck party to celebrate their hard work.`,
 };
 
+data.parents = {
+	h2: 'PARENT EDUCATION',
+	img: {
+		src: 'http://placehold.it/500x300',
+		alt: 'Parent Education Photo'
+	},
+	par_1: `Parent education is something that I am passionate about.  Because I believe that parents are my greatest allies in the process of teaching, I offer many forms of parent education.  All families who are new to the violin are required to sign up for 3 forty-five minute parent education lessons with me.  These parent education sessions are strictly between the teacher and the practice parent and occur before the child starts his/her first lesson.  In these lessons, we will cover bowhold technique, Suzuki methodology, practice techniques, lesson etiquette, and much more.`,
+	par_2: `Additionally, I occasionally hold private parent-teacher conferences to check in on how the students are doing during home practice.  These meetings allow me to brainstorm with parents on how to meet their child’s individual practice needs.`,
+	par_3: `In addition to parent teacher conferences, I have partnered with a fellow violin teacher, Amanda Sansonetti to offer continuing parent education.  While students are in violin group class, parents will occasionally meet with a violin teacher (whoever is not teaching the group class that day) and discuss a violin topic (helping students practice, or helping them perform).  Our goal with these continuing parent education classes is to provide community and education to parents.`,
+};
+
 data.changeHref('student_opportunities_href', '.');
 
 module.exports = data;

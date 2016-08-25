@@ -26,7 +26,9 @@ data.parents = {
 	},
 	makeups: {
 		h3: `Makeups:`,
-		par_1: `I understand that sometimes schedules may change and you might need to cancel or reschedule lessons. If you need to cancel a lesson, please give me a 72-hour notice and I will be able to give you a make-up lesson. I will only be able to offer a make-up lesson if I am given a 3-day notice about a cancellation. I will no longer be able to give make up lessons to families that fail to give me a 3-day cancellation notice. The only exception to this rule is if there is a family emergency or unpredictable circumstance (such as car trouble). Please note that forgetting about lessons or traffic are not valid examples of “unpredictable circumstances”. Regarding illness, I allow my students to take three sick days a year.  3 lesson out of the year, you may take a sick day (less than 24 hour notice) and I will schedule a make up lesson with you.  If a student cancels due to sickness after 3 sick days, that lesson will be cancelled and the cost forfeited.`,
+		par_1: `I understand that sometimes schedules may change and you might need to cancel or reschedule lessons. If you need to cancel a lesson, please give me a 72-hour notice and I will be able to give you a make-up lesson. I will only be able to offer a make-up lesson if I am given a 3-day notice about a cancellation. I will no longer be able to give make up lessons to families that fail to give me a 3-day cancellation notice.`,
+		par_2: `The only exception to this rule is if there is a family emergency or unpredictable circumstance (such as car trouble). Please note that forgetting about lessons or traffic are not valid examples of “unpredictable circumstances”.`,
+		par_3: `Regarding illness, I allow my students to take three sick days a year.  3 lesson out of the year, you may take a sick day (less than 24 hour notice) and I will schedule a make up lesson with you.  If a student cancels due to sickness after 3 sick days, that lesson will be cancelled and the cost forfeited.`,
 	},
 	new_students: {
 		h3: `New Students:`,
@@ -38,7 +40,8 @@ data.parents = {
 	},
 	payment: {
 		h3: `Payment:`,
-		par_1: `At the first lesson of every month, please pay for all the lessons of that month upfront.  Payments can be made with cash or personal checks addressed to “Joycelyn Choo”. Please include the month under the subject line. If you are late on the monthly payment, a $15 dollars late fee will be charged. Please only pay for one month of tuition at a time.  I will be sending out a billing statement the week before tuition is due so that each family will be informed of their fees for that month.  Typically, I do not discuss my tuition rates over email or display them on my website.  I prefer to discuss that in person during a FREE trial lesson.`,
+		par_1: `At the first lesson of every month, please pay for all the lessons of that month upfront.  Payments can be made with cash or personal checks addressed to “Joycelyn Choo”. Please include the month under the subject line. If you are late on the monthly payment, a $15 dollars late fee will be charged.`,
+		par_2: `Please only pay for one month of tuition at a time.  I will be sending out a billing statement the week before tuition is due so that each family will be informed of their fees for that month.  Typically, I do not discuss my tuition rates over email or display them on my website.  I prefer to discuss that in person during a FREE trial lesson.`,
 	},
 	instruments: {
 		h3: `Instruments:`,

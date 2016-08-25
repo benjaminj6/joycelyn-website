@@ -12,6 +12,8 @@ data.travel = {
 	par_1: `Only in very rare circumstances do I drive to my student’s homes.  I ask that all students come take lessons in either my La Mirada or Walnut location.  If I do drive to my student’s home, there will be an additional gas fee for every lesson.`,
 };
 
+let moreysHref = `<a href="http://www.moreysmusic.com/" target="blank">Morey's Music Shop</a>`;
+
 data.parents = {
 	h2: `For Parents`,
 	practice_partners: {
@@ -43,10 +45,14 @@ data.parents = {
 		par_1: `At the first lesson of every month, please pay for all the lessons of that month upfront.  Payments can be made with cash or personal checks addressed to “Joycelyn Choo”. Please include the month under the subject line. If you are late on the monthly payment, a $15 dollars late fee will be charged.`,
 		par_2: `Please only pay for one month of tuition at a time.  I will be sending out a billing statement the week before tuition is due so that each family will be informed of their fees for that month.  Typically, I do not discuss my tuition rates over email or display them on my website.  I prefer to discuss that in person during a FREE trial lesson.`,
 	},
-	instruments: {
-		h3: `Instruments:`,
-		par_1: `Picking the right instrument is absolutely crucial to your child’s success with the violin.  If you do not already have a violin, PLEASE DO NOT SELECT ONE WITHOUT ME.  I understand that some families are under a budget and would rather not spend too much money on an instrument especially if the child will eventually outgrow the instrument. This is why I would recommend renting a violin from Morey’s Music Shop in Lakewood (hyperlink). Morey’s provides high quality violins in every size at affordable rates. If this option does not fit your family’s needs, please talk to me about it and we can work together to find a solution. The last thing I want is for one of my students to end up with a badly made violin that harms their technique.`,
+	links: {
+		moreys_href: `<a href="http://www.moreysmusic.com/" target="blank">Morey's Music Shop</a>`,
 	},
+};
+
+data.parents.instruments = {
+	h3: `Instruments:`,
+	par_1: `Picking the right instrument is absolutely crucial to your child’s success with the violin.  If you do not already have a violin, PLEASE DO NOT SELECT ONE WITHOUT ME.  I understand that some families are under a budget and would rather not spend too much money on an instrument especially if the child will eventually outgrow the instrument. This is why I would recommend renting a violin from ${data.parents.links.moreys_href} in Lakewood. Morey’s provides high quality violins in every size at affordable rates. If this option does not fit your family’s needs, please talk to me about it and we can work together to find a solution. The last thing I want is for one of my students to end up with a badly made violin that harms their technique.`,
 };
 
 data.students = {

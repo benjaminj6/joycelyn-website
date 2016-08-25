@@ -46,7 +46,7 @@ let html =
 			</div>
 			<div class="instruments">
 				<h3>{{parents.instruments.h3}}</h3>
-				<p>{{parents.instruments.par_1}}</p>
+				<p>{{{parents.instruments.par_1}}}</p>
 			</div>
 		</section>
 		<section class="students">

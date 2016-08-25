@@ -9,7 +9,7 @@ let html =
 		<img src="{{img.src}}" alt="{{img.alt}}">
 		<section class="intro">
 			<p>{{intro.par_1}}</p>
-			<p>{{intro.par_2.text_part_1}}<a href="{{intro.par_2.bio_href}}">{{intro.par_2.text_in_link}}</a></p>
+			<p>{{intro.par_2.text_part_1}}<a href="{{intro.par_2.bio_href}}" target="blank">{{intro.par_2.text_in_link}}</a></p>
 		</section>
 		<section class="video-1">
 			<h3>{{video_1.h3}}</h3>

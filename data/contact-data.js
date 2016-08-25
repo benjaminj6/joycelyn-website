@@ -7,7 +7,7 @@ data.page_title = 'Joycelyn Choo | Contact';
 data.heading = 'CONTACT';
 
 function aTag(href, text) {
-	return `<a href="${href}">${text}</a>`;
+	return `<a href="${href}" target="blank">${text}</a>`;
 }
 
 data.lessons = {

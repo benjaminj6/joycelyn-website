@@ -13,12 +13,12 @@ data.par_1 = {
 };
 
 data.list_1 = {
-	h3: `1. Love is essential to Growth`,
+	h3: `Love is essential to Growth`,
 	par_1: `In my studio, students are people first and violinist second.  My goal in teaching is to love my students and care for them in the ways that I can.  Teaching the violin is just my excuse to get to do that! :]`,
 };
 
 data.list_2 = {
-	h3: `2. Every Child Can`,
+	h3: `Every Child Can`,
 	par_1: `No matter what gender or learning disability, every child can learn to play the violin just like every child can learn to speak.`,
 };
 

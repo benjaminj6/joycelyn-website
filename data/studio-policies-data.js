@@ -27,12 +27,33 @@ data.parents = {
 		h3: `Being late:`,
 		par_1: `Unfortunately, my schedule is not very flexible. If you are late to a lesson, I will not be able to make up the lost time by pushing the lesson later.  There will be no refunds or make ups for late lessons.`,
 	},
+
+	teacher_error: {
+		h3: `Teacher error:`,
+		par_1: `If I am more than 15 minutes late to a lesson, I will either refund your money 
+			for that lesson, or I will give you a makeup lesson. If I cancel a lesson, I will 
+			also give you a refund or give you a makeup lesson. I will try my best to keep 
+			a steady schedule, but unfortunately plans change very quickly sometimes.`.replace('/\\n/g', ''),
+	},
+
 	makeups: {
 		h3: `Makeups:`,
-		par_1: `I understand that sometimes schedules may change and you might need to cancel or reschedule lessons. If you need to cancel a lesson, please give me a 72-hour notice and I will be able to give you a make-up lesson. I will only be able to offer a make-up lesson if I am given a 3-day notice about a cancellation. I will no longer be able to give make up lessons to families that fail to give me a 3-day cancellation notice.`,
-		par_2: `The only exception to this rule is if there is a family emergency or unpredictable circumstance (such as car trouble). Please note that forgetting about lessons or traffic are not valid examples of “unpredictable circumstances”.`,
-		par_3: `Regarding illness, I allow my students to take three sick days a year.  3 lesson out of the year, you may take a sick day (less than 24 hour notice) and I will schedule a make up lesson with you.  If a student cancels due to sickness after 3 sick days, that lesson will be cancelled and the cost forfeited.`,
+		par_1: `I understand that sometimes schedules may change and you might need to
+			cancel or reschedule lessons. If you need to cancel a lesson, please give me a
+			72-hour notice and I will be able to give you a make-up lesson. I will only be
+			able to offer a make-up lesson if I am given a 72 hour notice about a
+			cancellation.`.replace('/\\n/g', ''),
+
+		par_2: `The only exception to this rule is if there is a family emergency or unpredictable 
+			circumstance (such as car trouble). Please note that forgetting about lessons or traffic are 
+			not valid examples of “unpredictable circumstances”.`.replace('/\\n/g', ''),
+
+		par_3: `Regarding illness, I allow my students to take three sick days a year.  3 lesson out of 
+			the year, you may take a sick day (less than 24 hour cancellation notice) and I will schedule 
+			a make- up lesson with you.  If a student cancels due to sickness after taking three sick 
+			days that year, that lesson will be cancelled and the cost forfeited.`.replace('/\\n/g', ''),
 	},
+
 	new_students: {
 		h3: `New Students:`,
 		par_1: `I offer a <a href="../contact">free trial lesson</a> to all new students (whether 
@@ -42,19 +63,18 @@ data.parents = {
 			to commit to at least 6 months of lesson before considering stopping lessons.  I believe that 
 			after 6 months, the student has given violin a “fair shot”.`.replace('/\\n/g', ''),
 	},
-	teacher_error: {
-		h3: `Teacher error:`,
-		par_1: `If I am more than 15 minutes late to a lesson, I will either refund your money for that lesson, or I will give you a makeup lesson. If I cancel a lesson, I will also give you a refund or give you a makeup lesson. I will try my best to keep a steady schedule, but unfortunately plans change very quickly sometimes.`,
-	},
+
 	payment: {
 		h3: `Payment:`,
 		par_1: `At the first lesson of every month, please pay for all the lessons of that month 
 			upfront.  Payments can be made with cash or personal checks addressed to 
 			“Joycelyn Choo”. Please include the month under the subject line. If you are 
-			late on the monthly payment, a $15 dollars late fee will be charged. Please only pay for one 
+			late on the monthly payment, a $15 late fee will be charged. Please only pay for one 
 			month of tuition at a time.  I will be sending out a billing statement the week before tuition 
 			is due so that each family will be informed of their fees for that month.`.replace(`/\\n/g`, ''),
-		par_2: `Typically, I do not discuss my tuition rates over email or display them on my website.  I prefer to discuss that in person during a <a href="../contact">free trial lesson</a>.`,
+
+		par_2: `Typically, I do not discuss my tuition rates over email or display them on my website.  
+			I prefer to discuss that in person during a <a href="../contact">free trial lesson</a>.`.replace(`/\\n/g`, ''),
 	},
 	links: {
 		moreys_href: `<a href="http://www.moreysmusic.com/" target="_blank">Morey's Music Shop</a>`,
@@ -63,22 +83,41 @@ data.parents = {
 
 data.parents.instruments = {
 	h3: `Instruments:`,
-	par_1: `Picking the right instrument is absolutely crucial to your child’s success with the violin.  If you do not already have a violin, <em>please do not select one without me.</em>  I understand that some families are under a budget and would rather not spend too much money on an instrument especially if the child will eventually outgrow the instrument. This is why I would recommend renting a violin from ${data.parents.links.moreys_href} in Lakewood. Morey’s provides high quality violins in every size at affordable rates. If this option does not fit your family’s needs, please talk to me about it and we can work together to find a solution. The last thing I want is for one of my students to end up with a badly made violin that harms their technique.`,
+	par_1: `Picking the right instrument is absolutely crucial to your child’s success with the violin.  
+		If you do not already have a violin, <em>please do not select one without me.</em>  I understand 
+		that some families are under a budget and would rather not spend too much money on an instrument 
+		especially if the child will eventually outgrow the instrument. This is why I would recommend 
+		renting a violin from ${data.parents.links.moreys_href} in Lakewood. Morey’s provides high 
+		quality violins in every size at affordable rates. If this option does not fit your family’s 
+		needs, please talk to me about it and we can work together to find a solution. The last thing 
+		I want is for one of my students to end up with a badly made violin that harms their technique.`.replace(`/\\n/g`, ''),
 };
 
 data.students = {
 	h2: `For Students`,
 	fingernails: {
 		h3: `Fingernails:`,
-		par_1: `As you’ll discover, it’s very difficult to play the violin with long fingernails. If you come to a lesson with long fingernails, you will be charged 10 cents for every nail that is too long. Clipping your nails during the lesson takes time out of our lesson that we could otherwise spend working on repertoire. Your money will be added to the “tip jar”. Occasionally, I will give opportunities for my students to win the money in the tip jar.`,
+		par_1: `As you’ll discover, it’s very difficult to play the violin with long fingernails. If 
+			you come to a lesson with long fingernails, you will be charged 10 cents for 
+			every nail that is too long. Clipping your nails during the lesson takes time 
+			out of our lesson that we could otherwise spend working on repertoire. Your money will be added 
+			to the “tip jar”. Occasionally, I will give opportunities for my students to win the money 
+			in the tip jar.  Sometimes students win up to $5-$10!`.replace(`/\\n/g`, ''),
 	},
 	listening: {
 		h3: `Listening:`,
-		par_1: `One of the most important components of the Suzuki Method is listening. If your student is playing past Twinkle, listen to your CD at least once a day, <em>every day.</em> This will allow you to learn pieces with more ease.`,
+		par_1: `One of the most important components of the Suzuki Method is listening. If your student 
+			is playing past Twinkle, listen to your CD at least once a day, <em>every day.</em> This will 
+			allow you to learn pieces with more ease.`.replace(`/\\n/g`, ''),
 	},
 	practicing: {
 		h3: `Practicing:`,
-		par_1: `I would like all students in my studio to practice at least 6 days a week with their practice partner. Practice is so fundamental to success with the violin.  If students show consistent lack of practice, they will be placed on probation.  If they continue to come unprepared to lessons due to lack of practice, they will be excused from a lesson (the cost of that lesson will also be forfeited).  After the first excusal, if they continue to come unprepared to lessons, then I will excuse them from my studio.`,
+		par_1: `I would like all students in my studio to practice at least 6 days a week with their 
+			practice partner. Practice is so fundamental to success with the violin.  If students show 
+			consistent lack of practice, they will be placed on probation.  If they continue to come 
+			unprepared to lessons due to lack of practice, they will be excused from a lesson (the cost 
+			of that lesson will also be forfeited).  After the first excusal, if they continue to come 
+			unprepared to lessons, then I will excuse them from my studio.`.replace(`/\\n/g`, ''),
 	},
 };
 

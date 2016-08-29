@@ -24,7 +24,7 @@ data.par_4 = `To find out more about my teaching philosophy, please listen to my
 	gave at Biola University entitled “What is my Role as a Music Teacher?”`.replace(`/\\n/g`, ``);
 
 data.par_5 = `If you're interested in taking lessons, please sign up for a 
-	<a href="../contact">free trial lesson</a>!`.replace(`/\\n/g`, ``);
+	<a href="../contact" target="_blank">free trial lesson</a>!`.replace(`/\\n/g`, ``);
 
 
 data.changeHref('teaching_philosophy_href', '.');

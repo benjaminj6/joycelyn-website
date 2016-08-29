@@ -25,6 +25,10 @@ let html =
 				<h3>{{parents.being_late.h3}}</h3>
 				<p>{{parents.being_late.par_1}}</p>
 			</div>
+			<div class="teacher-error">
+				<h3>{{parents.teacher_error.h3}}</h3>
+				<p>{{parents.teacher_error.par_1}}</p>
+			</div>
 			<div class="makeups">
 				<h3>{{parents.makeups.h3}}</h3>
 				<p>{{parents.makeups.par_1}}</p>
@@ -34,10 +38,6 @@ let html =
 			<div class="new-students">
 				<h3>{{parents.new_students.h3}}</h3>
 				<p>{{{parents.new_students.par_1}}}</p>
-			</div>
-			<div class="teacher-error">
-				<h3>{{parents.teacher_error.h3}}</h3>
-				<p>{{parents.teacher_error.par_1}}</p>
 			</div>
 			<div class="payment">
 				<h3>{{parents.payment.h3}}</h3>

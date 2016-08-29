@@ -5,7 +5,13 @@ let data = Object.create(globalData);
 data.page_title = 'Joycelyn Choo | Student Opportunities';
 
 data.heading = 'STUDENT OPPORTUNITIES';
-data.intro_par = `Students in my studio are enrolled in weekly private lessons in which they will study their instrument through use of suzuki repertoire, technique, and general music theory knowledge. In addition, students are required to attend weekly group classes to further develop solo performance, group performance, technique, practicing skills, and participate in games and activities with other students.  Students are also expected to perform twice a year in studio recitals where they can also benefit from the performances of their peers.  I know from experience that performance opportunities are the highlight of musical study.  It is a joy for all students to be able to perform and see their hard work come to fruition.`;  
+data.intro_par = `Students in my studio are enrolled in weekly private lessons in which they will 
+	study their instrument through use of suzuki repertoire, technique, and general music theory 
+	knowledge. In addition, students are required to attend weekly group classes to further develop 
+	solo performance, group performance, technique, practicing skills, and participate in games 
+	and activities with other students.  Students are also expected to perform twice a year in studio 
+	recitals where they can also benefit from the performances of their peers.  If you are considering 
+	joining my studio, remember I offer a <a href="../contact">free trial lesson</a>.`.replace(`/\\n/g`, ``);  
 
 data.weekly_lessons = {
 	h2: 'WEEKLY LESSONS',

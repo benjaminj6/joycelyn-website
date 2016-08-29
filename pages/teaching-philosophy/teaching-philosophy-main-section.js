@@ -14,6 +14,7 @@ let html =
 			<!-- The mp3 Player code will be inserted here -->
 			<p>MP3 PLAYER WITH SOUNDCLOUD LINK</p>
 		</div>
+		<p>{{{par_5}}}</p>
 	</main>
 `;
 

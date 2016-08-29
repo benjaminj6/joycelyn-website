@@ -9,6 +9,7 @@ let html =
 		<img src="{{img.src}}" alt="{{img.alt}}" />
 		<p>{{par_1}}</p>
 		<p>{{par_2}}</p>
+		<p>{{{par_3}}}</p>
 	</main>
 `;
 

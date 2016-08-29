@@ -33,7 +33,7 @@ let html =
 			</div>
 			<div class="new-students">
 				<h3>{{parents.new_students.h3}}</h3>
-				<p>{{parents.new_students.par_1}}</p>
+				<p>{{{parents.new_students.par_1}}}</p>
 			</div>
 			<div class="teacher-error">
 				<h3>{{parents.teacher_error.h3}}</h3>

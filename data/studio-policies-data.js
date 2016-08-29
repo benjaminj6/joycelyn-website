@@ -1,4 +1,4 @@
-let globalData = require('./global-data');
+ let globalData = require('./global-data');
 
 let data = Object.create(globalData);
 
@@ -35,7 +35,12 @@ data.parents = {
 	},
 	new_students: {
 		h3: `New Students:`,
-		par_1: `I require all new students to make a commitment to 6 months of lessons.  The beginning few months of learning the violin can be a little slow so I encourage students to commit to at least 6 months of lesson before considering stopping lessons.  I believe that after 6 months, the student has given violin a “fair shot”.`,
+		par_1: `I offer a <a href="../contact">free trial lesson</a> to all new students (whether 
+			they’ve played violin before or not).  However this section is regarding students who are 
+			new beginners.  I require all new beginners to make a commitment to 6 months of lessons.  
+			The beginning few months of learning the violin can be a little slow so I encourage students 
+			to commit to at least 6 months of lesson before considering stopping lessons.  I believe that 
+			after 6 months, the student has given violin a “fair shot”.`.replace('/\\n/g', ''),
 	},
 	teacher_error: {
 		h3: `Teacher error:`,
@@ -43,8 +48,13 @@ data.parents = {
 	},
 	payment: {
 		h3: `Payment:`,
-		par_1: `At the first lesson of every month, please pay for all the lessons of that month upfront.  Payments can be made with cash or personal checks addressed to “Joycelyn Choo”. Please include the month under the subject line. If you are late on the monthly payment, a $15 late fee will be charged.`,
-		par_2: `Please only pay for one month of tuition at a time.  I will be sending out a billing statement the week before tuition is due so that each family will be informed of their fees for that month.  Typically, I do not discuss my tuition rates over email or display them on my website.  I prefer to discuss that in person during a <em>free</em> trial lesson.`,
+		par_1: `At the first lesson of every month, please pay for all the lessons of that month 
+			upfront.  Payments can be made with cash or personal checks addressed to 
+			“Joycelyn Choo”. Please include the month under the subject line. If you are 
+			late on the monthly payment, a $15 dollars late fee will be charged. Please only pay for one 
+			month of tuition at a time.  I will be sending out a billing statement the week before tuition 
+			is due so that each family will be informed of their fees for that month.`.replace(`/\\n/g`, ''),
+		par_2: `Typically, I do not discuss my tuition rates over email or display them on my website.  I prefer to discuss that in person during a <a href="../contact">free trial lesson</a>.`,
 	},
 	links: {
 		moreys_href: `<a href="http://www.moreysmusic.com/" target="_blank">Morey's Music Shop</a>`,

@@ -19,7 +19,7 @@ data.weekly_lessons = {
 		src: 'http://placehold.it/500x300',
 		alt: 'Weekly Lessons Photo'
 	},
-	par_1: `Private instruction in music is highly individualized and can be tailored to fit the individual needs of the student. Though many schools offer music instruction, teachers’ time with their students is highly limited. In a private lessons, the student has the teacher’s full time and attention every week for a set amount of time. Students who study privately make more progress and are generally more satisfied in their music study than those who only study it in school because they can focus more on proper technique and holistic learning than their colleagues who only learn in a class setting.  Additionally, through private instruction students have the opportunity to be individually mentored by their teacher.`,
+	par_1: `Private instruction in music is highly individualized and can be tailored to fit the individual needs of the student. Though many schools offer music instruction, teachers’ time with their students is highly limited. In a private lesson, the student has my full time and attention every week for a set amount of time. Students who study privately make more progress and are generally more satisfied in their music study than those who only study it in school because they can focus more on proper technique and holistic learning than their colleagues who only learn in a class setting.  Additionally, through private instruction students have the opportunity to be individually mentored by me.  <a href="../contact">Sign up for a free trial lesson today</a>!`,
 };
 
 data.group_classes = {

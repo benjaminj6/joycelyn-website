@@ -7,12 +7,12 @@ let html =
 	<main>
 		<section class="intro">
 			${heading}
-			<p>{{intro_par}}</p>
+			<p>{{{intro_par}}}</p>
 		</section>
 		<section class="weekly-lessons">
 			<h2>{{weekly_lessons.h2}}</h2>
 			<img src="{{weekly_lessons.img.src}}" alt="{{weekly_lessons.img.alt}}">
-			<p>{{weekly_lessons.par_1}}</p>
+			<p>{{{weekly_lessons.par_1}}}</p>
 		</section>
 		<section class="group-classes">
 			<h2>{{group_classes.h2}}</h2>

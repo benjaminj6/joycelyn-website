@@ -9,7 +9,9 @@ data.intro_par = `Families who participate in my studio must agree to these poli
 
 data.travel = {
 	h2: `Travel`,
-	par_1: `Only in very rare circumstances do I drive to my student’s homes.  I ask that all students come take lessons in either my La Mirada or Walnut location.  If I do drive to my student’s home, there will be an additional gas fee for every lesson.`,
+	par_1: `Only in very rare circumstances do I drive to my student’s homes.  I ask that all students 
+		come take lessons in either my La Mirada or Walnut location.  If I do drive to my student’s 
+		home, there will be an additional gas fee for every lesson.`.replace('/\\n/g', ''),
 };
 
 let moreysHref = `<a href="http://www.moreysmusic.com/" target="_blank">Morey's Music Shop</a>`;
@@ -19,13 +21,28 @@ data.parents = {
 	h2: `For Parents`,
 	practice_partners: {
 		h3: `Parents as practice partners:`,
-		par_1: `I believe that parent’s participation in their student’s musical education is the number one key to success.  Families who study with me should designate one practice partner (usually one parent, but sometimes a babysitter or grandparent) to bring the student to lesson, take diligent notes during the lesson, ask questions at appropriate times during the lesson, daily play the recording for the student, and daily practice each day with the student at home.`,
-		par_2: `Unless a student has been approved to practice on their own, a parent or practice partner should be present during lessons and practices at all times.`,
-		par_3: `Parents, I understand that many of you are busy and that you may not have time for this intensive responsibility.  The violin is a difficult instrument that requires the help of an adult to learn.  If you do not have the time to practice and attend lessons, please assign someone else to do these tasks.  Otherwise, my studio may not be the correct fit for you.`,
+		par_1: `I believe that parent’s participation in their student’s musical education is the 
+			number one key to success.  Families who study with me should designate one practice partner 
+			(usually one parent, but sometimes a babysitter or grandparent) to bring the student to 
+			lesson, take diligent notes during the lesson, ask questions at appropriate times during the 
+			lesson, daily play the recording for the student, and daily practice 
+			each day with the student at home.`.replace('/\\n/g', ''),
+
+		par_2: `Unless a student has been approved to practice on their own, a parent or practice 
+			partner should be present during lessons and practices at all times.`.replace('/\\n/g', ''),
+
+		par_3: `Parents, I understand that many of you are busy and that you may not have time 
+			for this intensive responsibility.  The violin is a difficult instrument that requires 
+			the help of an adult to learn.  If you do not have the time to practice and attend lessons, 
+			please assign someone else to do these tasks.  Otherwise, my studio 
+			may not be the correct fit for you.`.replace('/\\n/g', ''),
 	},
+
 	being_late: {
 		h3: `Being late:`,
-		par_1: `Unfortunately, my schedule is not very flexible. If you are late to a lesson, I will not be able to make up the lost time by pushing the lesson later.  There will be no refunds or make ups for late lessons.`,
+		par_1: `Unfortunately, my schedule is not very flexible. If you are late to a lesson, 
+			I will not be able to make up the lost time by pushing the lesson later.  There will 
+			be no refunds or make ups for late lessons.`.replace('/\\n/g', ''),
 	},
 
 	teacher_error: {
@@ -38,6 +55,7 @@ data.parents = {
 
 	makeups: {
 		h3: `Makeups:`,
+
 		par_1: `I understand that sometimes schedules may change and you might need to
 			cancel or reschedule lessons. If you need to cancel a lesson, please give me a
 			72-hour notice and I will be able to give you a make-up lesson. I will only be
@@ -56,7 +74,8 @@ data.parents = {
 
 	new_students: {
 		h3: `New Students:`,
-		par_1: `I offer a <a href="../contact">free trial lesson</a> to all new students (whether 
+
+		par_1: `I offer a <a href="../contact" target="_blank">free trial lesson</a> to all new students (whether 
 			they’ve played violin before or not).  However this section is regarding students who are 
 			new beginners.  I require all new beginners to make a commitment to 6 months of lessons.  
 			The beginning few months of learning the violin can be a little slow so I encourage students 
@@ -74,7 +93,7 @@ data.parents = {
 			is due so that each family will be informed of their fees for that month.`.replace(`/\\n/g`, ''),
 
 		par_2: `Typically, I do not discuss my tuition rates over email or display them on my website.  
-			I prefer to discuss that in person during a <a href="../contact">free trial lesson</a>.`.replace(`/\\n/g`, ''),
+			I prefer to discuss that in person during a <a href="../contact" target="_blank">free trial lesson</a>.`.replace(`/\\n/g`, ''),
 	},
 	links: {
 		moreys_href: `<a href="http://www.moreysmusic.com/" target="_blank">Morey's Music Shop</a>`,

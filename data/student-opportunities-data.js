@@ -12,7 +12,7 @@ data.intro_par = `Students in my studio are enrolled in weekly private lessons i
 	solo performance, group performance, technique, practicing skills, and participate in games 
 	and activities with other students.  Students are also expected to perform twice a year in studio 
 	recitals where they can also benefit from the performances of their peers.  If you are considering 
-	joining my studio, remember I offer a <a href="../contact">free trial lesson</a>.`.replace(`/\\n/g`, ``);  
+	joining my studio, remember I offer a <a href="../contact" target="_blank">free trial lesson</a>.`.replace(`/\\n/g`, ``);  
 
 data.weekly_lessons = {
 	h2: 'WEEKLY LESSONS',
@@ -27,7 +27,7 @@ data.weekly_lessons = {
 		and are generally more satisfied in their music study than those who only study it in school 
 		because they can focus more on proper technique and holistic learning than their colleagues 
 		who only learn in a class setting.  Additionally, through private instruction students have 
-		the opportunity to be individually mentored by me.  <a href="../contact">Sign up for a free 
+		the opportunity to be individually mentored by me.  <a href="../contact" target="_blank">Sign up for a free 
 		trial lesson today</a>!`.replace(`/\\n/g`, ``),
 };
 

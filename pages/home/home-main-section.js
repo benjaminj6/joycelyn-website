@@ -1,8 +1,14 @@
 let html = 
+// Images in the rotating picture banner wil lbe done as background images to facilitate media queries.
+// Is there a way to do this in semantic html?
+
 `
 	<main>
 		<ul class="rotating-pics">
-			<li><img src="{{image_1_path}}" alt="Image 1" id="image-1"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
 		</ul>
 		<div class="rotating-pics-nav">
 			<i class="fa fa-angle-left"></i>

@@ -1,15 +1,10 @@
-let globalData = require('./global-data');
+let _ = require('../utils.js');
 
+let globalData = require('./global-data');
 let data = Object.create(globalData);
 
 data.page_title = 'Joycelyn Choo | Contact';
-
 data.heading = 'CONTACT';
-
-function aTag(href, text) {
-	return `<a href="${href}" target="_blank">${text}</a>`;
-}
-
 
 data.lessons = {
 	section_id: 'lessons',
@@ -22,17 +17,17 @@ data.lessons = {
 
 		h2: 'Prospective Student Application',
 
-		par_1: `Hello!  I’m so glad that you’re interested in violin lessons with me!  
+		par_1: _.removeBreaks(`Hello!  I’m so glad that you’re interested in violin lessons with me!  
 			<em>I offer a free trial lesson to anyone who is interested in violin lessons.</em>  
 			You will <em>not</em> need a violin for this trial lesson.  Before contacting me, please read 
-			through the ${aTag('../suzuki-method', 'Suzuki Method')}, 
-			${aTag('../studio-policies', 'Studio Policies')}, and 
-			${aTag('../student-opportunities', 'Student Opportunities')} sections!  
+			through the ${_.aTag('../suzuki-method', 'Suzuki Method')}, 
+			${_.aTag('../studio-policies', 'Studio Policies')}, and 
+			${_.aTag('../student-opportunities', 'Student Opportunities')} sections!  
 			Please note that I do not discuss my tuition rates over email or display it online.  
-			I prefer to talk to parents about that in the trial lesson.`.replace('/\\n/g', ''),
+			I prefer to talk to parents about that in the trial lesson.`),
 
-		par_2: `Please fill out the form below and I will get back to you within the day.  I am very 
-			quick to respond to my emails!`.replace('/\\n/g', ''),
+		par_2: _.removeBreaks(`Please fill out the form below and I will get back to you within the day.  I am very 
+			quick to respond to my emails!`),
 	},
 
 	form_id: 'lessons-form',
@@ -49,7 +44,8 @@ data.lessons = {
 		legend: `Prospective Student's Grade (if applicable)`,
 	},
 	student_experience: {
-		legend: 'Please list any musical experience that the student might have (if none, please write "new beginner")',
+		legend: _.removeBreaks(`Please list any musical experience that the student might have 
+			(if none, please write "new beginner")`),
 	},
 	previous_suzuki_teacher: {
 		legend: `If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?`,
@@ -119,9 +115,10 @@ data.lessons = {
 		},
 	},
 	group_classes: {
-		legend: `All students are required to enroll in a mandatory group class that meets 
-			once a week in addition to weekly lessons. Is this a commitment that 
-			your family is willing to make?`.replace('/\\n/g', ''),
+		legend: _.removeBreaks(`All students are required to enroll in a mandatory group class that 
+			meets once a week in addition to weekly lessons. Is this a commitment that 
+			your family is willing to make?`),
+
 		option_1: {
 			val: 'yes',
 			text: 'Yes',
@@ -131,9 +128,11 @@ data.lessons = {
 			text: 'No'
 		},
 	},
+
 	extra_questions: {
 		legend: 'Please add any additional questions or concerns here.',
 	},	
+
 	email: {
 		legend: 'Email*'
 	}
@@ -144,11 +143,11 @@ data.perform = {
 	
 	intro: {
 		h2: 'Performance Request',
-		par_1: `When I am not teaching, I love to perform with my musical colleagues. If you are 
+		par_1: _.removeBreaks(`When I am not teaching, I love to perform with my musical colleagues. If you are 
 			interested in contracting me to play for your special event (wedding, funeral, birthday 
 			party etc.) please fill out the form below to get a free quote. If you are looking for a 
 			specific group of musicians (String quartet, String Trio, Piano Trio, String Duo etc.) 
-			please indicate it below in the options and I will be able to arrange a group for you.`.replace('/\\n/g', ''),
+			please indicate it below in the options and I will be able to arrange a group for you.`),
 	},
 
 	name: {
@@ -176,7 +175,8 @@ data.perform = {
 		legend: 'Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*',
 	},
 	special_requests: {
-		legend: 'Special Requests for music selection (I will be sending you some selections to choose from, but let me know if you have a request).',
+		legend: _.removeBreaks(`Special Requests for music selection (I will be sending you some 
+			selections to choose from, but let me know if you have a request).`),
 	},
 	extra_questions: {
 		legend: 'Please add any additional questions or concerns here.',

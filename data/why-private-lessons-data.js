@@ -18,7 +18,6 @@ data.par_1 = _.removeBreaks(`The benefits of music study have been closely studi
 	training verbal memory, improving spatial-temporal reasoning, and raising IQ, but it’s also 
 	been shown that playing instrument has emotional and mental benefits.`);
 
-
 data.par_2 = _.removeBreaks(`Artistic expression is an outlet that contributes the emotional health of those who 
 	play an instrument and develops attention span and self-discipline. Playing an instrument 
 	develops the brain in ways that no other skill does.  Playing an instrument has been proven 

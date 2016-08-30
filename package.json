@@ -7,43 +7,30 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:home && npm run build:about-pages && npm run build:teaching-pages && npm run build:performing && npm run build:blog && npm run build:contact",
     "watch": "npm run watch:home & npm run watch:about-pages & npm run watch:teaching-pages & npm run watch:performing & npm run watch:blog & npm run watch:contact",
-
     "build:home": "assemble --cwd=pages/home",
     "watch:home": "chokidar 'pages/home/*.js' -c 'npm run build:home'",
-    
     "build:about-pages": "npm run build:bio && npm run build:teaching-philosophy",
     "watch:about-pages": "npm run watch:bio & npm run watch:teaching-philosophy",
-
     "build:bio": "assemble --cwd=pages/bio",
     "watch:bio": "chokidar 'pages/bio/*.js' 'data/bio-data.js' -c 'npm run build:bio'",
-
     "build:teaching-philosophy": "assemble --cwd=pages/teaching-philosophy",
     "watch:teaching-philosophy": "chokidar 'pages/teaching-philosophy/*.js' 'data/teaching-philosophy-data.js' -c 'npm run build:teaching-philosophy'",
-
     "build:teaching-pages": "npm run build:why-private-lessons && npm run build:student-opportunities && npm run build:studio-policies && npm run build:suzuki-method",
     "watch:teaching-pages": "npm run watch:why-private-lessons & npm run watch:student-opportunities & npm run watch:studio-policies & npm run watch:suzuki-method",
-    
     "build:why-private-lessons": "assemble --cwd=pages/why-private-lessons",
     "watch:why-private-lessons": "chokidar 'pages/why-private-lessons/*.js' 'data/why-private-lessons-data.js' -c 'npm run build:why-private-lessons'",
-
     "build:student-opportunities": "assemble --cwd=pages/student-opportunities",
     "watch:student-opportunities": "chokidar 'pages/student-opportunities/*.js' 'data/student-opportunities-data.js' -c 'npm run build:student-opportunities'",
-
     "build:studio-policies": "assemble --cwd=pages/studio-policies",
     "watch:studio-policies": "chokidar 'pages/studio-policies/*.js' 'data/studio-policies-data.js' -c 'npm run build:studio-policies'",
-
     "build:suzuki-method": "assemble --cwd=pages/suzuki-method",
     "watch:suzuki-method": "chokidar 'pages/suzuki-method/*.js' 'data/suzuki-method-data.js' -c 'npm run build:suzuki-method'",
-    
     "build:performing": "assemble --cwd=pages/performing",
     "watch:performing": "chokidar 'pages/performing/*.js' 'data/performing-data.js' -c 'npm run build:performing'",
-
     "build:blog": "assemble --cwd=pages/blog",
     "watch:blog": "chokidar 'pages/blog/*.js' 'data/blog-data.js' -c 'npm run build:blog'",
-    
     "build:contact": "assemble --cwd=pages/contact",
     "watch:contact": "chokidar 'pages/contact/*.js' 'data/contact-data.js' -c 'npm run build:contact'"
-
   },
   "author": "Benjamin Johnson",
   "license": "ISC",
@@ -54,6 +41,7 @@
     "pretty": "^1.0.0"
   },
   "devDependencies": {
-    "assemble": "^0.17.1"
+    "assemble": "^0.17.1",
+    "less": "^2.7.1"
   }
 }

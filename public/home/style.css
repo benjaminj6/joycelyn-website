@@ -88,12 +88,12 @@ main ul.rotating-pics li {
 main ul.rotating-pics li.pic-1 {
   background-image: url('../assets/images/home-mobile-1.jpg');
   background-size: cover;
-  display: none;
 }
 main ul.rotating-pics li.pic-2 {
   background-image: url('../assets/images/home-mobile-2.jpg');
   background-size: cover;
   background-position-y: bottom;
+  display: none;
 }
 main ul.rotating-pics li.pic-3 {
   background-image: url('../assets/images/home-mobile-3.jpg');

@@ -1,5 +1,5 @@
-let html =
-  `<footer>
+module.exports =`
+	<footer>
 		<nav class="media-links">
 			<ul>
 				<li>
@@ -24,5 +24,3 @@ let html =
 			<h6>Website by <a href="LINK TO PORTFOLIO" target="_blank">Benjamin Johnson</a></h6>
 		</div>	
 	</footer>`;
-
-module.exports = html;

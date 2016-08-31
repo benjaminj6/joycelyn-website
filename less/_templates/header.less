@@ -1,0 +1,90 @@
+@import (reference) './mixins.less';
+@import (reference) './typography.less';
+@import (reference) './colors.less';
+
+header {
+
+  div.titles {
+    .wrapper(95%);
+    display: flex;
+    flex-wrap: wrap;
+
+    h1 {
+      margin: 10px 0;
+      width: 100%;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 0;
+      align-self: stretch;
+      width: 70%;
+      font-size: 18px;
+    }
+
+    div.menu-icons {
+    	font-size: 18px;
+      align-self: flex-end;
+      display: inline-block;
+      width: 30%;
+      text-align: right;
+
+      h4 {
+        margin: 0;
+        display: inline;
+      }
+
+      i.fa-bars {}
+    }
+  }
+
+  nav {
+		display: none;
+		width: 100%;
+		min-height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 777;
+		height: 100%;
+		background-color: @white;
+		overflow-y: scroll;
+
+    i.fa-times {
+    	position: absolute;
+    	z-index: 999;
+    	margin: 10px;
+    	font-size: 24px;
+    }
+
+    ul {
+			.reset-list;
+			text-align: center;
+			padding-top: 2vh;
+
+      li.menu-item {
+      	margin: 7vh auto;
+      	.nav-menu-font;
+				cursor: pointer;
+				
+        a {
+	      	.nav-menu-font;
+        }
+
+        i.fa-angle-down {}
+
+        ul.submenu {
+          li.submenu-item {
+          	display: none;
+          	margin: 2vh auto;
+          	font-size: 20px;
+
+          	a {
+							.nav-submenu-font;
+          	}
+          }
+        }
+      }
+    }
+  }
+}

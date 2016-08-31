@@ -59,19 +59,66 @@ header nav ul li.menu-item {
   cursor: pointer;
 }
 header nav ul li.menu-item a {
-  color: #000;
   text-decoration: none;
-  font-size: 20px;
+  color: #000;
 }
 header nav ul li.menu-item ul.submenu li.submenu-item {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
   display: none;
   margin: 2vh auto;
   font-size: 20px;
 }
-header nav ul li.menu-item ul.submenu li.submenu-item a {
-  color: #000;
-  text-decoration: none;
-  font-size: 16px;
+@media only screen and (min-width: 600px) {
+  header div.titles {
+    flex-direction: column;
+  }
+  header div.titles h1 {
+    text-align: center;
+  }
+  header div.titles h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  header div.titles div.menu-icons {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    min-height: 0;
+    position: static;
+    height: auto;
+    z-index: 0;
+  }
+  header nav i.fa-times {
+    display: none;
+  }
+  header nav ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    font-size: 0;
+    margin: 15px 0;
+  }
+  header nav ul li.menu-item {
+    width: 16.66666667%;
+    margin: 0;
+    display: inline-block;
+  }
+  header nav ul li.menu-item ul.submenu {
+    margin: 15px 0;
+    width: 16.66666667%;
+    border: 1px solid transparent;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+  }
+  header nav ul li.menu-item ul.submenu li.submenu-item {
+    display: inline-block;
+  }
 }
 main {
   margin: 10px 0;
@@ -86,25 +133,25 @@ main ul.rotating-pics li {
   height: 80vh;
 }
 main ul.rotating-pics li.pic-1 {
-  background-image: url('../assets/images/home-mobile-1.jpg');
+  background-image: url('../../public/assets/images/home-mobile-1.jpg');
   background-size: cover;
 }
 main ul.rotating-pics li.pic-2 {
-  background-image: url('../assets/images/home-mobile-2.jpg');
+  display: none;
+  background-image: url('../../public/assets/images/home-mobile-2.jpg');
   background-size: cover;
   background-position-y: bottom;
-  display: none;
 }
 main ul.rotating-pics li.pic-3 {
-  background-image: url('../assets/images/home-mobile-3.jpg');
-  background-size: cover;
   display: none;
+  background-image: url('../../public/assets/images/home-mobile-3.jpg');
+  background-size: cover;
 }
 main ul.rotating-pics li.pic-4 {
-  background-image: url('../assets/images/home-mobile-4.jpg');
+  display: none;
+  background-image: url('../../public/assets/images/home-mobile-4.jpg');
   background-size: cover;
   background-position-y: bottom;
-  display: none;
 }
 main div.rotating-pics-nav {
   display: flex;
@@ -131,7 +178,7 @@ main div.rotating-pics-nav ul li {
   margin: 0 2vw;
   align-self: center;
 }
-main div.rotating-pics-nav ul li i.fa {
+main div.rotating-pics-nav ul li i {
   margin: 0;
   font-size: 10px;
 }

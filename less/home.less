@@ -2,10 +2,11 @@
 @import (reference) '_templates/mixins.less';
 @import (reference) '_templates/colors.less';
 
-// Styles
+// Header styling
 @import '_templates/header.less';
 
 main {
+	margin: 10px 0;
 	height: 80vh;
 
   ul.rotating-pics {
@@ -16,11 +17,13 @@ main {
 
 	    &.pic-1 {
 				.set-background-image('../assets/images/home-mobile-1.jpg');
+	    	display: none;
 	    }
 
 	    &.pic-2 {
 	    	.set-background-image('../assets/images/home-mobile-2.jpg');
-	    	display: none;
+	    	background-position-y: bottom;
+	    	// display: none;
 	    }
 
 	    &.pic-3 {
@@ -69,3 +72,6 @@ main {
 
   }
 }
+
+// Footer styling
+@import '_templates/footer.less';

@@ -1,4 +1,5 @@
-@import (reference) 'colors.less';
+@import (reference) './colors.less';
+@import (reference) './vars.less';
 
 .nav-font(@font-size) {
 	color: @black;
@@ -10,9 +11,13 @@
 	.nav-font(20px);
 }
 
+@nav-menu-desktop: 18px;
+
 .nav-submenu-font {
 	.nav-font(16px);
 }
+
+@nav-submenu-desktop: 16px;
 
 .a-tag {
 	text-decoration: none;

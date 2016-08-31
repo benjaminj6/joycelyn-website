@@ -1,6 +1,7 @@
-@import (reference) '../_templates/mixins.less';
-@import (reference) '../_templates/colors.less';
-@import (reference) '../_templates/typography.less';
+@import '../_templates/colors.less';
+@import '../_templates/mixins.less';
+@import '../_templates/typography.less';
+@import '../_templates/vars.less';
 
 @import '../_templates/header.less';
 
@@ -15,23 +16,23 @@ main {
 			height: 80vh;
 
 			&.pic-1 {
-				.set-background-image('../../public/assets/images/home-mobile-1.jpg');
+				.set-background-image('../assets/images/home-mobile-1.jpg');
 			}
 
 			&.pic-2 {
 				display: none;
-				.set-background-image('../../public/assets/images/home-mobile-2.jpg');
+				.set-background-image('../assets/images/home-mobile-2.jpg');
 				background-position-y: bottom; 
 			}
 
 			&.pic-3 {
 				display: none;
-				.set-background-image('../../public/assets/images/home-mobile-3.jpg');	
+				.set-background-image('../assets/images/home-mobile-3.jpg');	
 			}
 
 			&.pic-4 {
 				display: none;
-				.set-background-image('../../public/assets/images/home-mobile-4.jpg');	
+				.set-background-image('../assets/images/home-mobile-4.jpg');	
 				background-position-y: bottom; 
 			}
 		}
@@ -43,7 +44,7 @@ main {
 		justify-content: center;
 		align-items: center;
 		z-index: 999;
-		color: @white-80;
+		color: @black-80;
 		margin-top: -12vh;
 
 		i {
@@ -69,7 +70,7 @@ main {
 		}
 	}
 
-	@media only screen and (min-width: 700px) {
+	@media only screen and (min-width: @desktop-breakpoint) {
 		@import './style-desktop.less';
 	}
 }

@@ -1,5 +1,7 @@
-@import (reference) './colors.less';
-@import (reference) './mixins.less';
+@import './colors.less';
+@import './mixins.less';
+@import './typography.less';
+@import './vars.less';
 
 footer {
 
@@ -31,7 +33,9 @@ footer {
 						font-size: 16px;
 					}
 				}
+				
 			}
+	
 		}
 	}
 
@@ -43,5 +47,9 @@ footer {
 
 			a {}
 		}
+	}
+
+	@media only screen and (min-width: @desktop-breakpoint) {
+		@import './footer-desktop.less';		
 	}
 }

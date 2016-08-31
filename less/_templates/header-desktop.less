@@ -33,16 +33,26 @@ nav {
 		font-size: 0;
 		margin: 15px 0;
 
+		&::after, &::before {
+		  background-color: #000;
+		  width: 1%;
+		  height: 1px;
+		  vertical-align: 4px;
+		  content: "";
+		  display: inline-block;
+		}
+
 		li.menu-item {
-			width: (100% / 6);
+			width: @header-menu-widths;
 			margin: 0;
 			display: inline-block;
+			font-size: @nav-menu-desktop;
 
 			a {}
 			i.fa-angle-down {}
 			ul.submenu {
 				margin: 15px 0;
-				width: (100% / 6);
+				width: @header-menu-widths;
 				border: 1px solid transparent;
 				position: absolute;
 				z-index: 999;
@@ -50,6 +60,8 @@ nav {
 
 				li.submenu-item {
 					display: inline-block;
+					font-size: @nav-submenu-desktop;
+
 					a {}
 				}
 			}

@@ -1,6 +1,7 @@
 @import (reference) './mixins.less';
 @import (reference) './typography.less';
 @import (reference) './colors.less';
+@import (reference) './vars.less';
 
 header {
   div.titles {
@@ -79,7 +80,7 @@ header {
             .nav-submenu-font;
             display: none;
             margin: 2vh auto;
-            font-size: 20px;
+            // font-size: 20px;
 
             a {
             }
@@ -89,7 +90,7 @@ header {
     }
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: @desktop-breakpoint) {
     @import 'header-desktop.less';
   }
 }

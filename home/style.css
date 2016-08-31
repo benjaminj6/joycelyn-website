@@ -74,6 +74,7 @@ header nav ul li.menu-item ul.submenu li.submenu-item a {
   font-size: 16px;
 }
 main {
+  margin: 10px 0;
   height: 80vh;
 }
 main ul.rotating-pics {
@@ -87,11 +88,12 @@ main ul.rotating-pics li {
 main ul.rotating-pics li.pic-1 {
   background-image: url('../assets/images/home-mobile-1.jpg');
   background-size: cover;
+  display: none;
 }
 main ul.rotating-pics li.pic-2 {
   background-image: url('../assets/images/home-mobile-2.jpg');
   background-size: cover;
-  display: none;
+  background-position-y: bottom;
 }
 main ul.rotating-pics li.pic-3 {
   background-image: url('../assets/images/home-mobile-3.jpg');
@@ -132,5 +134,37 @@ main div.rotating-pics-nav ul li {
 main div.rotating-pics-nav ul li i.fa {
   margin: 0;
   font-size: 10px;
+}
+footer nav.media-links ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer nav.media-links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4vw;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+}
+footer nav.media-links ul li a {
+  font-size: 0;
+  color: #fff;
+}
+footer nav.media-links ul li a i {
+  font-size: 16px;
+}
+footer div.footer-text {
+  text-align: center;
+  margin: 15px 0;
+}
+footer div.footer-text h6 {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

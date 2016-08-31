@@ -16,7 +16,7 @@ module.exports =
 				<a href="{{home_href}}">Home</a>
 			</li>
 			<li class="menu-item">
-				About Me <i class="fa fa-angle-down"></i>
+				About <i class="fa fa-angle-down"></i>
 				<ul class="submenu">
 					<li class="submenu-item">
 						<a href="{{bio_href}}">Bio</a>

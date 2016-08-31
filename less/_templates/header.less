@@ -3,7 +3,6 @@
 @import (reference) './colors.less';
 
 header {
-
   div.titles {
     .wrapper(95%);
     display: flex;
@@ -23,7 +22,7 @@ header {
     }
 
     div.menu-icons {
-    	font-size: 18px;
+      font-size: 18px;
       align-self: flex-end;
       display: inline-block;
       width: 30%;
@@ -34,57 +33,63 @@ header {
         display: inline;
       }
 
-      i.fa-bars {}
+      i.fa-bars {
+      }
     }
   }
 
   nav {
-		display: none;
-		width: 100%;
-		min-height: 100vh;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 777;
-		height: 100%;
-		background-color: @white;
-		overflow-y: scroll;
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 777;
+    height: 100%;
+    background-color: @white;
+    overflow-y: scroll;
 
     i.fa-times {
-    	position: absolute;
-    	z-index: 999;
-    	margin: 10px;
-    	font-size: 24px;
+      position: absolute;
+      z-index: 999;
+      margin: 10px;
+      font-size: 24px;
     }
 
     ul {
-			.reset-list;
-			text-align: center;
-			padding-top: 2vh;
+      .reset-list;
+      text-align: center;
+      padding-top: 2vh;
 
       li.menu-item {
-      	margin: 7vh auto;
-      	.nav-menu-font;
-				cursor: pointer;
-				
+        margin: 7vh auto;
+        .nav-menu-font;
+        cursor: pointer;
+
         a {
-	      	.nav-menu-font;
+          .a-tag;
         }
 
-        i.fa-angle-down {}
+        i.fa-angle-down {
+        }
 
         ul.submenu {
           li.submenu-item {
-          	display: none;
-          	margin: 2vh auto;
-          	font-size: 20px;
+            .nav-submenu-font;
+            display: none;
+            margin: 2vh auto;
+            font-size: 20px;
 
-          	a {
-							.nav-submenu-font;
-          	}
+            a {
+            }
           }
         }
       }
     }
+  }
+
+  @media only screen and (min-width: 600px) {
+    @import 'header-desktop.less';
   }
 }

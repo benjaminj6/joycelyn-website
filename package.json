@@ -22,8 +22,8 @@
     "//": "Tasks for the 'Home' page",  
     "build:html:home": "assemble --cwd=html/home",
     "watch:html:home": "chokidar 'html/home/*.js' -c 'npm run build:html:home'",
-    "build:less:home": "lessc --source-map less/home.less public/home/style.css",
-    "watch:less:home": "chokidar 'less/home.less' -c 'npm run build:less:home'",
+    "build:less:home": "lessc --source-map less/home/style.less public/home/style.css",
+    "watch:less:home": "chokidar 'less/home/*.less' -c 'npm run build:less:home'",
 
     "//": "Tasks for pages in the 'About Me' section",  
     "build:html:about-pages": "npm run build:html:bio && npm run build:html:teaching-philosophy",

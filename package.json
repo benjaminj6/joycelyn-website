@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
 
+    "//": "Tasks for all files",
+    "build": "npm run build:html && npm run build:less",
+    "watch": "npm run watch:html & npm run watch:less",
+
     "//": "Tasks for all html files",  
     "build:html": "npm run build:html:home && npm run build:html:about-pages && npm run build:html:teaching-pages && npm run build:html:performing && npm run build:html:blog && npm run build:html:contact",
     "watch:html": "npm run watch:html:templates & npm run watch:html:home & npm run watch:html:about-pages & npm run watch:html:teaching-pages & npm run watch:html:performing & npm run watch:html:blog & npm run watch:html:contact",

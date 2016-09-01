@@ -1,7 +1,14 @@
-let header = require('../_templates/header');
-let footer = require('../_templates/footer');
-let body = require('./why-private-lessons-main-section');
+let data = require('./why-private-lessons-data');
+let heading = require('../_templates/section-heading');
 
-let html = require('../_templates/doc')(body);
+let body = `
+	<main>
+		${data.heading}
+		<img src="${data.img.src}" alt="${data.img.alt}" />
+		<p>${data.par_1}</p>
+		<p>${data.par_2}</p>
+		<p>${data.par_3}</p>
+	</main>
+`;
 
-module.exports = html;
+module.exports = require('../_templates/doc')(body, data);

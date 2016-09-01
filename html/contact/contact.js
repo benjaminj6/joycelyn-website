@@ -1,7 +1,7 @@
 let data = require('./contact-data');
 let heading = require('../_templates/section-heading')('heading', 'heading_classes');
 
-let performForm = require('./perform-form');
+let performForm = require('./perform-form')(data);
 let lessonsForm = require('./lessons-form')(data);
 
 let body = `
@@ -13,9 +13,8 @@ let body = `
 			<button>Performing at an event</button>		
 		</section>
 		${lessonsForm}
+		${performForm}
 	</main>
 `;
-			// ${performForm}
-
 
 module.exports = require('../_templates/doc')(body, data);

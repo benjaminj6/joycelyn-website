@@ -1,3 +1,5 @@
+let data = require('./home-data');
+
 let body = `
 	<main>
 		<ul class="rotating-pics">
@@ -27,4 +29,4 @@ let body = `
 	</main>
 `;
 
-module.exports = require('../_templates/doc')(body);
+module.exports = require('../_templates/doc')(body, data);

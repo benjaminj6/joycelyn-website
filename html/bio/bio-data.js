@@ -4,15 +4,14 @@ let globalData = require('../global-data');
 let data = Object.create(globalData);
 
 data.page_title = 'Joycelyn Choo | Bio';
-data.heading = 'BIO';
+data.heading = 'Hello!  So glad you found my page.  Here’s a little information about myself.';
 
 data.img = {
 	src: '../assets/images/bio.jpg',
-	alt: 'Playing violin in a garden',
+	alt: 'Joycelyn Choo',
 };
 
-data.par_1 = _.removeBreaks(`Hello!  So glad you found my page.  Here’s a little information 
-	about myself.  I started taking violin lessons at the age of four in a Suzuki violin program.  
+data.par_1 = _.removeBreaks(`I started taking violin lessons at the age of four in a Suzuki violin program.  
 	Since then, I have gained 17 years of violin experience and 12 years of piano experience. 
 	In the past, I have studied violin at the prestigious Colburn school of music in Los Angeles.  
 	After studying for four years under Elizabeth Larson, Sam Fischer, and Jason Uyeyama, 

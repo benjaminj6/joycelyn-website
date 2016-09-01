@@ -1,6 +1,3 @@
-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
 header div.titles {
   width: 95%;
   margin: 0 auto;
@@ -63,8 +60,9 @@ header nav ul li.menu-item {
   cursor: pointer;
 }
 header nav ul li.menu-item a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
+  font-size: 20px;
 }
 header nav ul li.menu-item ul.submenu li.submenu-item {
   color: #000;
@@ -72,6 +70,11 @@ header nav ul li.menu-item ul.submenu li.submenu-item {
   font-size: 16px;
   display: none;
   margin: 2vh auto;
+}
+header nav ul li.menu-item ul.submenu li.submenu-item a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
 }
 @media only screen and (min-width: 700px) {
   header div.titles {
@@ -135,22 +138,35 @@ header nav ul li.menu-item ul.submenu li.submenu-item {
   }
 }
 main {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+  padding: 2vh 0;
 }
-main div.section-heading {
-  text-align: center;
-  padding: 20px 0;
-}
-main div.section-heading h1 {
-  margin: 0;
-}
-main div.section-heading hr {
-  display: none;
-}
-main section img {
+main img {
   width: 100%;
   object-fit: cover;
+  height: 60vh;
+  object-position: top;
+}
+main section {
+  padding: 10px 0;
+}
+main section div.section-heading {
+  text-align: center;
+}
+main section div.section-heading h1 {
+  margin: 0 auto;
+  font-size: 24px;
+  max-width: 356px;
+}
+main section div.section-heading hr {
+  margin: 0;
+}
+main section div.text p {
+  font-size: 20px;
+}
+main section div.text a {
+  color: #000;
 }
 footer nav.media-links ul {
   padding: 0;

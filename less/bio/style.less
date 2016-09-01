@@ -3,29 +3,45 @@
 @import '../_templates/header.less';
 
 main {
-	.wrapper(90%);
+	.wrapper(95%);
+	padding: 2vh 0;
 	
-	div.section-heading {
-		text-align: center;
-		padding: 20px 0;
-
-		h1 {
-			margin: 0;
-		}
-		hr {
-			// will display on desktop possibly?
-			display: none;
-		}
+	img {
+		width: 100%;
+		object-fit: cover; 
+		height: 60vh;
+		object-position: top;
 	}
 
 	section {
-		img {
-			width: 100%;
-			object-fit: cover; 
+		padding: 10px 0;
+		
+		
+		div.section-heading {
+			text-align: center;
+
+			h1 {
+				margin: 0 auto;
+				.section-heading-font;
+				max-width: 356px;
+			}
+
+			hr {
+				// will display on desktop possibly?
+				// display: none;
+				// width: 50%;
+				margin: 0;
+			}
 		}
+
 		div.text {
-			p {}
-			a {}
+			p {
+				.paragraph-text;
+			}
+
+			a {
+				.a-tag;
+			}
 		}	
 	}
 

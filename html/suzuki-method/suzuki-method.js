@@ -1,9 +1,9 @@
 let data = require('./suzuki-method-data');
-let heading = require('../_templates/section-heading');
+let heading = require('../_templates/section-heading')(data);
 
 let body = `
 	<main>
-		${data.heading}
+		${heading}
 		<p>${data.par_1}</p>
 		<ul>
 			<li>

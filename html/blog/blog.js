@@ -1,9 +1,9 @@
 let data = require('./blog-data.js');
-let heading = require('../_templates/section-heading')('heading', 'heading_classes');
+let heading = require('../_templates/section-heading')(data);
 
 let body = `
 	<main>
-		${data.heading}
+		${heading}
 		<article>
 			<h2>${data.post_1.title}</h2>
 			<h3>${data.post_1.date}</h3>

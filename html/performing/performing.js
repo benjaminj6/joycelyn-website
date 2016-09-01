@@ -1,9 +1,9 @@
 let data = require('./performing-data');
-let heading = require('../_templates/section-heading');
+let heading = require('../_templates/section-heading')(data);
 
 let body = `
 	<main>
-		${data.heading}
+		${heading}
 		<img src="${data.img.src}}" alt="${data.img.alt}}">
 		<section class="intro">
 			<p>${data.intro.par_1}}</p>

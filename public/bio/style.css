@@ -1,0 +1,195 @@
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+header div.titles {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+header div.titles h1 {
+  margin: 0 0 10px;
+  width: 100%;
+  font-size: 30px;
+}
+header div.titles h2 {
+  margin: 0;
+  align-self: stretch;
+  width: 70%;
+  font-size: 18px;
+}
+header div.titles div.menu-icons {
+  font-size: 18px;
+  align-self: flex-end;
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+header div.titles div.menu-icons h4 {
+  margin: 0;
+  display: inline;
+}
+header nav {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 777;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+header nav i.fa-times {
+  position: absolute;
+  z-index: 999;
+  margin: 10px;
+  font-size: 24px;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 2vh;
+}
+header nav ul li.menu-item {
+  margin: 7vh auto;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+header nav ul li.menu-item a {
+  text-decoration: none;
+  color: #000;
+}
+header nav ul li.menu-item ul.submenu li.submenu-item {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  display: none;
+  margin: 2vh auto;
+}
+@media only screen and (min-width: 700px) {
+  header div.titles {
+    flex-direction: column;
+  }
+  header div.titles h1 {
+    text-align: center;
+  }
+  header div.titles h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  header div.titles div.menu-icons {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    min-height: 0;
+    position: static;
+    height: auto;
+    z-index: 0;
+  }
+  header nav i.fa-times {
+    display: none;
+  }
+  header nav ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    font-size: 0;
+    margin: 15px 0;
+  }
+  header nav ul::after,
+  header nav ul::before {
+    background-color: #000;
+    width: 1%;
+    height: 1px;
+    vertical-align: 4px;
+    content: "";
+    display: inline-block;
+  }
+  header nav ul li.menu-item {
+    width: 15.38461538%;
+    margin: 0;
+    display: inline-block;
+    font-size: 18px;
+  }
+  header nav ul li.menu-item ul.submenu {
+    margin: 15px 0;
+    width: 15.38461538%;
+    border: 1px solid transparent;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+  }
+  header nav ul li.menu-item ul.submenu li.submenu-item {
+    display: block;
+    font-size: 16px;
+  }
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+main div.section-heading {
+  text-align: center;
+  padding: 20px 0;
+}
+main div.section-heading h1 {
+  margin: 0;
+}
+main div.section-heading hr {
+  display: none;
+}
+main section img {
+  width: 100%;
+  object-fit: cover;
+}
+footer nav.media-links ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer nav.media-links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4vw;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+}
+footer nav.media-links ul li a {
+  font-size: 0;
+  color: #fff;
+}
+footer nav.media-links ul li a i {
+  font-size: 16px;
+}
+footer div.footer-text {
+  text-align: center;
+  margin: 15px 0;
+}
+footer div.footer-text h6 {
+  margin: 0;
+}
+@media only screen and (min-width: 700px) {
+  footer {
+    margin: 20px;
+  }
+  footer nav.media-links ul li {
+    margin: 0 2vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

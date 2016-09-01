@@ -7,7 +7,8 @@ data.page_title = 'Joycelyn Choo | Bio';
 data.heading = 'BIO';
 
 data.img = {
-	src: 'http://www.placehold.it/300x500'
+	src: '../assets/images/bio.jpg',
+	alt: 'Playing violin in a garden',
 };
 
 data.par_1 = _.removeBreaks(`Hello!  So glad you found my page.  Here’s a little information 
@@ -30,7 +31,7 @@ data.par_3 = _.removeBreaks(`In my free time, I enjoy working with middle school
 	schoolers at church, reading good books, and watching thoughtful movies.`);
 
 data.par_4 = _.removeBreaks(`You can view my resume 
-	${_.aTag('http://www.linkedin.com/in/joycelyn-choo-a9b24a123', 'here')}.`);
+	${_.aTag('http://www.linkedin.com/in/joycelyn-choo-a9b24a123', 'here.')}`);
 
 data.changeHref('bio_href', '.');
 

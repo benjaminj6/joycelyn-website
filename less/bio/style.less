@@ -1,0 +1,34 @@
+@import (reference) '../_templates/mixins.less';
+
+@import '../_templates/header.less';
+
+main {
+	.wrapper(90%);
+	
+	div.section-heading {
+		text-align: center;
+		padding: 20px 0;
+
+		h1 {
+			margin: 0;
+		}
+		hr {
+			// will display on desktop possibly?
+			display: none;
+		}
+	}
+
+	section {
+		img {
+			width: 100%;
+			object-fit: cover; 
+		}
+		div.text {
+			p {}
+			a {}
+		}	
+	}
+
+}
+
+@import '../_templates/footer.less';

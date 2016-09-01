@@ -1,12 +1,14 @@
-module.exports = function(headingData, classData = null) {
+module.exports = function(data) {
 	
-	let html = `
-		<div class="section-heading{{${classData}}}">
-			<h1>{{${headingData}}}</h1>
+	if (!data.heading_classes) {
+		data.heading_classes = ''
+	}
+
+	return `
+		<div class="section-heading${data.heading_classes}">
+			<h1>${data.heading}</h1>
 			<hr>
 		</div>	
 	`;
-
-	return html;
 };
 

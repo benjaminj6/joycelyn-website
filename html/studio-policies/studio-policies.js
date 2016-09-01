@@ -1,10 +1,10 @@
 let data = require('./studio-policies-data');
-let heading = require('../_templates/section-heading');
+let heading = require('../_templates/section-heading')(data);
 
 let body = `
 	<main>
 		<section class="intro">
-			${data.heading}
+			${heading}
 			<p>${data.intro_par}</p>
 		</section>
 		<section class="travel">

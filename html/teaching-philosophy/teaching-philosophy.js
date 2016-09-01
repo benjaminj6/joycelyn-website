@@ -1,9 +1,9 @@
 let data = require('./teaching-philosophy-data');
-let heading = require('../_templates/section-heading');
+let heading = require('../_templates/section-heading')(data);
 
 let body = `
 	<main>
-		${data.heading}
+		${heading}
 		<p>${data.par_1}</p>
 		<p>${data.par_2}</p>
 		<p>${data.par_3}</p>

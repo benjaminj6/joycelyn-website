@@ -12,7 +12,7 @@ let body = `
 			<i class="fa fa-angle-left"></i>
 			<ul>
 				<li>
-					<i class="fa fa-circle-thin"></i>
+					<i class="fa fa-circle"></i>
 				</li>
 				<li>
 					<i class="fa fa-circle-thin"></i>

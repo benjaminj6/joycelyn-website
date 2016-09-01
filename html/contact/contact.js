@@ -1,5 +1,5 @@
 let data = require('./contact-data');
-let heading = require('../_templates/section-heading')('heading', 'heading_classes');
+let heading = require('../_templates/section-heading')(data);
 
 let performForm = require('./perform-form')(data);
 let lessonsForm = require('./lessons-form')(data);

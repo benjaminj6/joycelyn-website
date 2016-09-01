@@ -6,11 +6,14 @@
   "scripts": {
 
     "//": "Tasks for all files",
+    "clean": "rm -r public/*",
     "build": "npm run build:html && npm run build:less",
     "watch": "npm run watch:html & npm run watch:less",
 
     "//": "Tasks for all html files",
-    "build:html": "assemble bio:html blog:html contact:html home:html performing:html student-opportunities:html studio-policies:html suzuki-method:html teaching-philosophy:html why-private-lessons:html",  
+    "build:html": "npm run assemble:html && npm run rename:html",
+    "assemble:html": "assemble bio:html blog:html contact:html home:html performing:html student-opportunities:html studio-policies:html suzuki-method:html teaching-philosophy:html why-private-lessons:html",  
+    "rename:html": "renamer --replace index.html 'public/**/*.html'",
     "watch:html": "npm run watch:templates:html & npm run watch:home:html & npm run watch:about:html & npm run watch:teaching-pages:html & npm run watch:performing:html & npm run watch:blog:html & npm run watch:contact:html",
     "watch:templates:html": "chokidar 'html/_templates/*.js' -c 'npm run build:html'",
   

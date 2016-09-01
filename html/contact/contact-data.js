@@ -50,6 +50,7 @@ data.lessons = {
 	previous_suzuki_teacher: {
 		legend: `If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?`,
 		option_1: {
+			
 			val: 'suzuki',
 			text: 'Suzuki',
 		},
@@ -114,6 +115,7 @@ data.lessons = {
 			label: 'Sunday',
 		},
 	},
+	
 	group_classes: {
 		legend: _.removeBreaks(`All students are required to enroll in a mandatory group class that 
 			meets once a week in addition to weekly lessons. Is this a commitment that 

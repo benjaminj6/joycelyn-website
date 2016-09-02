@@ -5,10 +5,13 @@
 main {
 	.wrapper(95%);
 	padding: 2vh 0;
-			
+	display: flex;
+	flex-direction: column;
+
 	div.section-heading {
+		order: 2;
 		text-align: center;
-		padding: 10px 0;
+		padding: 20px 0 0;
 
 		h1 {
 			margin: 0 auto;
@@ -23,24 +26,25 @@ main {
 		}
 	}
 
-	section {	
-		img {
-			width: 100%;
-			object-fit: cover; 
-			height: 60vh;
-			object-position: top;
+	img {
+		order: 1;
+		width: 100%;
+		object-fit: cover; 
+		height: 60vh;
+		object-position: top;
+	}
+
+	div.text {
+		order: 3; 
+
+		p {
+			.paragraph-text;
 		}
 
-		div.text {
-			p {
-				.paragraph-text;
-			}
-
-			a {
-				.a-tag;
-			}
-		}			
-	}
+		a {
+			.a-tag;
+		}
+	}			
 	
 	@media only screen and (min-width: 666px) {
 		@import './style-desktop.less';

@@ -1,13 +1,16 @@
 // Goes INSIDE the main tag as a media query
 
 .wrapper(60%);
-max-width: 700px;
+max-width: 650px;
+display: block;
+padding: 7vh 0;
 // display: flex;
 // flex-direction: column;
 
 div.section-heading {
 	// order: 1;
 	// display: inline-block;
+	margin-bottom: 10px;
 	
 	// margin: 0;
 	// margin: 0;
@@ -24,26 +27,25 @@ div.section-heading {
 	}
 }
 
-section {
-	img {
-		// order: 2;
-		width: 50%;
-		float: left;
-		// float: left;
-		height: 40vh;
-		margin-right: 10px;
-	}
+img {
+	// order: 2;
+	width: 50%;
+	float: left;
+	// float: left;
+	height: 40vh;
+	margin-right: 10px;
+}
 
-	div.text {
-		// float: right;
-		// order: 3;
+div.text {
+	// float: right;
+	// order: 3;
 
-		p {
-			// margin-top: 10px;
-			font-size: @paragraph-text-desktop;
+	p {
+		margin-top: 0;
+		font-size: @paragraph-text-desktop;
 
-			a {}
-		}
+		a {}
 	}
 }
+
 

@@ -45,33 +45,38 @@ header nav i.fa-times {
   margin: 10px;
   font-size: 24px;
 }
-header nav ul {
+header nav ul.menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
-  padding-top: 2vh;
+  padding-top: 6vh;
 }
-header nav ul li.menu-item {
+header nav ul.menu li.menu-item {
   margin: 7vh auto;
   color: #000;
   text-decoration: none;
   font-size: 20px;
   cursor: pointer;
 }
-header nav ul li.menu-item a {
+header nav ul.menu li.menu-item a {
   color: #000;
   text-decoration: none;
   font-size: 20px;
 }
-header nav ul li.menu-item ul.submenu li.submenu-item {
+header nav ul.menu li.menu-item ul.submenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+header nav ul.menu li.menu-item ul.submenu li.submenu-item {
   color: #000;
   text-decoration: none;
   font-size: 16px;
-  display: none;
   margin: 2vh auto;
 }
-header nav ul li.menu-item ul.submenu li.submenu-item a {
+header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
   color: #000;
   text-decoration: none;
   font-size: 16px;
@@ -101,7 +106,7 @@ header nav ul li.menu-item ul.submenu li.submenu-item a {
   header nav i.fa-times {
     display: none;
   }
-  header nav ul {
+  header nav ul.menu {
     width: 90%;
     margin: 0 auto;
     padding: 0;
@@ -109,8 +114,8 @@ header nav ul li.menu-item ul.submenu li.submenu-item a {
     font-size: 0;
     margin: 15px 0;
   }
-  header nav ul::after,
-  header nav ul::before {
+  header nav ul.menu::after,
+  header nav ul.menu::before {
     background-color: #000;
     width: 1%;
     height: 1px;
@@ -118,13 +123,16 @@ header nav ul li.menu-item ul.submenu li.submenu-item a {
     content: "";
     display: inline-block;
   }
-  header nav ul li.menu-item {
+  header nav ul.menu li.menu-item {
     width: 15.38461538%;
     margin: 0;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
   }
-  header nav ul li.menu-item ul.submenu {
+  header nav ul.menu li.menu-item a {
+    font-size: 16px;
+  }
+  header nav ul.menu li.menu-item ul.submenu {
     margin: 15px 0;
     width: 15.38461538%;
     border: 1px solid transparent;
@@ -132,9 +140,12 @@ header nav ul li.menu-item ul.submenu li.submenu-item a {
     z-index: 999;
     background-color: #fff;
   }
-  header nav ul li.menu-item ul.submenu li.submenu-item {
+  header nav ul.menu li.menu-item ul.submenu li.submenu-item {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
+  }
+  header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
+    font-size: 14px;
   }
 }
 main {
@@ -142,31 +153,45 @@ main {
   margin: 0 auto;
   padding: 2vh 0;
 }
-main img {
+main div.section-heading {
+  text-align: center;
+  padding: 10px 0;
+}
+main div.section-heading h1 {
+  margin: 0 auto;
+  font-size: 32px;
+  max-width: 356px;
+}
+main div.section-heading hr {
+  margin: 0;
+}
+main section img {
   width: 100%;
   object-fit: cover;
   height: 60vh;
   object-position: top;
-}
-main section {
-  padding: 10px 0;
-}
-main section div.section-heading {
-  text-align: center;
-}
-main section div.section-heading h1 {
-  margin: 0 auto;
-  font-size: 24px;
-  max-width: 356px;
-}
-main section div.section-heading hr {
-  margin: 0;
 }
 main section div.text p {
   font-size: 20px;
 }
 main section div.text a {
   color: #000;
+}
+@media only screen and (min-width: 666px) {
+  main {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  main section img {
+    width: 50%;
+    float: left;
+    height: 40vh;
+    margin-right: 10px;
+  }
+  main section div.text p {
+    font-size: 16px;
+  }
 }
 footer nav.media-links ul {
   padding: 0;

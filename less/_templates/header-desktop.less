@@ -26,7 +26,7 @@ nav {
 		display: none;
 	}
 
-	ul {
+	ul.menu {
 		.wrapper(90%);
 		padding: 0;
 		width: 100%;
@@ -48,7 +48,10 @@ nav {
 			display: inline-block;
 			font-size: @nav-menu-desktop;
 
-			a {}
+			a {
+				font-size: @nav-menu-desktop;
+			}
+
 			i.fa-angle-down {}
 			ul.submenu {
 				margin: 15px 0;
@@ -62,7 +65,9 @@ nav {
 					display: block;
 					font-size: @nav-submenu-desktop;
 
-					a {}
+					a {
+						font-size: @nav-submenu-desktop;
+					}
 				}
 			}
 		}

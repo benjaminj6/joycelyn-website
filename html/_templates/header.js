@@ -11,7 +11,7 @@ module.exports =
 	</div>
 	<nav>
 		<i class="fa fa-times"></i>
-		<ul>
+		<ul class="menu">
 			<li class="menu-item">
 				<a href="{{home_href}}">Home</a>
 			</li>

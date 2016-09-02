@@ -61,10 +61,10 @@ header {
       font-size: 24px;
     }
 
-    ul {
+    ul.menu {
       .reset-list;
       text-align: center;
-      padding-top: 2vh;
+      padding-top: 6vh;
 
       li.menu-item {
         margin: 7vh auto;
@@ -79,9 +79,11 @@ header {
         }
 
         ul.submenu {
+          .reset-list;
+          display: none;
+
           li.submenu-item {
             .nav-submenu-font;
-            display: none;
             margin: 2vh auto;
             // font-size: 20px;
 

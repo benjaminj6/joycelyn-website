@@ -5,33 +5,30 @@
 main {
 	.wrapper(95%);
 	padding: 2vh 0;
-	
-	img {
-		width: 100%;
-		object-fit: cover; 
-		height: 60vh;
-		object-position: top;
+			
+	div.section-heading {
+		text-align: center;
+		padding: 10px 0;
+
+		h1 {
+			margin: 0 auto;
+			.section-heading-font;
+			max-width: 356px;
+		}
+
+		hr {
+			// display: none;
+			// width: 50%;
+			margin: 0;
+		}
 	}
 
-	section {
-		padding: 10px 0;
-		
-		
-		div.section-heading {
-			text-align: center;
-
-			h1 {
-				margin: 0 auto;
-				.section-heading-font;
-				max-width: 356px;
-			}
-
-			hr {
-				// will display on desktop possibly?
-				// display: none;
-				// width: 50%;
-				margin: 0;
-			}
+	section {	
+		img {
+			width: 100%;
+			object-fit: cover; 
+			height: 60vh;
+			object-position: top;
 		}
 
 		div.text {
@@ -42,9 +39,14 @@ main {
 			a {
 				.a-tag;
 			}
-		}	
+		}			
+	}
+	
+	@media only screen and (min-width: 666px) {
+		@import './style-desktop.less';
 	}
 
 }
+
 
 @import '../_templates/footer.less';

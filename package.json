@@ -54,7 +54,7 @@
 	        "watch:about:less": "npm run watch:bio:less",
 
     "//": "--- BIO ---",  
-        "build:bio": "rm public/bio/* && npm run build:bio:html && npm run build:bio:less",
+        "build:bio": "npm run build:bio:html && npm run build:bio:less",
         "watch:bio": "npm run watch:bio:html & npm run watch:bio:less",
 
         "//": "--- HTML Tasks ---",    

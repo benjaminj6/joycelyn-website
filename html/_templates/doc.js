@@ -1,3 +1,5 @@
+
+
 let header = require('./header');
 let footer = require('./footer');
 
@@ -15,7 +17,7 @@ module.exports = function(body, data) {
 				<link rel="stylesheet" href="${data.css}" />
 			</head>
 			<body>
-				${header}
+				${header(data)}
 				${body}
 				${footer}
 				<script src="${data.jQuery}"></script>

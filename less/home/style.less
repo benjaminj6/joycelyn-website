@@ -20,18 +20,19 @@ main {
 			}
 
 			&.pic-2 {
-				display: none;
+				// display: none;
 				.set-background-image('../assets/images/home-mobile-2.jpg');
-				background-position-y: bottom; 
+				background-position-y: top; 
 			}
 
 			&.pic-3 {
-				display: none;
-				.set-background-image('../assets/images/home-mobile-3.jpg');	
+				// display: none;
+				.set-background-image('../assets/images/home-mobile-3.jpg');
+				background-position-y: center;	
 			}
 
 			&.pic-4 {
-				display: none;
+				// display: none;
 				.set-background-image('../assets/images/home-mobile-4.jpg');	
 				background-position-y: bottom; 
 			}
@@ -70,8 +71,8 @@ main {
 		}
 	}
 
-	@media only screen and (min-width: @desktop-breakpoint) {
-		@import './style-desktop.less';
+	@media only screen and (min-width: 800px), (orientation: landscape) {
+		@import './landscape-photos.less';
 	}
 }
 

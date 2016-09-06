@@ -25,12 +25,12 @@
 header div.titles {
   width: 95%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px 0 0;
   display: flex;
   flex-wrap: wrap;
 }
 header div.titles h1 {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
   width: 100%;
   font-size: 30px;
 }
@@ -107,7 +107,8 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
 }
 @media only screen and (min-width: 700px) {
   header {
-    padding-top: 5vh;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
   }
   header div.titles {
     flex-direction: column;

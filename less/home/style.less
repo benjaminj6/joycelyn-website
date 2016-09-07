@@ -3,79 +3,223 @@
 @import '../_templates/typography.less';
 @import '../_templates/vars.less';
 
-@import '../_templates/header.less';
+header {
+	div.titles {
+		display: flex;
+		flex-direction: column-reverse;
 
-main {
-	margin: 10px 0;
-	height: 80vh;
+		img {
+			// separate image from the content flow. Either with absolute/fixed pos
+			// or via flexbox. Or via some type of float
+			border-style: none;
+		  height: 20vh;
+		  /* width: 80vw; */
+		  /* object-fit: cover; */
+		  margin: 30vh auto;
+		}
 
-	ul.rotating-pics {
-		.reset-list;
+		div.menu-icons {
+			// These will need to float up at the top right. Flexbox maybe reverse order.
+			height: 10vh;
+			font-size: 24px;
+			/* align-content: center; */
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding: 0 2vh;
+			align-self: inherit;
 
-		li {
-			height: 80vh;
-
-			&.pic-1 {
-				.set-background-image('../assets/images/home-mobile-1.jpg');
-			}
-
-			&.pic-2 {
-				// display: none;
-				.set-background-image('../assets/images/home-mobile-2.jpg');
-				background-position-y: top; 
-			}
-
-			&.pic-3 {
-				// display: none;
-				.set-background-image('../assets/images/home-mobile-3.jpg');
-				background-position-y: center;	
-			}
-
-			&.pic-4 {
-				// display: none;
-				.set-background-image('../assets/images/home-mobile-4.jpg');	
-				background-position-y: bottom; 
-			}
+			h4 {}
+			i.fa-bars {}
 		}
 	}
 
-	div.rotating-pics-nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		z-index: 999;
-		color: @black-80;
-		margin-top: -12vh;
+	nav {
+		// should be able to copy/paste the mobile code for this...will need to adjust desktop
+		display: none;
+		width: 100%;
+		min-height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 777;
+		height: 100%;
+		background-color: @white;
+		overflow-y: scroll;
 
-		i {
+		i.fa-times {
+			position: absolute;
+			z-index: 999;
+			margin: 10px;
 			font-size: 24px;
 		}
-
-		ul {
+		ul.menu {
 			.reset-list;
-			display: inline-block;
-		  font-size: 0;
-		  margin: 0 2vw;
+			text-align: center;
+			padding-top: 6vh;
+			
+			li.menu-item {
+				margin: 7vh auto;
+				.nav-menu-font;
+				cursor: pointer;
 
-			li {
-				display: inline-block;
-				margin: 0 2vw;
-				align-self: center;
+				a {
+					.nav-menu-font;
+				}
 
-				i {
-					margin: 0;
-					font-size: 10px;
+				i.fa-angle-down {}
+
+				ul.submenu {
+					.reset-list;
+					display: none;
+
+					li.submenu-item {
+						.nav-submenu-font;
+						margin: 2vh auto;
+
+						a {
+							.nav-submenu-font;
+						}
+					}
 				}
 			}
 		}
 	}
 
-	@media only screen and (min-width: 800px), (orientation: landscape) {
-		@import './landscape-photos.less';
-	}
+	@media only screen and (min-width: @desktop-breakpoint) {}
 }
 
-@import '../_templates/footer.less';
+footer {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	/* flex-direction: column; */
+	justify-content: center;
+
+	nav.media-links {
+
+		ul {
+			.reset-list;
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			
+			li {
+			
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 4vw;
+				border-radius: 50%;
+				// border: 1px solid @black;
+				width: 28px;
+				height: 28px;
+				background-color: @black;
+
+				a {
+					font-size: 0;
+					color: @white;
+
+					i {
+						font-size: 16px;
+					}
+				}
+				
+			}
+	
+		}
+	}
+
+	div.footer-text {
+		display: none;
+		h6 {
+
+			a {}
+		}
+	}
+
+	@media only screen and (min-width: @desktop-breakpoint) {}
+}
+
+
+
+
+// @import '../_templates/header.less';
+
+
+
+// main {
+// 	margin: 10px 0;
+// 	height: 80vh;
+
+// 	ul.rotating-pics {
+// 		.reset-list;
+
+// 		li {
+// 			height: 80vh;
+
+// 			&.pic-1 {
+// 				.set-background-image('../assets/images/home-mobile-1.jpg');
+// 			}
+
+// 			&.pic-2 {
+// 				// display: none;
+// 				.set-background-image('../assets/images/home-mobile-2.jpg');
+// 				background-position-y: top; 
+// 			}
+
+// 			&.pic-3 {
+// 				// display: none;
+// 				.set-background-image('../assets/images/home-mobile-3.jpg');
+// 				background-position-y: center;	
+// 			}
+
+// 			&.pic-4 {
+// 				// display: none;
+// 				.set-background-image('../assets/images/home-mobile-4.jpg');	
+// 				background-position-y: bottom; 
+// 			}
+// 		}
+// 	}
+
+// 	div.rotating-pics-nav {
+// 		display: flex;
+// 		flex-direction: row;
+// 		justify-content: center;
+// 		align-items: center;
+// 		z-index: 999;
+// 		color: @black-80;
+// 		margin-top: -12vh;
+
+// 		i {
+// 			font-size: 24px;
+// 		}
+
+// 		ul {
+// 			.reset-list;
+// 			display: inline-block;
+// 		  font-size: 0;
+// 		  margin: 0 2vw;
+
+// 			li {
+// 				display: inline-block;
+// 				margin: 0 2vw;
+// 				align-self: center;
+
+// 				i {
+// 					margin: 0;
+// 					font-size: 10px;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	@media only screen and (min-width: 800px), (orientation: landscape) {
+// 		@import './landscape-photos.less';
+// 	}
+// }
+
+// @import '../_templates/footer.less';
 
 

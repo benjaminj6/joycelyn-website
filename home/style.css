@@ -175,13 +175,12 @@ footer div.footer-text {
     margin: 0;
     margin-left: 30px;
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     flex-direction: column;
     align-items: flex-end;
-    /* width: 80px; */
   }
   header nav ul.menu li.menu-item a {
-    font-size: 16px;
+    font-size: 18px;
   }
   header nav ul.menu li.menu-item ul.submenu {
     display: none;
@@ -189,14 +188,11 @@ footer div.footer-text {
     margin-top: 3vh;
   }
   header nav ul.menu li.menu-item ul.submenu li.submenu-item {
-    font-size: 14px;
+    font-size: 16px;
     text-align: right;
   }
   header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
-    font-size: 14px;
-  }
-  footer {
-    justify-content: flex-end;
+    font-size: 16px;
   }
   footer nav.media-links ul li {
     margin: 0 10px;

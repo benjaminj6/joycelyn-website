@@ -114,10 +114,10 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     width: 15.38461538%;
     margin: 0;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
   }
   header nav ul.menu li.menu-item a {
-    font-size: 16px;
+    font-size: 18px;
   }
   header nav ul.menu li.menu-item ul.submenu {
     margin: 15px 0;
@@ -129,10 +129,10 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
   }
   header nav ul.menu li.menu-item ul.submenu li.submenu-item {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
   }
   header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 main {

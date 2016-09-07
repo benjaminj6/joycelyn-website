@@ -21,10 +21,10 @@ data.par_2 = _.removeBreaks(`My greatest goal as a teacher is to love my student
 	the unconditional love that parents and teachers offer their kids/students, regardless of their 
 	skill, that the students begin to explore the beauty of music.`);
 
-data.par_4 = _.removeBreaks(`To find out more about my teaching philosophy, please listen to my lecture that I 
+data.par_3 = _.removeBreaks(`To find out more about my teaching philosophy, please listen to my lecture that I 
 	gave at Biola University entitled “What is my Role as a Music Teacher?”`);
 
-data.par_5 = _.removeBreaks(`If you're interested in taking lessons, please sign up for a 
+data.par_4 = _.removeBreaks(`If you're interested in taking lessons, please sign up for a 
 	${ _.aTag('../contact/', 'free trial lesson') }!`);
 
 

@@ -1,0 +1,33 @@
+@import (reference) '../_templates/mixins.less';
+
+@import '../_templates/header.less';
+
+main {
+	.wrapper(95%);
+	padding: 7vh 0 0;
+
+	div.section-heading {
+		h1 {
+			margin: 0;
+		}
+
+		hr {}
+	}
+
+	section.text {
+		p {}
+	}
+
+	section.mp3-player {
+		iframe {}
+		p {
+			a {}
+		}
+	}
+
+	@media only screen and (min-width: 650px) {
+		@import './style-desktop.less';
+	}
+}
+
+@import '../_templates/footer.less';

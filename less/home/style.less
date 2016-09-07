@@ -3,39 +3,42 @@
 @import '../_templates/typography.less';
 @import '../_templates/vars.less';
 
+body {
+	background-image: @white-photo-filter, url('../assets/images/home-mobile-1.jpg');
+	// background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+
 header {
 	div.titles {
 		display: flex;
 		flex-direction: column-reverse;
 
 		img {
-			// separate image from the content flow. Either with absolute/fixed pos
-			// or via flexbox. Or via some type of float
 			border-style: none;
 		  height: 20vh;
-		  /* width: 80vw; */
-		  /* object-fit: cover; */
 		  margin: 30vh auto;
 		}
 
 		div.menu-icons {
-			// These will need to float up at the top right. Flexbox maybe reverse order.
 			height: 10vh;
 			font-size: 24px;
-			/* align-content: center; */
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
 			padding: 0 2vh;
 			align-self: inherit;
 
-			h4 {}
+			h4 {
+				margin: 0 5px;
+				display: inline;
+			}
 			i.fa-bars {}
 		}
 	}
 
 	nav {
-		// should be able to copy/paste the mobile code for this...will need to adjust desktop
 		display: none;
 		width: 100%;
 		min-height: 100vh;
@@ -61,10 +64,12 @@ header {
 			li.menu-item {
 				margin: 7vh auto;
 				.nav-menu-font;
+				color: @black-60;
 				cursor: pointer;
 
 				a {
 					.nav-menu-font;
+					color: @black-60;
 				}
 
 				i.fa-angle-down {}
@@ -75,25 +80,24 @@ header {
 
 					li.submenu-item {
 						.nav-submenu-font;
+						color: @black-60;
 						margin: 2vh auto;
 
 						a {
 							.nav-submenu-font;
+							color: @black-60;
 						}
 					}
 				}
 			}
 		}
 	}
-
-	@media only screen and (min-width: @desktop-breakpoint) {}
 }
 
 footer {
 	height: 10vh;
 	display: flex;
 	align-items: center;
-	/* flex-direction: column; */
 	justify-content: center;
 
 	nav.media-links {
@@ -112,17 +116,16 @@ footer {
 				justify-content: center;
 				margin: 0 4vw;
 				border-radius: 50%;
-				// border: 1px solid @black;
-				width: 28px;
-				height: 28px;
-				background-color: @black;
+				width: 40px;
+				height: 40px;
+				background-color: @black-60;
 
 				a {
 					font-size: 0;
 					color: @white;
 
 					i {
-						font-size: 16px;
+						font-size: 22px;
 					}
 				}
 				
@@ -133,93 +136,14 @@ footer {
 
 	div.footer-text {
 		display: none;
-		h6 {
-
-			a {}
-		}
+		
 	}
-
-	@media only screen and (min-width: @desktop-breakpoint) {}
 }
 
+@media only screen and (min-width: @desktop-breakpoint) {
+	@import './style-desktop.less';
+}
 
-
-
-// @import '../_templates/header.less';
-
-
-
-// main {
-// 	margin: 10px 0;
-// 	height: 80vh;
-
-// 	ul.rotating-pics {
-// 		.reset-list;
-
-// 		li {
-// 			height: 80vh;
-
-// 			&.pic-1 {
-// 				.set-background-image('../assets/images/home-mobile-1.jpg');
-// 			}
-
-// 			&.pic-2 {
-// 				// display: none;
-// 				.set-background-image('../assets/images/home-mobile-2.jpg');
-// 				background-position-y: top; 
-// 			}
-
-// 			&.pic-3 {
-// 				// display: none;
-// 				.set-background-image('../assets/images/home-mobile-3.jpg');
-// 				background-position-y: center;	
-// 			}
-
-// 			&.pic-4 {
-// 				// display: none;
-// 				.set-background-image('../assets/images/home-mobile-4.jpg');	
-// 				background-position-y: bottom; 
-// 			}
-// 		}
-// 	}
-
-// 	div.rotating-pics-nav {
-// 		display: flex;
-// 		flex-direction: row;
-// 		justify-content: center;
-// 		align-items: center;
-// 		z-index: 999;
-// 		color: @black-80;
-// 		margin-top: -12vh;
-
-// 		i {
-// 			font-size: 24px;
-// 		}
-
-// 		ul {
-// 			.reset-list;
-// 			display: inline-block;
-// 		  font-size: 0;
-// 		  margin: 0 2vw;
-
-// 			li {
-// 				display: inline-block;
-// 				margin: 0 2vw;
-// 				align-self: center;
-
-// 				i {
-// 					margin: 0;
-// 					font-size: 10px;
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	@media only screen and (min-width: 800px), (orientation: landscape) {
-// 		@import './landscape-photos.less';
-// 	}
-// }
-
-// @import '../_templates/footer.less';
-
-
+@media only screen and (min-width: 800px), (orientation: landscape) {
+	@import './landscape-photos.less';
+}

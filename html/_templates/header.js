@@ -4,7 +4,7 @@ module.exports = function(data) {
 			<div class="titles">
 				<img src="../assets/images/logo.png" alt="Joycelyn Choo, Violinist | Teacher" />
 				<div class="menu-icons">
-					<!-- <h4>Menu</h4> -->
+					<h4>Menu</h4>
 					<i class="fa fa-bars"></i>
 				</div>
 			</div>
@@ -15,7 +15,7 @@ module.exports = function(data) {
 						<a href="${data.home_href}">Home</a>
 					</li>
 					<li class="menu-item">
-						About <i class="fa fa-angle-down"></i>
+						<div class="menu-button">About <i class="fa fa-angle-down"></i></div class="menu-button">
 						<ul class="submenu">
 							<li class="submenu-item">
 								<a href="${data.bio_href}">Bio</a>
@@ -26,7 +26,7 @@ module.exports = function(data) {
 						</ul>
 					</li>
 					<li class="menu-item">
-						Teaching <i class="fa fa-angle-down"></i>
+						<div class="menu-button">Teaching <i class="fa fa-angle-down"></i></div class="menu-button">
 						<ul class="submenu">
 							<li class="submenu-item">
 								<a href="${data.why_private_lessons_href}">Why Private Lessons?</a>

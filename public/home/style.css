@@ -22,6 +22,11 @@
 .paragraph-text {
   font-size: 20px;
 }
+body {
+  background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-mobile-1.jpg');
+  background-size: cover;
+  background-position: center bottom;
+}
 header div.titles {
   display: flex;
   flex-direction: column-reverse;
@@ -29,19 +34,20 @@ header div.titles {
 header div.titles img {
   border-style: none;
   height: 20vh;
-  /* width: 80vw; */
-  /* object-fit: cover; */
   margin: 30vh auto;
 }
 header div.titles div.menu-icons {
   height: 10vh;
   font-size: 24px;
-  /* align-content: center; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0 2vh;
   align-self: inherit;
+}
+header div.titles div.menu-icons h4 {
+  margin: 0 5px;
+  display: inline;
 }
 header nav {
   display: none;
@@ -73,12 +79,14 @@ header nav ul.menu li.menu-item {
   color: #000;
   text-decoration: none;
   font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
 header nav ul.menu li.menu-item a {
   color: #000;
   text-decoration: none;
   font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }
 header nav ul.menu li.menu-item ul.submenu {
   margin: 0;
@@ -90,18 +98,19 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item {
   color: #000;
   text-decoration: none;
   font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
   margin: 2vh auto;
 }
 header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
   color: #000;
   text-decoration: none;
   font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
 }
 footer {
   height: 10vh;
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
   justify-content: center;
 }
 footer nav.media-links ul {
@@ -118,18 +127,84 @@ footer nav.media-links ul li {
   justify-content: center;
   margin: 0 4vw;
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  background-color: #000;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 footer nav.media-links ul li a {
   font-size: 0;
   color: #fff;
 }
 footer nav.media-links ul li a i {
-  font-size: 16px;
+  font-size: 22px;
 }
 footer div.footer-text {
   display: none;
+}
+@media only screen and (min-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header div.titles img {
+    border-style: none;
+    height: 20vh;
+    margin: 30vh auto;
+  }
+  header div.titles div.menu-icons {
+    display: none;
+  }
+  header nav {
+    display: block;
+    min-height: 0;
+    position: static;
+    height: 10vh;
+    background-color: transparent;
+  }
+  header nav i.fa-times {
+    display: none;
+  }
+  header nav ul.menu {
+    padding: 2vh;
+    display: flex;
+    position: fixed;
+    right: 0;
+  }
+  header nav ul.menu li.menu-item {
+    margin: 0;
+    margin-left: 30px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-end;
+    /* width: 80px; */
+  }
+  header nav ul.menu li.menu-item a {
+    font-size: 16px;
+  }
+  header nav ul.menu li.menu-item ul.submenu {
+    display: none;
+    position: absolute;
+    margin-top: 3vh;
+  }
+  header nav ul.menu li.menu-item ul.submenu li.submenu-item {
+    font-size: 14px;
+    text-align: right;
+  }
+  header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
+    font-size: 14px;
+  }
+  footer {
+    justify-content: flex-end;
+  }
+  footer nav.media-links ul li {
+    margin: 0 10px;
+  }
+}
+@media only screen and (min-width: 800px), (orientation: landscape) {
+  body {
+    background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-desktop-1.jpg');
+    background-position: center bottom;
+  }
 }
 /*# sourceMappingURL=style.css.map */

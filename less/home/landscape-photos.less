@@ -1,22 +1,8 @@
-ul.rotating-pics li {
-	&.pic-1 {
-		.set-background-image('../assets/images/home-desktop-1.jpg');
-		background-position-y: bottom;
-		background-position-x: center;
-	}
+body {
+	background-image: @white-photo-filter, url('../assets/images/home-desktop-1.jpg');
+	background-position: center bottom;
 
-	&.pic-2 {
-		.set-background-image('../assets/images/home-desktop-2.jpg');
-		background-position-y: center; 
-	}
+	// Desktop 3 will need to be positioned at center top via jQuery.
 
-	&.pic-3 {
-		.set-background-image('../assets/images/home-desktop-3.jpg');
-		background-position-y: 26%;
-	}
-
-	&.pic-4 {
-		.set-background-image('../assets/images/home-desktop-4.jpg');		
-		background-position-y: top;
-	}
+	// Desktop 4 will need to be positioned at center center via jQuery.
 }

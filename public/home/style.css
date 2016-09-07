@@ -121,7 +121,7 @@ footer nav.media-links ul li a i {
 footer div.footer-text {
   display: none;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   header {
     display: flex;
     flex-direction: column-reverse;
@@ -162,7 +162,6 @@ footer div.footer-text {
     font-size: 18px;
   }
   header nav ul.menu li.menu-item ul.submenu {
-    display: none;
     position: absolute;
     margin-top: 3vh;
   }

@@ -103,8 +103,7 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     flex-direction: column;
   }
   header div.titles img {
-    width: 40%;
-    margin: 0 auto;
+    height: 15vh;
   }
   header div.titles div.menu-icons {
     display: none;

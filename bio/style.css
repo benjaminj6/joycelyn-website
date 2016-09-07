@@ -13,7 +13,7 @@ header div.titles div.menu-icons {
   float: right;
 }
 header div.titles div.menu-icons h4 {
-  margin: 0;
+  margin: 0 5px;
   display: inline;
 }
 header nav {
@@ -204,8 +204,8 @@ footer nav.media-links ul li {
   justify-content: center;
   margin: 0 4vw;
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   background-color: #000;
 }
 footer nav.media-links ul li a {
@@ -213,7 +213,7 @@ footer nav.media-links ul li a {
   color: #fff;
 }
 footer nav.media-links ul li a i {
-  font-size: 16px;
+  font-size: 22px;
 }
 footer div.footer-text {
   text-align: center;

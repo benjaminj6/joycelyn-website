@@ -5,25 +5,31 @@
 
 header {
   // border-bottom: 1px solid @black-20;
+  height: 10vh;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  width: 100vw;
 
   div.titles {
-    .wrapper(95%);
-    padding: 10px 0 0;
-    // display: flex;
-    // flex-wrap: wrap;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     img {
-      height: 12vh;
+      height: 10vh;
     }
 
     div.menu-icons {
-      font-size: 18px;
-      // align-self: flex-end;
-      display: inline-block;
-      float: right;
-      // width: 30%;
-      // text-align: right;
+      height: 10vh;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 2vh;
+      color: @black-60;
+      position: absolute;
+      right: 0;
 
       h4 {
         margin: 0 5px;

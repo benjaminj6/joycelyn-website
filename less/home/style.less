@@ -1,11 +1,12 @@
-@import '../_templates/colors.less';
-@import '../_templates/mixins.less';
-@import '../_templates/typography.less';
-@import '../_templates/vars.less';
+@import (reference) '../_templates/colors.less';
+@import (reference) '../_templates/mixins.less';
+@import (reference) '../_templates/typography.less';
+@import (reference) '../_templates/vars.less';
+
+@import '../_templates/global-styles.less';
 
 body {
 	background-image: @white-photo-filter, url('../assets/images/home-mobile-1.jpg');
-	// background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
 }
@@ -14,6 +15,7 @@ header {
 	div.titles {
 		display: flex;
 		flex-direction: column-reverse;
+
 
 		img {
 			border-style: none;

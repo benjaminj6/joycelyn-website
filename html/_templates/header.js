@@ -4,7 +4,7 @@ module.exports = function(data) {
 			<div class="titles">
 				<img src="../assets/images/logo.png" alt="Joycelyn Choo, Violinist | Teacher" />
 				<div class="menu-icons">
-					<h4>Menu</h4>
+					<!-- <h4>Menu</h4> -->
 					<i class="fa fa-bars"></i>
 				</div>
 			</div>

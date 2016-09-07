@@ -1,16 +1,31 @@
+* {
+  font-weight: lighter;
+}
+header {
+  height: 10vh;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  width: 100vw;
+}
 header div.titles {
-  width: 95%;
-  margin: 0 auto;
-  padding: 10px 0 0;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 header div.titles img {
-  height: 12vh;
+  height: 10vh;
 }
 header div.titles div.menu-icons {
-  font-size: 18px;
-  display: inline-block;
-  float: right;
+  height: 10vh;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2vh;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
 }
 header div.titles div.menu-icons h4 {
   margin: 0 5px;

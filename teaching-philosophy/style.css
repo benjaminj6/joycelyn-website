@@ -2,26 +2,15 @@ header div.titles {
   width: 95%;
   margin: 0 auto;
   padding: 10px 0 0;
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
 }
-header div.titles h1 {
-  margin: 0 0 5px;
-  width: 100%;
-  font-size: 30px;
-}
-header div.titles h2 {
-  margin: 0;
-  align-self: stretch;
-  width: 70%;
-  font-size: 18px;
+header div.titles img {
+  height: 12vh;
 }
 header div.titles div.menu-icons {
   font-size: 18px;
-  align-self: flex-end;
   display: inline-block;
-  width: 30%;
-  text-align: right;
+  float: right;
 }
 header div.titles div.menu-icons h4 {
   margin: 0;
@@ -89,13 +78,8 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
   header div.titles {
     flex-direction: column;
   }
-  header div.titles h1 {
-    text-align: center;
-  }
-  header div.titles h2 {
-    display: block;
-    width: 100%;
-    text-align: center;
+  header div.titles img {
+    height: 15vh;
   }
   header div.titles div.menu-icons {
     display: none;
@@ -158,6 +142,11 @@ main {
 }
 main div.section-heading h1 {
   margin: 0;
+}
+@media only screen and (min-width: 450px) {
+  main {
+    width: 80%;
+  }
 }
 @media only screen and (min-width: 650px) {
   main {

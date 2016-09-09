@@ -50,8 +50,8 @@
 	        "watch:about:html": "npm run watch:bio:html & npm run watch:teaching-philosophy:html",
         
         "//": "--- LESS Tasks ---",
-	        "build:about:less": "npm run build:bio:less",
-	        "watch:about:less": "npm run watch:bio:less",
+	        "build:about:less": "npm run build:bio:less && npm run build:teaching-philosophy:less",
+	        "watch:about:less": "npm run watch:bio:less & npm run watch:teaching-philosophy:less",
 
     "//": "--- BIO ---",  
         "build:bio": "npm run build:bio:html && npm run build:bio:less",

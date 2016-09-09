@@ -6,20 +6,20 @@ header {
   z-index: 999;
   background-color: #fff;
   width: 100vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5vh 0;
 }
 header div.titles {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 9vh;
+  height: 10vh;
 }
 header div.titles img {
   height: 100%;
 }
 header div.titles div.menu-icons {
-  height: 9vh;
+  height: 10vh;
   font-size: 24px;
   display: flex;
   align-items: center;
@@ -102,7 +102,6 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     display: inline;
     min-height: 0;
     position: static;
-    height: 10vh;
     background-color: transparent;
   }
   header nav i.fa-times {
@@ -129,7 +128,8 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
   }
   header nav ul.menu li.menu-item ul.submenu {
     position: absolute;
-    margin-top: 3vh;
+    margin-top: 5vh;
+    background-color: #fff;
   }
   header nav ul.menu li.menu-item ul.submenu li.submenu-item {
     font-size: 16px;
@@ -137,7 +137,7 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
   }
 }
 main {
-  padding: 2vh 0;
+  padding: 11vh 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -147,9 +147,17 @@ main img {
   height: 60vh;
   object-position: top;
 }
+@media (orientation: landscape) {
+  main img {
+    height: 90vh;
+  }
+}
 main section {
   width: 95%;
   margin: 0 auto;
+}
+main section div.section-heading {
+  padding-top: 4vh;
 }
 main section div.section-heading h1 {
   font-size: 32px;
@@ -164,9 +172,8 @@ main section div.text p {
 main section div.text a {
   color: #000;
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 800px) {
   main {
-    padding: 20px 0 0;
     flex-direction: row;
     height: 90vh;
   }
@@ -181,7 +188,6 @@ main section div.text a {
     overflow-y: scroll;
   }
   main section div.section-heading {
-    padding-top: 4vh;
     margin-bottom: 10px;
   }
   main section div.text {
@@ -190,6 +196,9 @@ main section div.text a {
   main section div.text p {
     font-size: 16px;
   }
+}
+footer {
+  margin: 2vh;
 }
 footer nav.media-links ul {
   padding: 0;
@@ -225,7 +234,7 @@ footer div.footer-text h6 {
 }
 @media only screen and (min-width: 800px) {
   footer {
-    margin: 20px;
+    margin: 3vh 0;
   }
   footer nav.media-links ul li {
     margin: 0 10px;

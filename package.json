@@ -22,8 +22,8 @@
         "watch:html": "npm run watch:templates:html & npm run watch:home:html & npm run watch:about:html & npm run watch:teaching-pages:html & npm run watch:performing:html & npm run watch:blog:html & npm run watch:contact:html",
   
     "//": "--- Tasks for all LESS files ---",  
-        "build:less": "npm run build:home:less && npm run build:about:less",
-        "watch:less": "npm run watch:templates:less & npm run watch:home:less & npm run watch:about:less",
+        "build:less": "npm run build:home:less && npm run build:about:less && npm run build:teaching-pages:less",
+        "watch:less": "npm run watch:templates:less & npm run watch:home:less & npm run watch:about:less & npm run watch:teaching-pages:less",
 
     "//": "--- Tasks for Templates ---",
         "watch:templates": "npm run watch:templates:html & npm run watch:templates:less",
@@ -85,11 +85,19 @@
     "//": "--- TEACHING ---",  
         "build:teaching-pages:html": "npm run build:why-private-lessons:html && npm run build:student-opportunities:html && npm run build:studio-policies:html && npm run build:suzuki-method:html",
         "watch:teaching-pages:html": "npm run watch:why-private-lessons:html & npm run watch:student-opportunities:html & npm run watch:studio-policies:html & npm run watch:suzuki-method:html",
+        "build:teaching-pages:less": "npm run build:why-private-lessons:less",
+        "watch:teaching-pages:less": "npm run watch:why-private-lessons:less",
 
     "//": "--- WHY PRIVATE LESSONS ---",  
+
+        "//": "--- HTML TASKS ---",  
         "build:why-private-lessons:html": "assemble why-private-lessons:html && renamer --replace index.html 'public/why-private-lessons/*.html",
         "watch:why-private-lessons:html": "chokidar 'html/why-private-lessons/*.js' -c 'npm run build:why-private-lessons:html'",
-   
+
+        "//": "--- LESS TASKS ---",  
+        "build:why-private-lessons:less": "lessc --source-map less/why-private-lessons/style.less public/why-private-lessons/style.css",
+        "watch:why-private-lessons:less": "chokidar 'less/why-private-lessons/*.less' -c 'npm run build:why-private-lessons:less'",
+
     "//": "--- STUDENT OPPORTUNITIES ---",  
         "build:student-opportunities:html": "assemble student-opportunities:html && npm run rename:student-opportunities:html",
         "rename:student-opportunities:html": "renamer --replace index.html 'public/student-opportunities/*.html",

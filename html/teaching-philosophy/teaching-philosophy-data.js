@@ -25,7 +25,7 @@ data.par_3 = _.removeBreaks(`To find out more about my teaching philosophy, plea
 	gave at Biola University entitled “What is my Role as a Music Teacher?”`);
 
 data.par_4 = _.removeBreaks(`If you're interested in taking lessons, please sign up for a 
-	${ _.aTag('../contact/', 'free trial lesson') }!`);
+	${_.aTag('../contact/', 'free trial lesson!')}`);
 
 
 data.changeHref('teaching_philosophy_href', '.');

@@ -7,9 +7,9 @@ data.page_title = 'Joycelyn Choo | Why Private Lessons?';
 data.heading = 'WHY PRIVATE LESSONS?';
 
 data.img = {
-	src: 'http://placehold.it/700x400',
+	src: '../assets/images/why-private-lessons.jpg',
 	alt: 'Private Lessons Photo'
-}
+};
 
 data.par_1 = _.removeBreaks(`The benefits of music study have been closely studied in recent years and the results 
 	have shown that studying an instrument is extremely beneficial for the students who choose to 

@@ -18,6 +18,7 @@ let globalData = {
 	performing_href: '../performing',
 	blog_href: '../blog',
 	contact_href: '../contact',
+	title_img_href: '../assets/images/logo-wide.png',
 };
 
 globalData.changeHref = function(property, newHref) {

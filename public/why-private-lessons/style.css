@@ -1,6 +1,3 @@
-* {
-  font-weight: lighter;
-}
 header {
   position: fixed;
   z-index: 999;
@@ -139,64 +136,6 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
 }
 main {
   padding: 11vh 0 0;
-  display: flex;
-  flex-direction: column;
-}
-main img {
-  width: 100%;
-  object-fit: cover;
-  height: 60vh;
-  object-position: top;
-}
-@media (orientation: landscape) {
-  main img {
-    height: 90vh;
-  }
-}
-main section {
-  width: 95%;
-  margin: 0 auto;
-}
-main section div.section-heading {
-  padding-top: 4vh;
-}
-main section div.section-heading h1 {
-  font-size: 32px;
-  margin: 0 auto;
-}
-main section div.section-heading hr {
-  margin: 0;
-}
-main section div.text p {
-  font-size: 20px;
-}
-main section div.text a {
-  color: #000;
-}
-@media only screen and (min-width: 800px) {
-  main {
-    flex-direction: row;
-    height: 90vh;
-  }
-  main img {
-    width: 60%;
-    height: inherit;
-  }
-  main section {
-    width: 40%;
-    padding: 0 4%;
-    height: 100%;
-    overflow-y: scroll;
-  }
-  main section div.section-heading {
-    margin-bottom: 10px;
-  }
-  main section div.text {
-    height: 90%;
-  }
-  main section div.text p {
-    font-size: 16px;
-  }
 }
 footer {
   margin: 4vh;

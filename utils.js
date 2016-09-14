@@ -1,5 +1,5 @@
 module.exports = {
-	aTag: function(href, text) {
+	aTag: function(href, text, textBehind = '') {
 		return `<a href="${href}" target="_blank">${text}</a>`;
 	},
 

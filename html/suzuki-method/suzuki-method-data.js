@@ -6,7 +6,7 @@ let data = Object.create(globalData);
 data.page_title = 'Joycelyn Choo | Suzuki Method';
 data.heading = 'SUZUKI METHOD';
 
-data.par_1 = _.removeBreaks(`The( Suzuki Method is a very popular method of teaching the violin.  If you are a 
+data.par_1 = _.removeBreaks(`The Suzuki Method is a very popular method of teaching the violin.  If you are a 
 		prospective student, ${ _.aTag('https://suzukiassociation.org/about/suzuki-method/', 
 		'please read briefly about the Suzuki Method') } before contacting me.  I am a product of the 
 		Suzuki method and I can confidently say that Suzuki allowed me to learn the fundamentals of 

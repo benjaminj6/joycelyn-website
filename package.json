@@ -85,8 +85,8 @@
     "//": "--- TEACHING ---",  
         "build:teaching-pages:html": "npm run build:why-private-lessons:html && npm run build:student-opportunities:html && npm run build:studio-policies:html && npm run build:suzuki-method:html",
         "watch:teaching-pages:html": "npm run watch:why-private-lessons:html & npm run watch:student-opportunities:html & npm run watch:studio-policies:html & npm run watch:suzuki-method:html",
-        "build:teaching-pages:less": "npm run build:why-private-lessons:less",
-        "watch:teaching-pages:less": "npm run watch:why-private-lessons:less",
+        "build:teaching-pages:less": "npm run build:why-private-lessons:less && npm run build:student-opportunities:less && npm run build:studio-policies:less && npm run build:suzuki-method:less",      
+        "watch:teaching-pages:less": "npm run watch:why-private-lessons:less & npm run watch:student-opportunities:less & npm run watch:studio-polices:less & npm run watch:suzuki-method:less",
 
     "//": "--- WHY PRIVATE LESSONS ---",  
 
@@ -98,19 +98,34 @@
         "build:why-private-lessons:less": "lessc --source-map less/why-private-lessons/style.less public/why-private-lessons/style.css",
         "watch:why-private-lessons:less": "chokidar 'less/why-private-lessons/*.less' -c 'npm run build:why-private-lessons:less'",
 
-    "//": "--- STUDENT OPPORTUNITIES ---",  
+    "//": "--- STUDENT OPPORTUNITIES ---",
+
+
+        "//": "--- HTML TASKS ---",  
         "build:student-opportunities:html": "assemble student-opportunities:html && npm run rename:student-opportunities:html",
         "rename:student-opportunities:html": "renamer --replace index.html 'public/student-opportunities/*.html",
         "watch:student-opportunities:html": "chokidar 'html/student-opportunities/*.js' -c 'npm run build:student-opportunities:html'",
 
+        "//": "--- LESS TASKS ---",
+        "build:student-opportunities:less": "lessc --source-map less/student-opportunities/style.less public/student-opportunities/style.css",
+        "watch:student-opportunities:less": "chokidar 'less/student-opportunities/*.less' -c 'npm run build:student-opportunities:less'",
+
     "//": "--- STUDIO POLICIES ---",  
+        "//": "--- HTML TASKS ---",
         "build:studio-policies:html": "assemble studio-policies:html && npm run rename:studio-policies:html",
         "rename:studio-policies:html": "renamer --replace index.html 'public/studio-policies/*.html",
         "watch:studio-policies:html": "chokidar 'html/studio-policies/*.js' -c 'npm run build:studio-policies:html'",
 
+        "//": "--- LESS TASKS ---",
+        "build:studio-policies:less": "lessc --source-map less/studio-policies/style.less public/studio-policies/style.css",
+        "watch:studio-policies:less": "chokidar 'less/studio-policies/*.less' -c 'npm run build:studio-policies:less'",
+
     "//": "--- SUZUKI METHOD ---",  
         "build:suzuki-method:html": "assemble suzuki-method:html",
         "watch:suzuki-method:html": "chokidar 'html/suzuki-method/*.js' -c 'assemble suzuki-method:html'",
+
+        "build:suzuki-method:less": "lessc --source-map less/suzuki-method/style.less public/suzuki-method/style.css",
+        "watch:suzuki-method:less": "chokidar 'less/suzuki-method/*.less' -c 'npm run build:suzuki-method:less'",
 
     "//": "--- PERFORMING ---",  
         "build:performing:html": "assemble performing:html",

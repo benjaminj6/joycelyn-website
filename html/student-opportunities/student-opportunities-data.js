@@ -12,7 +12,7 @@ data.intro_par = _.removeBreaks(`Students in my studio are enrolled in weekly pr
 	solo performance, group performance, technique, practicing skills, and participate in games 
 	and activities with other students.  Students are also expected to perform twice a year in studio 
 	recitals where they can also benefit from the performances of their peers.  If you are considering 
-	joining my studio, remember I offer a ${ _.aTag('../contact/', 'free trial lesson') }.`);  
+	joining my studio, remember I offer a ${ _.aTag('../contact/', 'free trial lesson.') }`);  
 
 data.weekly_lessons = {
 	h2: 'WEEKLY LESSONS',
@@ -34,7 +34,7 @@ data.weekly_lessons = {
 data.group_classes = {
 	h2: 'GROUP CLASSES',
 	img: {
-		src: 'http://placehold.it/1000x900',
+		src: '../assets/images/group-classes.jpg',
 		alt: 'Group Classes Photo'
 	},
 
@@ -63,7 +63,7 @@ data.recitals = {
 data.parents = {
 	h2: 'PARENT EDUCATION',
 	img: {
-		src: 'http://placehold.it/500x300',
+		src: '../assets/images/parent-education.jpg',
 		alt: 'Parent Education Photo'
 	},
 

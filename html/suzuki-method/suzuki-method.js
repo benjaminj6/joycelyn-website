@@ -4,7 +4,7 @@ let heading = require('../_templates/section-heading')(data);
 let body = `
 	<main>
 		${heading}
-		<p>${data.par_1}</p>
+		<p class="intro">${data.par_1}</p>
 		<ul>
 			<li>
 				<h4>${data.list_1.h4}</h4>

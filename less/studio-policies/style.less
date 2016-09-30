@@ -1,0 +1,22 @@
+@import (reference) '../_templates/mixins.less';
+@import (reference) '../_templates/vars.less';
+@import (reference) '../_templates/typography.less';
+
+@import '../_templates/header.less';
+
+main {
+	padding: 11vh 0 0;
+	display: flex;
+	flex-direction: column;
+
+	img {
+		width: 100vw;
+		height: 60vh;
+		object-fit: cover;	
+	}
+	section {
+		.wrapper(95%);
+	}
+}
+
+@import '../_templates/footer.less';

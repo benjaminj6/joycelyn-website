@@ -1,21 +1,43 @@
+@import '../_templates/mixins.less';
+@import '../_templates/vars.less';
+
 @import '../_templates/header.less';
 
 main {
 	
 	padding: 11vh 0 0;
+	display: flex;
+	flex-direction: column;
 
-	div.section-heading {
-		h1 {}
-		hr {}
+	img {
+		width: 100vw;
+		height: 60vh;
+		object-fit: cover;
+		object-position: top;
+
+		@media only screen and (orientation: landscape) {
+			height: 90vh;
+		}
 	}
-	img {}
 
-	// perhaps move the paragraphs into their own div/section in why-provate...js?
+	section {
+		.wrapper(95%);
 
-	p {
-		a {}
+		div.section-heading {
+			h1 {}
+			hr {}
+		}
+
+		div.text {
+			p {
+				a {}
+			}
+		}		
 	}
 
+	@media only screen and (min-width: @desktop-breakpoint), {
+		@import './style-desktop.less';
+	}
 }
 
 @import '../_templates/footer.less';

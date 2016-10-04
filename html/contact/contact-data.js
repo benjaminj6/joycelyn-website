@@ -32,23 +32,24 @@ data.lessons = {
 
 	form_id: 'lessons-form',
 	parent_name: {
-		legend: 'Name (Parent or Guardian)*'
+		p: 'Name (Parent or Guardian)*'
 	},
 	student_name: {
-		legend: 'Name (Prospective Student)*',
+		p: 'Name (Prospective Student)*',
 	},
 	student_age: {
-		legend: `Prospective Student's Age*`,
+		p: `Prospective Student's Age*`,
 	},
 	student_grade: {
-		legend: `Prospective Student's Grade (if applicable)`,
+		p: `Prospective Student's Grade (if applicable)`,
 	},
 	student_experience: {
-		legend: _.removeBreaks(`Please list any musical experience that the student might have 
+		p: _.removeBreaks(`Please list any musical experience that the student might have 
 			(if none, please write "new beginner")`),
 	},
 	previous_suzuki_teacher: {
-		legend: `If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?`,
+		p: `If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?`,
+		name: 'previous-teacher',
 		option_1: {
 			
 			val: 'suzuki',
@@ -60,10 +61,10 @@ data.lessons = {
 		},
 	},
 	extracurriculars: {
-		legend: 'Please list all other extracurriculars that you are involved in',
+		p: 'Please list all other extracurriculars that you are involved in',
 	},
 	location: {
-		legend: 'Are you interested in lessons in Walnut or in La Mirada?*',
+		p: 'Are you interested in lessons in Walnut or in La Mirada?*',
 		name: 'location',
 		option_1: {
 			val: 'walnut',
@@ -75,10 +76,10 @@ data.lessons = {
 		},
 	},
 	coming_from: {
-		legend: 'What area are you coming from?',
+		p: 'What area are you coming from?',
 	},
 	trial_lesson: {
-		legend: 'What days would you be available for a free trial lesson? (Select all that apply)',
+		p: 'What days would you be available for a free trial lesson? (Select all that apply)',
 		
 		times: {
 			all_day: 'All day',
@@ -117,7 +118,7 @@ data.lessons = {
 	},
 	
 	group_classes: {
-		legend: _.removeBreaks(`All students are required to enroll in a mandatory group class that 
+		p: _.removeBreaks(`All students are required to enroll in a mandatory group class that 
 			meets once a week in addition to weekly lessons. Is this a commitment that 
 			your family is willing to make?`),
 
@@ -132,11 +133,11 @@ data.lessons = {
 	},
 
 	extra_questions: {
-		legend: 'Please add any additional questions or concerns here.',
+		p: 'Please add any additional questions or concerns here.',
 	},	
 
 	email: {
-		legend: 'Email*'
+		p: 'Email*'
 	}
 };
 
@@ -153,35 +154,35 @@ data.perform = {
 	},
 
 	name: {
-		legend: 'Name*',
+		p: 'Name*',
 	},
 	phone: {
-		legend: 'Phone Number*',
+		p: 'Phone Number*',
 	},
 	email: {
-		legend: 'Email*',
+		p: 'Email*',
 	},
 	event_type: {
-		legend: 'Type of event (wedding, party, etc.)',
+		p: 'Type of event (wedding, party, etc.)',
 	},
 	person_role: {
-		legend: 'Your role in the event (bride, groom, coordinator, host, birthday person, etc.)',
+		p: 'Your role in the event (bride, groom, coordinator, host, birthday person, etc.)',
 	},
 	date: {
-		legend: 'The date of your event*',
+		p: 'The date of your event*',
 	},
 	budget: {
-		legend: 'Budget (Please expect at least $100 per person)*',
+		p: 'Budget (Please expect at least $100 per person)*',
 	},
 	musicians: {
-		legend: 'Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*',
+		p: 'Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*',
 	},
 	special_requests: {
-		legend: _.removeBreaks(`Special Requests for music selection (I will be sending you some 
+		p: _.removeBreaks(`Special Requests for music selection (I will be sending you some 
 			selections to choose from, but let me know if you have a request).`),
 	},
 	extra_questions: {
-		legend: 'Please add any additional questions or concerns here.',
+		p: 'Please add any additional questions or concerns here.',
 	},
 };
 

@@ -4,7 +4,7 @@ let globalData = require('../global-data');
 
 let data = Object.create(globalData);
 
-data.page_title = 'Joycelyn Choo | Bio';
+data.page_title = 'Joycelyn Choo | Blog';
 data.heading = 'BLOG';
 
 data.post_1 = {

@@ -25,9 +25,8 @@ let body = `
 			<p>${data.post_3.content.par_2}</p>
 			<hr>
 		</article>
-		<section class="blog-nav">
-			<button>Previous <i class="fa fa-angle-left"></i></button>
-			<button>Next <i class="fa fa-angle-right"></i></button>
+		<section class="see-more">
+			<button class="">See More</button>
 		</section>
 	</main>
 `;

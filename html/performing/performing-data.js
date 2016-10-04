@@ -17,7 +17,7 @@ data.intro = {
 
 
 data.img = {
-	src: 'http://placehold.it/400x500',
+	src: '../assets/images/performing.jpg',
 	alt: 'Performing Photo'
 };
 

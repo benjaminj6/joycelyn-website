@@ -7,7 +7,7 @@ let body = `
 		<section>
 			${heading}
 			<div class="text">
-				<p>Families who participate in my studio must agree to my studio policies. You can view a PDF of them <a href="__">here</a>.</p>
+				<p>Families who participate in my studio must agree to my studio policies. You can view a PDF of them <a href="../assets/violin-studio-policies.docx">here</a>.</p>
 			</div>
 		</section>
 	</main>

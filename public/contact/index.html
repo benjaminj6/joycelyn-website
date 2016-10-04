@@ -69,14 +69,10 @@
       </nav>
     </header>
     <main>
-      <div class="section-heading">
-        <h1>CONTACT</h1>
-        <hr>
-      </div>
       <section class="form-choices">
         <h2>What would you like to contact me about?</h2>
-        <button>Lessons</button>
-        <button>Performing at an event</button>
+        <button class="lessons">Lessons</button>
+        <button class="performing">Performing at an event</button>
       </section>
       <section id=lessons>
         <div class="intro">
@@ -90,119 +86,228 @@
         </div>
         <form id="lessons-form">
           <fieldset>
-            <legend>Name (Parent or Guardian)*</legend>
+            <p>Name (Parent or Guardian)*</p>
             <input type="text" required="true">
           </fieldset>
           <fieldset>
-            <legend>Name (Prospective Student)*</legend>
+            <p>Name (Prospective Student)*</p>
             <input type="text" required="true">
           </fieldset>
           <fieldset>
-            <legend>Prospective Student's Age*</legend>
-            <input type="text" required="true">
+            <p>Prospective Student's Age*</p>
+            <input type="number" required="true">
           </fieldset>
           <fieldset>
-            <legend>Prospective Student's Grade (if applicable)</legend>
+            <p>Prospective Student's Grade (if applicable)</p>
+            <input type="number">
+          </fieldset>
+          <fieldset>
+            <p>Please list any musical experience that the student might have (if none, please write "new beginner")</p>
             <input type="text">
           </fieldset>
           <fieldset>
-            <legend>Please list any musical experience that the student might have (if none, please write "new beginner")</legend>
-            <input type="text">
-          </fieldset>
-          <fieldset>
-            <legend>If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?</legend>
-            <select name="undefined">
-              <option value="null">Select</option>
-              <option value="suzuki">Suzuki</option>
-              <option value="traditional">Traditional</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Please list all other extracurriculars that you are involved in</legend>
-            <input type="text">
-          </fieldset>
-          <fieldset>
-            <legend>Are you interested in lessons in Walnut or in La Mirada?*</legend>
-            <select name="location" required="true">
-              <option value="null">Select</option>
-              <option value="walnut">Walnut</option>
-              <option value="la mirada">La Mirada</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>What area are you coming from?</legend>
-            <input type="text">
-          </fieldset>
-          <fieldset>
-            <legend>What days would you be available for a free trial lesson? (Select all that apply)</legend>
-            <ul>
+            <p>If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?</p>
+            <ul class="radio-buttons">
               <li>
-                <input type="radio" id="monday" value="monday">
-                <label for="monday">Monday</label>
-                <select name="monday-time">
-                  <option value="All day">All day</option>
-                  <option value="AM">AM</option>
-                  <option value="PM">PM</option>
-                </select>
+                <input type="radio" value="suzuki" id="suzuki-option1">
+                <label for="suzuki-option1">Suzuki</label>
               </li>
               <li>
-                <input type="radio" id="tuesday" value="tuesday">
-                <label for="tuesday">Tuesday</label>
-                <select name="tuesday-time">
-                  <option value="All day">All day</option>
-                  <option value="AM">AM</option>
-                  <option value="PM">PM</option>
-                </select>
-              </li>
-              <li>
-                <input type="radio" id="wednesday" value="wednesday">
-                <label for="wednesday">Wednesday</label>
-                <select name="wednesday-time">
-                  <option value="All day">All day</option>
-                  <option value="AM">AM</option>
-                  <option value="PM">PM</option>
-                </select>
-              </li>
-              <li>
-                <input type="radio" id="thursday" value="thursday">
-                <label for="thursday">Thursday</label>
-                <select name="thursday-time">
-                  <option value="All day">All day</option>
-                  <option value="AM">AM</option>
-                  <option value="PM">PM</option>
-                </select>
-              </li>
-              <li>
-                <input type="radio" id="friday" value="friday">
-                <label for="friday">Friday</label>
-                <select name="friday-time">
-                  <option value="All day">All day</option>
-                  <option value="AM">AM</option>
-                  <option value="PM">PM</option>
-                </select>
-              </li>
-              <li>
-                <input type="radio" id="saturday" value="saturday">
-                <label for="saturday">Saturday</label>
-                <select name="saturday-time">
-                  <option value="All day">All day</option>
-                  <option value="AM">AM</option>
-                  <option value="PM">PM</option>
-                </select>
-              </li>
-              <li>
-                <input type="radio" id="sunday" value="sunday">
-                <label for="sunday">Sunday</label>
-                <select name="sunday-time">
-                  <option value="All day">All day</option>
-                  <option value="AM">AM</option>
-                  <option value="PM">PM</option>
-                </select>
+                <input type="radio" value="traditional" id="suzuki-option2">
+                <label for="suzuki-option2">Traditional</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend>All students are required to enroll in a mandatory group class that meets once a week in addition to weekly lessons. Is this a commitment that your family is willing to make?</legend>
+            <p>Please list all other extracurriculars that you are involved in</p>
+            <input type="text">
+          </fieldset>
+          <fieldset>
+            <p>Are you interested in lessons in Walnut or in La Mirada?*</p>
+            <ul class="radio-buttons">
+              <li>
+                <input type="radio" value="walnut" id="location-option1">
+                <label for="location-option1">Walnut</label>
+              </li>
+              <li>
+                <input type="radio" value="la mirada" id="location-option2">
+                <label for="location-option2">La Mirada</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <p>What area are you coming from?</p>
+            <input type="text">
+          </fieldset>
+          <fieldset>
+            <p>What days would you be available for a free trial lesson? (Select all that apply)</p>
+            <ul class="radio-buttons">
+              <li>
+                <input type="radio" id="monday" value="monday">
+                <label for="monday">Monday</label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" id="monday-all-day" value="All day">
+                    <label for="monday-all-day">All day</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="monday-am" value="AM">
+                    <label for="monday-am">AM</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="monday-pm" value="PM">
+                    <label for="monday-pm">PM</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <input type="radio" id="tuesday" value="tuesday">
+                <label for="tuesday">Tuesday</label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" id="tuesday-all-day" value="All day">
+                    <label for="tuesday-all-day">All day</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="tuesday-am" value="AM">
+                    <label for="tuesday-am">AM</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="tuesday-pm" value="PM">
+                    <label for="tuesday-pm">PM</label>
+                  </li>
+                </ul>
+
+                <!-- <select name="tuesday-time">
+								<option value="All day">All day</option>
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select> -->
+              </li>
+              <li>
+                <input type="radio" id="wednesday" value="wednesday">
+                <label for="wednesday">Wednesday</label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" id="wednesday-all-day" value="All day">
+                    <label for="wednesday-all-day">All day</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="wednesday-am" value="AM">
+                    <label for="wednesday-am">AM</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="wednesday-pm" value="PM">
+                    <label for="wednesday-pm">PM</label>
+                  </li>
+                </ul>
+
+                <!-- <select name="wednesday-time">
+								<option value="All day">All day</option>
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select> -->
+              </li>
+              <li>
+                <input type="radio" id="thursday" value="thursday">
+                <label for="thursday">Thursday</label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" id="thursday-all-day" value="All day">
+                    <label for="thursday-all-day">All day</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="thursday-am" value="AM">
+                    <label for="thursday-am">AM</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="thursday-pm" value="PM">
+                    <label for="thursday-pm">PM</label>
+                  </li>
+                </ul>
+
+                <!-- <select name="thursday-time">
+								<option value="All day">All day</option>
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select> -->
+              </li>
+              <li>
+                <input type="radio" id="friday" value="friday">
+                <label for="friday">Friday</label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" id="friday-all-day" value="All day">
+                    <label for="friday-all-day">All day</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="friday-am" value="AM">
+                    <label for="friday-am">AM</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="friday-pm" value="PM">
+                    <label for="friday-pm">PM</label>
+                  </li>
+                </ul>
+
+                <!-- <select name="friday-time">
+								<option value="All day">All day</option>
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select> -->
+              </li>
+              <li>
+                <input type="radio" id="saturday" value="saturday">
+                <label for="saturday">Saturday</label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" id="saturday-all-day" value="All day">
+                    <label for="saturday-all-day">All day</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="saturday-am" value="AM">
+                    <label for="saturday-am">AM</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="saturday-pm" value="PM">
+                    <label for="saturday-pm">PM</label>
+                  </li>
+                </ul>
+
+                <!-- <select name="saturday-time">
+								<option value="All day">All day</option>
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select> -->
+              </li>
+              <li>
+                <input type="radio" id="sunday" value="sunday">
+                <label for="sunday">Sunday</label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" id="sunday-all-day" value="All day">
+                    <label for="sunday-all-day">All day</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="sunday-am" value="AM">
+                    <label for="sunday-am">AM</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="sunday-pm" value="PM">
+                    <label for="sunday-pm">PM</label>
+                  </li>
+                </ul>
+
+                <!-- <select name="sunday-time">
+								<option value="All day">All day</option>
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select> -->
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <p>All students are required to enroll in a mandatory group class that meets once a week in addition to weekly lessons. Is this a commitment that your family is willing to make?</p>
             <select>
               <option value="null">Select</option>
               <option value="yes">Yes</option>
@@ -210,11 +315,11 @@
             </select>
           </fieldset>
           <fieldset>
-            <legend>Please add any additional questions or concerns here.</legend>
+            <p>Please add any additional questions or concerns here.</p>
             <input type="text">
           </fieldset>
           <fieldset>
-            <legend>Email*</legend>
+            <p>Email*</p>
             <input type="email" required="true">
           </fieldset>
           <button type="submit">Submit</button>
@@ -228,43 +333,43 @@
         </div>
         <form id="undefined">
           <fieldset>
-            <legend>Name*</legend>
+            <p>Name*</p>
             <input type="text" required="true">
           </fieldset>
           <fieldset>
-            <legend>Phone Number*</legend>
+            <p>Phone Number*</p>
             <input type="text" required="true">
           </fieldset>
           <fieldset>
-            <legend>Email*</legend>
+            <p>Email*</p>
             <input type="text" required="true">
           </fieldset>
           <fieldset>
-            <legend>Type of event (wedding, party, etc.)</legend>
+            <p>Type of event (wedding, party, etc.)</p>
             <input type="text">
           </fieldset>
           <fieldset>
-            <legend>Your role in the event (bride, groom, coordinator, host, birthday person, etc.)</legend>
+            <p>Your role in the event (bride, groom, coordinator, host, birthday person, etc.)</p>
             <input type="text">
           </fieldset>
           <fieldset>
-            <legend>The date of your event*</legend>
+            <p>The date of your event*</p>
             <input type="date" required="true">
           </fieldset>
           <fieldset>
-            <legend>Budget (Please expect at least $100 per person)*</legend>
+            <p>Budget (Please expect at least $100 per person)*</p>
             <input type="text" required="true">
           </fieldset>
           <fieldset>
-            <legend>Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*</legend>
+            <p>Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*</p>
             <input type="text" required="true">
           </fieldset>
           <fieldset>
-            <legend>Special Requests for music selection (I will be sending you some selections to choose from, but let me know if you have a request).</legend>
+            <p>Special Requests for music selection (I will be sending you some selections to choose from, but let me know if you have a request).</p>
             <input type="text">
           </fieldset>
           <fieldset>
-            <legend>Please add any additional questions or concerns here.</legend>
+            <p>Please add any additional questions or concerns here.</p>
             <input type="text">
           </fieldset>
           <button type="submit">Submit</button>

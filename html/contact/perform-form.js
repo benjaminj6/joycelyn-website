@@ -7,43 +7,43 @@ module.exports = function(data) {
 			</div>
 			<form id="${data.perform.form_id}">
 				<fieldset>
-					<legend>${data.perform.name.legend}</legend>
+					<p>${data.perform.name.p}</p>
 					<input type="text" required="true">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.phone.legend}</legend>
+					<p>${data.perform.phone.p}</p>
 					<input type="text" required="true">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.email.legend}</legend>
+					<p>${data.perform.email.p}</p>
 					<input type="text" required="true">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.event_type.legend}</legend>
+					<p>${data.perform.event_type.p}</p>
 					<input type="text">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.person_role.legend}</legend>
+					<p>${data.perform.person_role.p}</p>
 					<input type="text">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.date.legend}</legend>
+					<p>${data.perform.date.p}</p>
 					<input type="date" required="true">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.budget.legend}</legend>
+					<p>${data.perform.budget.p}</p>
 					<input type="text" required="true">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.musicians.legend}</legend>
+					<p>${data.perform.musicians.p}</p>
 					<input type="text" required="true">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.special_requests.legend}</legend>
+					<p>${data.perform.special_requests.p}</p>
 					<input type="text">
 				</fieldset>
 				<fieldset>
-					<legend>${data.perform.extra_questions.legend}</legend>
+					<p>${data.perform.extra_questions.p}</p>
 					<input type="text">
 				</fieldset>
 				<button type="submit">Submit</button>

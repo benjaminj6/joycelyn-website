@@ -22,7 +22,7 @@
         "watch:html": "npm run watch:templates:html & npm run watch:home:html & npm run watch:about:html & npm run watch:teaching-pages:html & npm run watch:performing:html & npm run watch:blog:html & npm run watch:contact:html",
   
     "//": "--- Tasks for all LESS files ---",  
-        "build:less": "npm run build:home:less && npm run build:about:less && npm run build:teaching-pages:less",
+        "build:less": "npm run build:home:less && npm run build:about:less && npm run build:teaching-pages:less && npm run build:performing:less && npm run build:blog:less && npm run build:contact:less",
         "watch:less": "npm run watch:templates:less & npm run watch:home:less & npm run watch:about:less & npm run watch:teaching-pages:less",
 
     "//": "--- Tasks for Templates ---",
@@ -131,13 +131,23 @@
         "build:performing:html": "assemble performing:html",
         "watch:performing:html": "chokidar 'html/performing/*.js' -c 'assemble performing:html'",
 
+        "build:performing:less": "lessc --source-map less/performing/style.less public/performing/style.css",
+        "watch:performing:less": "chokidar 'less/performing/*.less' -c 'npm run build:performing:less'",
+
     "//": "--- BLOG ---",  
         "build:blog:html": "assemble blog:html",
         "watch:blog:html": "chokidar 'html/blog/*.js' -c 'assemble blog:html'",
 
+        "build:blog:less": "lessc --source-map less/blog/style.less public/blog/style.css",
+        "watch:blog:less": "chokidar 'less/blog/*.less' -c 'npm run build:blog:less'",
+
     "//": "--- CONTACT ---",  
         "build:contact:html": "assemble contact:html",
-        "watch:contact:html": "chokidar 'html/contact/*.js' -c 'assemble contact:html'"
+        "watch:contact:html": "chokidar 'html/contact/*.js' -c 'assemble contact:html'",
+
+        "build:contact:less": "lessc --source-map less/contact/style.less public/contact/style.css",
+        "watch:contact:less": "chokidar 'less/contact/*.less' -c 'npm run build:contact:less'"
+
   },
   "author": "Benjamin Johnson",
   "license": "ISC",

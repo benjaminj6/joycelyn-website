@@ -161,8 +161,10 @@ main section form input[type="email"] {
 main section form input[type="number"] {
   width: 40%;
 }
-main section form input.paragraph-input {
-  height: 50px;
+main section form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  width: 90%;
 }
 main section form button[type="submit"] {
   width: 60%;

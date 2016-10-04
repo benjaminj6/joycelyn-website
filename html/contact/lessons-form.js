@@ -26,7 +26,7 @@ module.exports = function(data) {
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.student_experience.p}</p>
-					<input type="text" class="paragraph-input">
+					<textarea id="student-exprience" cols="30" rows="10"></textarea>
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.previous_suzuki_teacher.p}</p>
@@ -43,7 +43,7 @@ module.exports = function(data) {
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.extracurriculars.p}</p>
-					<input type="text" class="paragraph-input">
+					<textarea name="student-extracurriculars" id="" cols="30" rows="10"></textarea>
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.location.p}</p>
@@ -217,7 +217,7 @@ module.exports = function(data) {
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.extra_questions.p}</p>
-					<input type="text" class="paragraph-input">
+					<textarea id="lessons-extra-questions" cols="30" rows="10"></textarea>
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.email.p}</p>

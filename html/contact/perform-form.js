@@ -40,11 +40,11 @@ module.exports = function(data) {
 				</fieldset>
 				<fieldset>
 					<p>${data.perform.special_requests.p}</p>
-					<input type="text" class="paragraph-input">
+					<textarea id="special-requests" cols="30" rows="10"></textarea>
 				</fieldset>
 				<fieldset>
 					<p>${data.perform.extra_questions.p}</p>
-					<input type="text" class="paragraph-input">
+					<textarea id="performing-extra-questions" cols="30" rows="10"></textarea>
 				</fieldset>
 				<button type="submit">Submit</button>
 			</form>

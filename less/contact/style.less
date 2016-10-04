@@ -14,31 +14,37 @@ main {
 		flex-direction: column;
 		.wrapper(95%);
 		
-		input {
-			border: 1px solid @black-80;
-			border-radius: 2px;
+		form {
+			display: flex;
+			flex-direction: column;
 
-			&[type="text"] {
-				width: 90%;
-			}
-
-			&[type="number"] {
-				width: 40%;
-			}
-
-			&[type="radio"] {
-				border: none;
-				display: none;
-			}
-
-			&[type="radio"] + label {
+			input {
 				border: 1px solid @black-80;
-			}
-		}
+				border-radius: 2px;
 
-		select {
-			border: 1px solid @black-80;
-			option {}
+				&[type="text"], &[type="email"] {
+					width: 90%;
+				}
+
+				&[type="number"] {
+					width: 40%;
+				}
+
+				&.paragraph-input {
+					height: 50px;
+				}
+			}
+
+			button[type="submit"] {
+				width: 60%;
+				border: 1px solid @black-80;
+				border-radius: 2px;
+				background-color: transparent;
+				align-self: center;
+				margin: 20px 0;
+				height: 10vh;
+			}
+			
 		}
 
 		&.form-choices {
@@ -58,7 +64,68 @@ main {
 		}
 
 		&#lessons {
-			
+			ul.radio-buttons {
+				padding-left: 0;
+				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+
+				li {
+
+					input[type="radio"] {
+						border: none;
+						display: none;
+
+						& + label {
+							// display: inline-block;
+							padding: 5px;
+							border: 1px solid @black-80;
+							// width: 50%;
+
+							&.day-label {
+								width: 40%;
+							}
+						}
+					}
+
+					&.day {
+						margin: 10px 0;
+					}
+				}
+
+				&.days-list {
+					display: flex;
+					flex-direction: column;
+
+					li {
+						display: flex;
+						flex-direction: row;
+						justify-content: flex-start;
+					}
+				}
+
+				&.time {
+					// width: auto;
+					margin-left: 5px;
+
+					li {
+						width: auto;
+					}
+					// color: red;
+				}
+				
+				&.switch {
+					li {
+						width: 40%;
+
+						label {
+							display: flex;
+							justify-content: center;
+						}
+					}
+				}
+			}
 		}
 
 		&#perform {

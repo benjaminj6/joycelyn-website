@@ -146,25 +146,32 @@ main section {
   width: 95%;
   margin: 0 auto;
 }
-main section input {
+main section form {
+  display: flex;
+  flex-direction: column;
+}
+main section form input {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 2px;
 }
-main section input[type="text"] {
+main section form input[type="text"],
+main section form input[type="email"] {
   width: 90%;
 }
-main section input[type="number"] {
+main section form input[type="number"] {
   width: 40%;
 }
-main section input[type="radio"] {
-  border: none;
-  display: none;
+main section form input.paragraph-input {
+  height: 50px;
 }
-main section input[type="radio"] + label {
+main section form button[type="submit"] {
+  width: 60%;
   border: 1px solid rgba(0, 0, 0, 0.8);
-}
-main section select {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  background-color: transparent;
+  align-self: center;
+  margin: 20px 0;
+  height: 10vh;
 }
 main section.form-choices h2 {
   padding-top: 30%;
@@ -178,6 +185,49 @@ main section.form-choices button {
   margin: 5px auto;
   height: 10vh;
   border-radius: 2px;
+}
+main section#lessons ul.radio-buttons {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main section#lessons ul.radio-buttons li input[type="radio"] {
+  border: none;
+  display: none;
+}
+main section#lessons ul.radio-buttons li input[type="radio"] + label {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+main section#lessons ul.radio-buttons li input[type="radio"] + label.day-label {
+  width: 40%;
+}
+main section#lessons ul.radio-buttons li.day {
+  margin: 10px 0;
+}
+main section#lessons ul.radio-buttons.days-list {
+  display: flex;
+  flex-direction: column;
+}
+main section#lessons ul.radio-buttons.days-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+main section#lessons ul.radio-buttons.time {
+  margin-left: 5px;
+}
+main section#lessons ul.radio-buttons.time li {
+  width: auto;
+}
+main section#lessons ul.radio-buttons.switch li {
+  width: 40%;
+}
+main section#lessons ul.radio-buttons.switch li label {
+  display: flex;
+  justify-content: center;
 }
 footer {
   margin: 4vh;

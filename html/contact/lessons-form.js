@@ -26,11 +26,11 @@ module.exports = function(data) {
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.student_experience.p}</p>
-					<input type="text">
+					<input type="text" class="paragraph-input">
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.previous_suzuki_teacher.p}</p>
-					<ul class="radio-buttons">
+					<ul class="radio-buttons switch">
 						<li>
 							<input type="radio" value="${data.lessons.previous_suzuki_teacher.option_1.val}" id="suzuki-option1">
 							<label for="suzuki-option1">${data.lessons.previous_suzuki_teacher.option_1.text}</label>
@@ -43,12 +43,12 @@ module.exports = function(data) {
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.extracurriculars.p}</p>
-					<input type="text">
+					<input type="text" class="paragraph-input">
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.location.p}</p>
 
-					<ul class="radio-buttons">
+					<ul class="radio-buttons switch">
 						<li>
 							<input type="radio" value="${data.lessons.location.option_1.val}" id="location-option1">
 							<label for="location-option1">${data.lessons.location.option_1.text}</label>
@@ -65,12 +65,12 @@ module.exports = function(data) {
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.trial_lesson.p}</p>
-					<ul class="radio-buttons">
-						<li>
+					<ul class="radio-buttons days-list">
+						<li class="day">
 							<input type="radio" id="${data.lessons.trial_lesson.monday.id}" value="${data.lessons.trial_lesson.monday.id}">
-							<label for="${data.lessons.trial_lesson.monday.id}">${data.lessons.trial_lesson.monday.label}</label>
+							<label class="day-label" for="${data.lessons.trial_lesson.monday.id}">${data.lessons.trial_lesson.monday.label}</label>
 							
-							<ul class="radio-buttons">
+							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="monday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
 									<label for="monday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
@@ -85,11 +85,11 @@ module.exports = function(data) {
 								</li>
 							</ul>
 						</li>
-						<li>
+						<li class="day">
 							<input type="radio" id="${data.lessons.trial_lesson.tuesday.id}" value="${data.lessons.trial_lesson.tuesday.id}">
-							<label for="${data.lessons.trial_lesson.tuesday.id}">${data.lessons.trial_lesson.tuesday.label}</label>
+							<label class="day-label" for="${data.lessons.trial_lesson.tuesday.id}">${data.lessons.trial_lesson.tuesday.label}</label>
 
-							<ul class="radio-buttons">
+							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="tuesday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
 									<label for="tuesday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
@@ -103,20 +103,12 @@ module.exports = function(data) {
 									<label for="tuesday-pm">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
-
-							<!-- <select name="${data.lessons.trial_lesson.tuesday.id}-time">
-								<option value="${data.lessons.trial_lesson.times.all_day}">${data.lessons.trial_lesson.times.all_day}</option>
-								<option value="${data.lessons.trial_lesson.times.am}">${data.lessons.trial_lesson.times.am}</option>
-								<option value="${data.lessons.trial_lesson.times.pm}">${data.lessons.trial_lesson.times.pm}</option>
-							</select> -->
 						</li>
-						<li>
+						<li class="day">
 							<input type="radio" id="${data.lessons.trial_lesson.wednesday.id}" value="${data.lessons.trial_lesson.wednesday.id}">
-							<label for="${data.lessons.trial_lesson.wednesday.id}">${data.lessons.trial_lesson.wednesday.label}</label>
+							<label class="day-label" for="${data.lessons.trial_lesson.wednesday.id}">${data.lessons.trial_lesson.wednesday.label}</label>
 							
-							
-							
-							<ul class="radio-buttons">
+							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="wednesday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
 									<label for="wednesday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
@@ -130,18 +122,12 @@ module.exports = function(data) {
 									<label for="wednesday-pm">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
-
-							<!-- <select name="${data.lessons.trial_lesson.wednesday.id}-time">
-								<option value="${data.lessons.trial_lesson.times.all_day}">${data.lessons.trial_lesson.times.all_day}</option>
-								<option value="${data.lessons.trial_lesson.times.am}">${data.lessons.trial_lesson.times.am}</option>
-								<option value="${data.lessons.trial_lesson.times.pm}">${data.lessons.trial_lesson.times.pm}</option>
-							</select> -->
 						</li>
-						<li>
+						<li class="day">
 							<input type="radio" id="${data.lessons.trial_lesson.thursday.id}" value="${data.lessons.trial_lesson.thursday.id}">
-							<label for="${data.lessons.trial_lesson.thursday.id}">${data.lessons.trial_lesson.thursday.label}</label>
+							<label class="day-label" for="${data.lessons.trial_lesson.thursday.id}">${data.lessons.trial_lesson.thursday.label}</label>
 							
-							<ul class="radio-buttons">
+							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="thursday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
 									<label for="thursday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
@@ -155,18 +141,12 @@ module.exports = function(data) {
 									<label for="thursday-pm">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
-
-							<!-- <select name="${data.lessons.trial_lesson.thursday.id}-time">
-								<option value="${data.lessons.trial_lesson.times.all_day}">${data.lessons.trial_lesson.times.all_day}</option>
-								<option value="${data.lessons.trial_lesson.times.am}">${data.lessons.trial_lesson.times.am}</option>
-								<option value="${data.lessons.trial_lesson.times.pm}">${data.lessons.trial_lesson.times.pm}</option>
-							</select> -->
 						</li>
-						<li>
+						<li class="day">
 							<input type="radio" id="${data.lessons.trial_lesson.friday.id}" value="${data.lessons.trial_lesson.friday.id}">
-							<label for="${data.lessons.trial_lesson.friday.id}">${data.lessons.trial_lesson.friday.label}</label>
+							<label class="day-label" for="${data.lessons.trial_lesson.friday.id}">${data.lessons.trial_lesson.friday.label}</label>
 							
-							<ul class="radio-buttons">
+							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="friday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
 									<label for="friday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
@@ -180,18 +160,12 @@ module.exports = function(data) {
 									<label for="friday-pm">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
-
-							<!-- <select name="${data.lessons.trial_lesson.friday.id}-time">
-								<option value="${data.lessons.trial_lesson.times.all_day}">${data.lessons.trial_lesson.times.all_day}</option>
-								<option value="${data.lessons.trial_lesson.times.am}">${data.lessons.trial_lesson.times.am}</option>
-								<option value="${data.lessons.trial_lesson.times.pm}">${data.lessons.trial_lesson.times.pm}</option>
-							</select> -->
 						</li>
-						<li>
+						<li class="day">
 							<input type="radio" id="${data.lessons.trial_lesson.saturday.id}" value="${data.lessons.trial_lesson.saturday.id}">
-							<label for="${data.lessons.trial_lesson.saturday.id}">${data.lessons.trial_lesson.saturday.label}</label>
+							<label class="day-label" for="${data.lessons.trial_lesson.saturday.id}">${data.lessons.trial_lesson.saturday.label}</label>
 							
-							<ul class="radio-buttons">
+							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="saturday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
 									<label for="saturday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
@@ -205,18 +179,12 @@ module.exports = function(data) {
 									<label for="saturday-pm">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
-
-							<!-- <select name="${data.lessons.trial_lesson.saturday.id}-time">
-								<option value="${data.lessons.trial_lesson.times.all_day}">${data.lessons.trial_lesson.times.all_day}</option>
-								<option value="${data.lessons.trial_lesson.times.am}">${data.lessons.trial_lesson.times.am}</option>
-								<option value="${data.lessons.trial_lesson.times.pm}">${data.lessons.trial_lesson.times.pm}</option>
-							</select> -->
 						</li>
-						<li>
+						<li class="day">
 							<input type="radio" id="${data.lessons.trial_lesson.sunday.id}" value="${data.lessons.trial_lesson.sunday.id}">
-							<label for="${data.lessons.trial_lesson.sunday.id}">${data.lessons.trial_lesson.sunday.label}</label>
+							<label class="day-label" for="${data.lessons.trial_lesson.sunday.id}">${data.lessons.trial_lesson.sunday.label}</label>
 							
-							<ul class="radio-buttons">
+							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="sunday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
 									<label for="sunday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
@@ -230,26 +198,26 @@ module.exports = function(data) {
 									<label for="sunday-pm">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
-
-							<!-- <select name="${data.lessons.trial_lesson.sunday.id}-time">
-								<option value="${data.lessons.trial_lesson.times.all_day}">${data.lessons.trial_lesson.times.all_day}</option>
-								<option value="${data.lessons.trial_lesson.times.am}">${data.lessons.trial_lesson.times.am}</option>
-								<option value="${data.lessons.trial_lesson.times.pm}">${data.lessons.trial_lesson.times.pm}</option>
-							</select> -->
 						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.group_classes.p}</p>
-					<select>
-						<option value="${data.lessons.dropdown_default.val}">${data.lessons.dropdown_default.text}</option>
-						<option value="${data.lessons.group_classes.option_1.val}">${data.lessons.group_classes.option_1.text}</option>
-						<option value="${data.lessons.group_classes.option_2.val}">${data.lessons.group_classes.option_2.text}</option>
-					</select>
+
+					<ul class="radio-buttons switch">
+						<li>
+							<input type="radio" id="group-classes-option1" value="${data.lessons.group_classes.option_1.val}">
+							<label for="group-classes-option2">${data.lessons.group_classes.option_1.text}</label>
+						</li>
+						<li>
+							<input type="radio" id="group-classes-option2" value="${data.lessons.group_classes.option_2.val}">
+							<label for="group-classes-option2">${data.lessons.group_classes.option_2.text}</label>
+						</li>
+					</ul>
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.extra_questions.p}</p>
-					<input type="text">
+					<input type="text" class="paragraph-input">
 				</fieldset>
 				<fieldset>
 					<p>${data.lessons.email.p}</p>

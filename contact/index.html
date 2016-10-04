@@ -103,11 +103,11 @@
           </fieldset>
           <fieldset>
             <p>Please list any musical experience that the student might have (if none, please write "new beginner")</p>
-            <input type="text">
+            <input type="text" class="paragraph-input">
           </fieldset>
           <fieldset>
             <p>If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?</p>
-            <ul class="radio-buttons">
+            <ul class="radio-buttons switch">
               <li>
                 <input type="radio" value="suzuki" id="suzuki-option1">
                 <label for="suzuki-option1">Suzuki</label>
@@ -120,11 +120,11 @@
           </fieldset>
           <fieldset>
             <p>Please list all other extracurriculars that you are involved in</p>
-            <input type="text">
+            <input type="text" class="paragraph-input">
           </fieldset>
           <fieldset>
             <p>Are you interested in lessons in Walnut or in La Mirada?*</p>
-            <ul class="radio-buttons">
+            <ul class="radio-buttons switch">
               <li>
                 <input type="radio" value="walnut" id="location-option1">
                 <label for="location-option1">Walnut</label>
@@ -141,11 +141,11 @@
           </fieldset>
           <fieldset>
             <p>What days would you be available for a free trial lesson? (Select all that apply)</p>
-            <ul class="radio-buttons">
-              <li>
+            <ul class="radio-buttons days-list">
+              <li class="day">
                 <input type="radio" id="monday" value="monday">
-                <label for="monday">Monday</label>
-                <ul class="radio-buttons">
+                <label class="day-label" for="monday">Monday</label>
+                <ul class="radio-buttons time">
                   <li>
                     <input type="radio" id="monday-all-day" value="All day">
                     <label for="monday-all-day">All day</label>
@@ -160,10 +160,10 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="day">
                 <input type="radio" id="tuesday" value="tuesday">
-                <label for="tuesday">Tuesday</label>
-                <ul class="radio-buttons">
+                <label class="day-label" for="tuesday">Tuesday</label>
+                <ul class="radio-buttons time">
                   <li>
                     <input type="radio" id="tuesday-all-day" value="All day">
                     <label for="tuesday-all-day">All day</label>
@@ -177,17 +177,11 @@
                     <label for="tuesday-pm">PM</label>
                   </li>
                 </ul>
-
-                <!-- <select name="tuesday-time">
-								<option value="All day">All day</option>
-								<option value="AM">AM</option>
-								<option value="PM">PM</option>
-							</select> -->
               </li>
-              <li>
+              <li class="day">
                 <input type="radio" id="wednesday" value="wednesday">
-                <label for="wednesday">Wednesday</label>
-                <ul class="radio-buttons">
+                <label class="day-label" for="wednesday">Wednesday</label>
+                <ul class="radio-buttons time">
                   <li>
                     <input type="radio" id="wednesday-all-day" value="All day">
                     <label for="wednesday-all-day">All day</label>
@@ -201,17 +195,11 @@
                     <label for="wednesday-pm">PM</label>
                   </li>
                 </ul>
-
-                <!-- <select name="wednesday-time">
-								<option value="All day">All day</option>
-								<option value="AM">AM</option>
-								<option value="PM">PM</option>
-							</select> -->
               </li>
-              <li>
+              <li class="day">
                 <input type="radio" id="thursday" value="thursday">
-                <label for="thursday">Thursday</label>
-                <ul class="radio-buttons">
+                <label class="day-label" for="thursday">Thursday</label>
+                <ul class="radio-buttons time">
                   <li>
                     <input type="radio" id="thursday-all-day" value="All day">
                     <label for="thursday-all-day">All day</label>
@@ -225,17 +213,11 @@
                     <label for="thursday-pm">PM</label>
                   </li>
                 </ul>
-
-                <!-- <select name="thursday-time">
-								<option value="All day">All day</option>
-								<option value="AM">AM</option>
-								<option value="PM">PM</option>
-							</select> -->
               </li>
-              <li>
+              <li class="day">
                 <input type="radio" id="friday" value="friday">
-                <label for="friday">Friday</label>
-                <ul class="radio-buttons">
+                <label class="day-label" for="friday">Friday</label>
+                <ul class="radio-buttons time">
                   <li>
                     <input type="radio" id="friday-all-day" value="All day">
                     <label for="friday-all-day">All day</label>
@@ -249,17 +231,11 @@
                     <label for="friday-pm">PM</label>
                   </li>
                 </ul>
-
-                <!-- <select name="friday-time">
-								<option value="All day">All day</option>
-								<option value="AM">AM</option>
-								<option value="PM">PM</option>
-							</select> -->
               </li>
-              <li>
+              <li class="day">
                 <input type="radio" id="saturday" value="saturday">
-                <label for="saturday">Saturday</label>
-                <ul class="radio-buttons">
+                <label class="day-label" for="saturday">Saturday</label>
+                <ul class="radio-buttons time">
                   <li>
                     <input type="radio" id="saturday-all-day" value="All day">
                     <label for="saturday-all-day">All day</label>
@@ -273,17 +249,11 @@
                     <label for="saturday-pm">PM</label>
                   </li>
                 </ul>
-
-                <!-- <select name="saturday-time">
-								<option value="All day">All day</option>
-								<option value="AM">AM</option>
-								<option value="PM">PM</option>
-							</select> -->
               </li>
-              <li>
+              <li class="day">
                 <input type="radio" id="sunday" value="sunday">
-                <label for="sunday">Sunday</label>
-                <ul class="radio-buttons">
+                <label class="day-label" for="sunday">Sunday</label>
+                <ul class="radio-buttons time">
                   <li>
                     <input type="radio" id="sunday-all-day" value="All day">
                     <label for="sunday-all-day">All day</label>
@@ -297,26 +267,25 @@
                     <label for="sunday-pm">PM</label>
                   </li>
                 </ul>
-
-                <!-- <select name="sunday-time">
-								<option value="All day">All day</option>
-								<option value="AM">AM</option>
-								<option value="PM">PM</option>
-							</select> -->
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <p>All students are required to enroll in a mandatory group class that meets once a week in addition to weekly lessons. Is this a commitment that your family is willing to make?</p>
-            <select>
-              <option value="null">Select</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+            <ul class="radio-buttons switch">
+              <li>
+                <input type="radio" id="group-classes-option1" value="yes">
+                <label for="group-classes-option2">Yes</label>
+              </li>
+              <li>
+                <input type="radio" id="group-classes-option2" value="no">
+                <label for="group-classes-option2">No</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <p>Please add any additional questions or concerns here.</p>
-            <input type="text">
+            <input type="text" class="paragraph-input">
           </fieldset>
           <fieldset>
             <p>Email*</p>
@@ -366,11 +335,11 @@
           </fieldset>
           <fieldset>
             <p>Special Requests for music selection (I will be sending you some selections to choose from, but let me know if you have a request).</p>
-            <input type="text">
+            <input type="text" class="paragraph-input">
           </fieldset>
           <fieldset>
             <p>Please add any additional questions or concerns here.</p>
-            <input type="text">
+            <input type="text" class="paragraph-input">
           </fieldset>
           <button type="submit">Submit</button>
         </form>

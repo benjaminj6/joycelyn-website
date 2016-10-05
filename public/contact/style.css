@@ -205,6 +205,19 @@ main section#lessons ul.radio-buttons li input[type="radio"] + label {
 }
 main section#lessons ul.radio-buttons li input[type="radio"] + label.day-label {
   width: 40%;
+  border-radius: 2px;
+  text-align: center;
+}
+main section#lessons ul.radio-buttons li input[type="radio"] + label.left-label {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+main section#lessons ul.radio-buttons li input[type="radio"] + label.center-label {
+  border-radius: 0;
+}
+main section#lessons ul.radio-buttons li input[type="radio"] + label.right-label {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 main section#lessons ul.radio-buttons li.day {
   margin: 10px 0;
@@ -220,6 +233,7 @@ main section#lessons ul.radio-buttons.days-list li {
 }
 main section#lessons ul.radio-buttons.time {
   margin-left: 5px;
+  border-radius: 2px;
 }
 main section#lessons ul.radio-buttons.time li {
   width: auto;

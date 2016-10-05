@@ -33,11 +33,11 @@ module.exports = function(data) {
 					<ul class="radio-buttons switch">
 						<li>
 							<input type="radio" value="${data.lessons.previous_suzuki_teacher.option_1.val}" id="suzuki-option1">
-							<label for="suzuki-option1">${data.lessons.previous_suzuki_teacher.option_1.text}</label>
+							<label for="suzuki-option1" class="left-label">${data.lessons.previous_suzuki_teacher.option_1.text}</label>
 						</li>
 						<li>
 							<input type="radio" value="${data.lessons.previous_suzuki_teacher.option_2.val}" id="suzuki-option2">
-							<label for="suzuki-option2">${data.lessons.previous_suzuki_teacher.option_2.text}</label>
+							<label for="suzuki-option2" class="right-label">${data.lessons.previous_suzuki_teacher.option_2.text}</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -51,11 +51,11 @@ module.exports = function(data) {
 					<ul class="radio-buttons switch">
 						<li>
 							<input type="radio" value="${data.lessons.location.option_1.val}" id="location-option1">
-							<label for="location-option1">${data.lessons.location.option_1.text}</label>
+							<label for="location-option1" class="left-label">${data.lessons.location.option_1.text}</label>
 						</li>
 						<li>
 							<input type="radio" value="${data.lessons.location.option_2.val}" id="location-option2">
-							<label for="location-option2">${data.lessons.location.option_2.text}</label>							
+							<label for="location-option2" class="right-label">${data.lessons.location.option_2.text}</label>							
 						</li>
 					</ul>
 				</fieldset>
@@ -73,7 +73,7 @@ module.exports = function(data) {
 							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="monday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
-									<label for="monday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
+									<label for="monday-all-day" class="left-label">${data.lessons.trial_lesson.times.all_day}</label>
 								</li>
 								<li>
 									<input type="radio" id="monday-am" value="${data.lessons.trial_lesson.times.am}">
@@ -81,7 +81,7 @@ module.exports = function(data) {
 								</li>
 								<li>
 									<input type="radio" id="monday-pm" value="${data.lessons.trial_lesson.times.pm}">
-									<label for="monday-pm">${data.lessons.trial_lesson.times.pm}</label>
+									<label for="monday-pm" class="right-label">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
 						</li>
@@ -92,7 +92,7 @@ module.exports = function(data) {
 							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="tuesday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
-									<label for="tuesday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
+									<label for="tuesday-all-day" class="left-label">${data.lessons.trial_lesson.times.all_day}</label>
 								</li>
 								<li>
 									<input type="radio" id="tuesday-am" value="${data.lessons.trial_lesson.times.am}">
@@ -100,7 +100,7 @@ module.exports = function(data) {
 								</li>
 								<li>
 									<input type="radio" id="tuesday-pm" value="${data.lessons.trial_lesson.times.pm}">
-									<label for="tuesday-pm">${data.lessons.trial_lesson.times.pm}</label>
+									<label for="tuesday-pm" class="right-label">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
 						</li>
@@ -111,7 +111,7 @@ module.exports = function(data) {
 							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="wednesday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
-									<label for="wednesday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
+									<label for="wednesday-all-day" class="left-label">${data.lessons.trial_lesson.times.all_day}</label>
 								</li>
 								<li>
 									<input type="radio" id="wednesday-am" value="${data.lessons.trial_lesson.times.am}">
@@ -119,7 +119,7 @@ module.exports = function(data) {
 								</li>
 								<li>
 									<input type="radio" id="wednesday-pm" value="${data.lessons.trial_lesson.times.pm}">
-									<label for="wednesday-pm">${data.lessons.trial_lesson.times.pm}</label>
+									<label for="wednesday-pm" class="right-label">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
 						</li>
@@ -130,7 +130,7 @@ module.exports = function(data) {
 							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="thursday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
-									<label for="thursday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
+									<label for="thursday-all-day" class="left-label">${data.lessons.trial_lesson.times.all_day}</label>
 								</li>
 								<li>
 									<input type="radio" id="thursday-am" value="${data.lessons.trial_lesson.times.am}">
@@ -138,7 +138,7 @@ module.exports = function(data) {
 								</li>
 								<li>
 									<input type="radio" id="thursday-pm" value="${data.lessons.trial_lesson.times.pm}">
-									<label for="thursday-pm">${data.lessons.trial_lesson.times.pm}</label>
+									<label for="thursday-pm" class="right-label">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
 						</li>
@@ -149,7 +149,7 @@ module.exports = function(data) {
 							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="friday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
-									<label for="friday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
+									<label for="friday-all-day" class="left-label">${data.lessons.trial_lesson.times.all_day}</label>
 								</li>
 								<li>
 									<input type="radio" id="friday-am" value="${data.lessons.trial_lesson.times.am}">
@@ -157,7 +157,7 @@ module.exports = function(data) {
 								</li>
 								<li>
 									<input type="radio" id="friday-pm" value="${data.lessons.trial_lesson.times.pm}">
-									<label for="friday-pm">${data.lessons.trial_lesson.times.pm}</label>
+									<label for="friday-pm" class="right-label">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
 						</li>
@@ -168,7 +168,7 @@ module.exports = function(data) {
 							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="saturday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
-									<label for="saturday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
+									<label for="saturday-all-day" class="left-label">${data.lessons.trial_lesson.times.all_day}</label>
 								</li>
 								<li>
 									<input type="radio" id="saturday-am" value="${data.lessons.trial_lesson.times.am}">
@@ -176,7 +176,7 @@ module.exports = function(data) {
 								</li>
 								<li>
 									<input type="radio" id="saturday-pm" value="${data.lessons.trial_lesson.times.pm}">
-									<label for="saturday-pm">${data.lessons.trial_lesson.times.pm}</label>
+									<label for="saturday-pm" class="right-label">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
 						</li>
@@ -187,7 +187,7 @@ module.exports = function(data) {
 							<ul class="radio-buttons time">
 								<li>
 									<input type="radio" id="sunday-all-day" value="${data.lessons.trial_lesson.times.all_day}">
-									<label for="sunday-all-day">${data.lessons.trial_lesson.times.all_day}</label>
+									<label for="sunday-all-day" class="left-label">${data.lessons.trial_lesson.times.all_day}</label>
 								</li>
 								<li>
 									<input type="radio" id="sunday-am" value="${data.lessons.trial_lesson.times.am}">
@@ -195,7 +195,7 @@ module.exports = function(data) {
 								</li>
 								<li>
 									<input type="radio" id="sunday-pm" value="${data.lessons.trial_lesson.times.pm}">
-									<label for="sunday-pm">${data.lessons.trial_lesson.times.pm}</label>
+									<label for="sunday-pm" class="right-label">${data.lessons.trial_lesson.times.pm}</label>
 								</li>
 							</ul>
 						</li>
@@ -207,11 +207,11 @@ module.exports = function(data) {
 					<ul class="radio-buttons switch">
 						<li>
 							<input type="radio" id="group-classes-option1" value="${data.lessons.group_classes.option_1.val}">
-							<label for="group-classes-option2">${data.lessons.group_classes.option_1.text}</label>
+							<label for="group-classes-option2" class="left-label">${data.lessons.group_classes.option_1.text}</label>
 						</li>
 						<li>
 							<input type="radio" id="group-classes-option2" value="${data.lessons.group_classes.option_2.val}">
-							<label for="group-classes-option2">${data.lessons.group_classes.option_2.text}</label>
+							<label for="group-classes-option2" class="right-label">${data.lessons.group_classes.option_2.text}</label>
 						</li>
 					</ul>
 				</fieldset>

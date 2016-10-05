@@ -1,25 +1,38 @@
 let assemble = require('assemble');
+let pretty = require('pretty');
+
 let app = assemble();
 
-var template = require('./templates/doc.js');
-var body = '<h1>Just an h1 tag</h1>';
-var data = {
-	pageTitle: 'Joycelyn Choo',
-	jQueryPath: 'PATHTOJQUERY',
-	fontAwesomePath: 'PATHTOFONTAWESOME',
-	cssPath: 'PATHTOCSS',
-	body: body
-};
+// home build 
+htmlTask('home');
 
-app.page('home.html', {content: template})
-	.render(data, function(err, view) {
-		if (err) { throw err; }	
-	});
+// // about builds
+htmlTask('bio');
+htmlTask('teaching-philosophy');
 
-app.task('default', function() {
-	return app.toStream('home.html')
-		.pipe(app.renderFile())
-		.pipe(app.dest('public/home'));
-});
+// // teaching builds
+htmlTask('why-private-lessons');
+htmlTask('student-opportunities');
+htmlTask('studio-policies');
+htmlTask('suzuki-method');
+
+// // Performing builds
+htmlTask('performing');
+
+// // Blog builds
+htmlTask('blog');
+
+// // Contact builds
+htmlTask('contact');
+
+function htmlTask(name) {
+  app.task(`${name}:html`, function() {
+    app.page(`${name}.html`, { content: pretty(require(`./html/${name}/${name}`)) });
+    
+    return app.toStream(`${name}.html`)
+      .pipe(app.renderFile())
+      .pipe(app.dest(`public/${name}`));
+  });
+}
 
 module.exports = app;

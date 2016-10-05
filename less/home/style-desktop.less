@@ -1,0 +1,85 @@
+@import (reference) '../_templates/colors.less';
+@import (reference) '../_templates/typography.less';
+
+header {
+	display: flex;
+	flex-direction: column-reverse;
+	
+
+	div.titles {
+
+		img {
+			border-style: none;
+		  height: 20vh;
+		  margin: 30vh auto;
+		}
+
+		div.menu-icons {
+			display: none;
+
+			h4 {}
+			i.fa-bars {}
+		}
+	}
+
+	nav {
+		display: block;
+		min-height: 0;
+		position: static;
+		height: 10vh;
+		background-color: transparent;
+
+		i.fa-times {
+			display: none;
+		}
+
+		ul.menu {
+
+			padding: 2vh;
+			display: flex;
+			position: fixed;
+			right: 0;
+			
+			li.menu-item {
+				margin: 0;
+				margin-left: 30px;
+				display: flex;
+				font-size: @nav-menu-desktop;
+				flex-direction: column;
+				align-items: flex-end;
+
+				a {
+					font-size: @nav-menu-desktop;
+				}
+
+				i.fa-angle-down {}
+
+				ul.submenu {
+					// display: none;
+					position: absolute;
+					margin-top: 3vh;
+
+					li.submenu-item {
+						font-size: @nav-submenu-desktop;
+						text-align: right;
+
+						a {
+						font-size: @nav-submenu-desktop;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	// justify-content: flex-end;
+	nav.media-links {
+		ul {
+			li {
+				margin: 0 10px;
+			}
+		}
+	}
+}

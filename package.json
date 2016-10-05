@@ -4,16 +4,161 @@
   "description": "Joycelyn Choo's portfolio site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "git subtree push --prefix public origin gh-pages",
+
+    "//": "--- Tasks for all files ---",
+        "build": "npm run build:assets && npm run build:html && npm run build:less",
+        "watch": "npm run watch:html & npm run watch:less",
+
+    "//": "--- Tasks for assets folder ---",
+        "build:assets": "npm run clean:assets && cp -r assets/ public/assets/",
+        "clean:assets": "rm -r public/assets",
+
+    "//": "--- Tasks for all HTML files ---",
+        "build:html": "npm run clean:html && npm run assemble:html && npm run rename:html",
+        "assemble:html": "assemble bio:html blog:html contact:html home:html performing:html student-opportunities:html studio-policies:html suzuki-method:html teaching-philosophy:html why-private-lessons:html",  
+        "rename:html": "renamer --replace index.html 'public/**/*.html'",
+        "clean:html": "rm -r public/**/*.html",
+        "watch:html": "npm run watch:templates:html & npm run watch:home:html & npm run watch:about:html & npm run watch:teaching-pages:html & npm run watch:performing:html & npm run watch:blog:html & npm run watch:contact:html",
+  
+    "//": "--- Tasks for all LESS files ---",  
+        "build:less": "npm run build:home:less && npm run build:about:less && npm run build:teaching-pages:less && npm run build:performing:less && npm run build:blog:less && npm run build:contact:less",
+        "watch:less": "npm run watch:templates:less & npm run watch:home:less & npm run watch:about:less & npm run watch:teaching-pages:less",
+
+    "//": "--- Tasks for Templates ---",
+        "watch:templates": "npm run watch:templates:html & npm run watch:templates:less",
+        "watch:templates:html": "chokidar 'html/_templates/*.js' -c 'npm run build:html'",
+        "watch:templates:less": "chokidar 'less/_templates/*.less' -c 'npm run build:less'",
+
+    "//": "--- HOME ---",
+        "build:home": "npm run build:home:html && npm run build:home:less",
+        "watch:home": "npm run watch:home:html & npm run watch:home:less",
+
+        "//": "--- HTML Tasks ---",  
+	        "build:home:html": "npm run clean:home:html && assemble home:html && npm run rename:home:html",
+	        "watch:home:html": "chokidar 'html/home/*.js' -c 'npm run build:home:html'",
+	        "rename:home:html": "renamer --replace index.html 'public/home/*.html'",
+	        "clean:home:html": "rm public/home/*.html",
+
+        "//": "--- LESS Tasks ---",
+	        "build:home:less": "lessc --source-map less/home/style.less public/home/style.css",
+	        "watch:home:less": "chokidar 'less/home/*.less' -c 'npm run build:home:less'",
+
+    "//": "--- ABOUT ---",
+        "//": "--- HTML Tasks ---",  
+	        "build:about:html": "npm run build:bio:html && npm run build:teaching-philosophy:html",
+	        "watch:about:html": "npm run watch:bio:html & npm run watch:teaching-philosophy:html",
+        
+        "//": "--- LESS Tasks ---",
+	        "build:about:less": "npm run build:bio:less && npm run build:teaching-philosophy:less",
+	        "watch:about:less": "npm run watch:bio:less & npm run watch:teaching-philosophy:less",
+
+    "//": "--- BIO ---",  
+        "build:bio": "npm run build:bio:html && npm run build:bio:less",
+        "watch:bio": "npm run watch:bio:html & npm run watch:bio:less",
+
+        "//": "--- HTML Tasks ---",    
+	        "build:bio:html": "npm run clean:bio:html && assemble bio:html && npm run rename:bio:html",
+	        "watch:bio:html": "chokidar 'html/bio/*.js' -c 'npm run build:bio:html'",
+	        "rename:bio:html": "renamer --replace index.html 'public/bio/*.html'",
+	        "clean:bio:html": "rm public/bio/*.html",
+
+        "//": "--- LESS Tasks ---",
+	        "build:bio:less": "lessc --source-map less/bio/style.less public/bio/style.css",
+	        "watch:bio:less": "chokidar 'less/bio/*.less' -c 'npm run build:bio:less'",
+
+    "//": "--- TEACHING PHILOSOPHY ---",
+    	"build:teaching-philosophy": "npm run build:teaching-philosophy:html && npm run build:teaching-philosophy:less",
+    	"watch:teaching-philosophy": "npm run watch:teaching-philosophy:html & npm run watch:teaching-philosophy:less",
+
+    	"//": "--- HTML Tasks ---",
+	        "build:teaching-philosophy:html": "npm run clean:teaching-philosophy:html && assemble teaching-philosophy:html && npm run rename:teaching-philosophy:html",
+	        "watch:teaching-philosophy:html": "chokidar 'html/teaching-philosophy/*.js' -c 'npm run build:teaching-philosophy:html'",
+	        "rename:teaching-philosophy:html": "renamer --replace index.html 'public/teaching-philosophy/*.html'",
+	        "clean:teaching-philosophy:html": "rm public/teaching-philosophy/*.html",
+
+        "//": "--- LESS Tasks ---",
+	        "build:teaching-philosophy:less": "lessc --source-map less/teaching-philosophy/style.less public/teaching-philosophy/style.css",
+	        "watch:teaching-philosophy:less": "chokidar 'less/teaching-philosophy/*.less' -c 'npm run build:teaching-philosophy:less'",
+
+
+    "//": "--- TEACHING ---",  
+        "build:teaching-pages:html": "npm run build:why-private-lessons:html && npm run build:student-opportunities:html && npm run build:studio-policies:html && npm run build:suzuki-method:html",
+        "watch:teaching-pages:html": "npm run watch:why-private-lessons:html & npm run watch:student-opportunities:html & npm run watch:studio-policies:html & npm run watch:suzuki-method:html",
+        "build:teaching-pages:less": "npm run build:why-private-lessons:less && npm run build:student-opportunities:less && npm run build:studio-policies:less && npm run build:suzuki-method:less",      
+        "watch:teaching-pages:less": "npm run watch:why-private-lessons:less & npm run watch:student-opportunities:less & npm run watch:studio-polices:less & npm run watch:suzuki-method:less",
+
+    "//": "--- WHY PRIVATE LESSONS ---",  
+
+        "//": "--- HTML TASKS ---",  
+        "build:why-private-lessons:html": "assemble why-private-lessons:html && renamer --replace index.html 'public/why-private-lessons/*.html",
+        "watch:why-private-lessons:html": "chokidar 'html/why-private-lessons/*.js' -c 'npm run build:why-private-lessons:html'",
+
+        "//": "--- LESS TASKS ---",  
+        "build:why-private-lessons:less": "lessc --source-map less/why-private-lessons/style.less public/why-private-lessons/style.css",
+        "watch:why-private-lessons:less": "chokidar 'less/why-private-lessons/*.less' -c 'npm run build:why-private-lessons:less'",
+
+    "//": "--- STUDENT OPPORTUNITIES ---",
+
+
+        "//": "--- HTML TASKS ---",  
+        "build:student-opportunities:html": "assemble student-opportunities:html && npm run rename:student-opportunities:html",
+        "rename:student-opportunities:html": "renamer --replace index.html 'public/student-opportunities/*.html",
+        "watch:student-opportunities:html": "chokidar 'html/student-opportunities/*.js' -c 'npm run build:student-opportunities:html'",
+
+        "//": "--- LESS TASKS ---",
+        "build:student-opportunities:less": "lessc --source-map less/student-opportunities/style.less public/student-opportunities/style.css",
+        "watch:student-opportunities:less": "chokidar 'less/student-opportunities/*.less' -c 'npm run build:student-opportunities:less'",
+
+    "//": "--- STUDIO POLICIES ---",  
+        "//": "--- HTML TASKS ---",
+        "build:studio-policies:html": "assemble studio-policies:html && npm run rename:studio-policies:html",
+        "rename:studio-policies:html": "renamer --replace index.html 'public/studio-policies/*.html",
+        "watch:studio-policies:html": "chokidar 'html/studio-policies/*.js' -c 'npm run build:studio-policies:html'",
+
+        "//": "--- LESS TASKS ---",
+        "build:studio-policies:less": "lessc --source-map less/studio-policies/style.less public/studio-policies/style.css",
+        "watch:studio-policies:less": "chokidar 'less/studio-policies/*.less' -c 'npm run build:studio-policies:less'",
+
+    "//": "--- SUZUKI METHOD ---",  
+        "build:suzuki-method:html": "assemble suzuki-method:html",
+        "watch:suzuki-method:html": "chokidar 'html/suzuki-method/*.js' -c 'assemble suzuki-method:html'",
+
+        "build:suzuki-method:less": "lessc --source-map less/suzuki-method/style.less public/suzuki-method/style.css",
+        "watch:suzuki-method:less": "chokidar 'less/suzuki-method/*.less' -c 'npm run build:suzuki-method:less'",
+
+    "//": "--- PERFORMING ---",  
+        "build:performing:html": "assemble performing:html",
+        "watch:performing:html": "chokidar 'html/performing/*.js' -c 'assemble performing:html'",
+
+        "build:performing:less": "lessc --source-map less/performing/style.less public/performing/style.css",
+        "watch:performing:less": "chokidar 'less/performing/*.less' -c 'npm run build:performing:less'",
+
+    "//": "--- BLOG ---",  
+        "build:blog:html": "assemble blog:html",
+        "watch:blog:html": "chokidar 'html/blog/*.js' -c 'assemble blog:html'",
+
+        "build:blog:less": "lessc --source-map less/blog/style.less public/blog/style.css",
+        "watch:blog:less": "chokidar 'less/blog/*.less' -c 'npm run build:blog:less'",
+
+    "//": "--- CONTACT ---",  
+        "build:contact:html": "assemble contact:html",
+        "watch:contact:html": "chokidar 'html/contact/*.js' -c 'assemble contact:html'",
+
+        "build:contact:less": "lessc --source-map less/contact/style.less public/contact/style.css",
+        "watch:contact:less": "chokidar 'less/contact/*.less' -c 'npm run build:contact:less'"
+
   },
   "author": "Benjamin Johnson",
   "license": "ISC",
   "dependencies": {
-    "fontawesome": "^4.5.0",
+    "font-awesome": "^4.6.3",
     "jquery": "^3.1.0",
-    "normalize.css": "^4.2.0"
+    "normalize.css": "^4.2.0",
+    "pretty": "^1.0.0"
   },
   "devDependencies": {
-    "assemble": "^0.17.1"
+    "assemble": "^0.17.1",
+    "less": "^2.7.1"
   }
 }

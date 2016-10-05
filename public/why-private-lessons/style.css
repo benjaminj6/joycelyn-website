@@ -1,0 +1,230 @@
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header {
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  width: 100vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5vh 0;
+}
+header div.titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+header div.titles img {
+  height: 80%;
+}
+header div.titles div.menu-icons {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: flex-end;
+  padding: 0 1vh;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
+}
+header div.titles div.menu-icons h4 {
+  margin: 0 5px;
+  display: inline;
+}
+header nav {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 777;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+header nav i.fa-times {
+  position: absolute;
+  z-index: 999;
+  margin: 10px;
+  font-size: 24px;
+}
+header nav ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 6vh;
+}
+header nav ul.menu li.menu-item {
+  margin: 7vh auto;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+header nav ul.menu li.menu-item a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+header nav ul.menu li.menu-item ul.submenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+header nav ul.menu li.menu-item ul.submenu li.submenu-item {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 2vh auto;
+}
+header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+@media only screen and (min-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header div.titles img {
+    margin: 0 2vh;
+  }
+  header div.titles div.menu-icons {
+    display: none;
+  }
+  header nav {
+    display: inline;
+    min-height: 0;
+    position: static;
+    background-color: transparent;
+  }
+  header nav i.fa-times {
+    display: none;
+  }
+  header nav ul.menu {
+    padding: 0 2vh;
+    height: 10vh;
+    display: flex;
+    right: 0;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header nav ul.menu li.menu-item {
+    margin: 0;
+    margin-left: 30px;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  header nav ul.menu li.menu-item a {
+    font-size: 18px;
+  }
+  header nav ul.menu li.menu-item ul.submenu {
+    position: absolute;
+    margin-top: 5vh;
+    background-color: #fff;
+  }
+  header nav ul.menu li.menu-item ul.submenu li.submenu-item {
+    font-size: 16px;
+    text-align: right;
+  }
+}
+main {
+  padding: 11vh 0 0;
+  display: flex;
+  flex-direction: column;
+}
+main img {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  object-position: top;
+}
+@media only screen and (orientation: landscape) {
+  main img {
+    height: 90vh;
+  }
+}
+main section {
+  width: 95%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 800px) {
+  main {
+    flex-direction: row;
+    height: 90vh;
+  }
+  main img {
+    height: 90vh;
+    width: 60vw;
+  }
+  main section {
+    width: 40%;
+    padding: 0 4%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  main section div.section-heading {
+    margin-bottom: 10px;
+  }
+  main section div.text {
+    height: 90%;
+  }
+  main section div.text p {
+    font-size: 16px;
+  }
+}
+footer {
+  margin: 4vh;
+}
+footer nav.media-links ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer nav.media-links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4vw;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+footer nav.media-links ul li a {
+  font-size: 0;
+  color: #fff;
+}
+footer nav.media-links ul li a i {
+  font-size: 22px;
+}
+footer div.footer-text {
+  text-align: center;
+  margin: 15px 0;
+}
+footer div.footer-text h6 {
+  margin: 0;
+}
+@media only screen and (min-width: 800px) {
+  footer {
+    margin: 3vh 0;
+  }
+  footer nav.media-links ul li {
+    margin: 0 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

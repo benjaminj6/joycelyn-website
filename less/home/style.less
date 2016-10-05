@@ -1,0 +1,152 @@
+@import (reference) '../_templates/colors.less';
+@import (reference) '../_templates/mixins.less';
+@import (reference) '../_templates/typography.less';
+@import (reference) '../_templates/vars.less';
+
+@import '../_templates/global-styles.less';
+
+body {
+	background-image: @white-photo-filter, url('../assets/images/home-mobile-1.jpg');
+	background-size: cover;
+	background-position: center bottom;
+}
+
+header {
+	div.titles {
+		display: flex;
+		flex-direction: column-reverse;
+
+
+		img {
+			border-style: none;
+		  height: 20vh;
+		  margin: 30vh auto;
+		}
+
+		div.menu-icons {
+			height: 10vh;
+			font-size: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding: 0 2vh;
+			align-self: inherit;
+			color: @black-60;
+
+			h4 {
+				margin: 0 5px;
+				display: inline;
+			}
+			i.fa-bars {}
+		}
+	}
+
+	nav {
+		display: none;
+		width: 100%;
+		min-height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 777;
+		height: 100%;
+		background-color: @white;
+		overflow-y: scroll;
+
+		i.fa-times {
+			position: absolute;
+			z-index: 999;
+			margin: 10px;
+			font-size: 24px;
+		}
+		ul.menu {
+			.reset-list;
+			text-align: center;
+			padding-top: 6vh;
+			
+			li.menu-item {
+				margin: 7vh auto;
+				.nav-menu-font;
+				color: @black-60;
+				cursor: pointer;
+
+				a {
+					.nav-menu-font;
+					color: @black-60;
+				}
+
+				i.fa-angle-down {}
+
+				ul.submenu {
+					.reset-list;
+					display: none;
+
+					li.submenu-item {
+						.nav-submenu-font;
+						color: @black-60;
+						margin: 2vh auto;
+
+						a {
+							.nav-submenu-font;
+							color: @black-60;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	nav.media-links {
+
+		ul {
+			.reset-list;
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			
+			li {
+			
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 4vw;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				background-color: @black-60;
+
+				a {
+					font-size: 0;
+					color: @white;
+
+					i {
+						font-size: 22px;
+					}
+				}
+				
+			}
+	
+		}
+	}
+
+	div.footer-text {
+		display: none;
+		
+	}
+}
+
+@media only screen and (min-width: @desktop-breakpoint) {
+	@import './style-desktop.less';
+}
+
+@media only screen and (min-width: @desktop-breakpoint), (orientation: landscape) {
+	@import './landscape-photos.less';
+}

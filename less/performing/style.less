@@ -1,0 +1,43 @@
+@import (reference) '../_templates/mixins.less';
+@import '../_templates/header.less';
+main {
+    padding: 11vh 0 0;
+    display: flex;
+    flex-direction: column;
+
+    div.section-heading {
+	    padding-top: 4vh;
+	    // padding: 20px 0 0;
+	    h1 {
+	        .section-heading-font;
+	        margin: 0 auto;
+	        // max-width: 356px;
+	    }
+	    hr {
+	        margin: 0;
+	    }
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 50vh;
+        object-position: top;
+    }
+    section.intro {
+    	.wrapper(95%);
+    }
+    section.video {
+    	margin: 10vh 0 0;
+
+    	h3 {
+				.wrapper(95%);
+				margin-bottom: 5px;
+    	}
+    	iframe {
+    		width: 100%;
+    		height: 50vh;
+    	}
+    }
+}
+
+@import '../_templates/footer.less';

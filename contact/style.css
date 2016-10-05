@@ -234,14 +234,9 @@ main section#lessons ul.radio-buttons.days-list li {
 main section#lessons ul.radio-buttons.time {
   margin-left: 5px;
   border-radius: 2px;
-  width: 40%;
 }
-main section#lessons ul.radio-buttons.time li {
-  width: 33%;
-}
-main section#lessons ul.radio-buttons.time li label {
-  text-align: center;
-  width: 100%;
+main section#lessons ul.radio-buttons.time label {
+  padding: 0 10px;
 }
 main section#lessons ul.radio-buttons.switch li {
   width: 40%;

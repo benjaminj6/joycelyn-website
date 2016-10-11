@@ -1,0 +1,24 @@
+@import (reference) '../global/global-styles.less';
+.globalInitial();
+body {
+  @url: '../assets/images/home-mobile-1.jpg';
+  background-image: linear-gradient(0, fade(#fff, 80%), fade(#fff, 80%)), url(@url);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+// url('../assets/images/home-mobile-1.jpg')
+@import './modules/home.header.less';
+
+.desktop(800px, {
+    body {
+      background-color: #000;
+    }
+  });
+// @media only screen and (min-width: @desktop-breakpoint) {
+//   @import './style-desktop.less';
+// }
+// @media only screen and (min-width: @desktop-breakpoint),
+// (orientation: landscape) {
+//   @import './landscape-photos.less';
+// }

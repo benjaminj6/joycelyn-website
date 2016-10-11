@@ -1,5 +1,5 @@
 @import (reference) './mixins.less';
-@import (reference) './typography.less';
+@import (reference) './fonts.less';
 @import (reference) './colors.less';
 @import (reference) './vars.less';
 
@@ -10,7 +10,7 @@ header {
   z-index: 999;
   background-color: #fff;
   width: 100vw;
-  border-bottom: 1px solid @black-20;
+  border-bottom: 1px solid fade(#000, 20%);
   padding: 0.5vh 0;
 
   div.titles {
@@ -32,7 +32,7 @@ header {
       align-self: flex-start;
       justify-content: flex-end;
       padding: 0 1vh;
-      color: @black-60;
+      color: fade(#000, 60%);
       position: absolute;
       right: 0;
 
@@ -55,7 +55,7 @@ header {
     left: 0;
     z-index: 777;
     height: 100%;
-    background-color: @white;
+    background-color: #fff;
     overflow-y: scroll;
 
     i.fa-times {
@@ -89,12 +89,12 @@ header {
           display: none;
 
           li.submenu-item {
-            .nav-submenu-font;
+            .submenu-font;
             margin: 2vh auto;
             // font-size: 20px;
 
             a {
-              .nav-submenu-font;
+              .submenu-font;
             }
           }
         }

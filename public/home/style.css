@@ -1,21 +1,38 @@
-* {
-  font-weight: lighter;
+html {
+  box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 body {
-  background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-mobile-1.jpg');
+  background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-desktop-1.jpg');
   background-size: cover;
   background-position: center bottom;
 }
-header div.titles {
+
+.titles {
   display: flex;
   flex-direction: column-reverse;
 }
-header div.titles img {
+
+.titles img {
   border-style: none;
   height: 20vh;
   margin: 30vh auto;
 }
-header div.titles div.menu-icons {
+
+.menu-icons {
   height: 10vh;
   font-size: 24px;
   display: flex;
@@ -25,11 +42,13 @@ header div.titles div.menu-icons {
   align-self: inherit;
   color: rgba(0, 0, 0, 0.6);
 }
-header div.titles div.menu-icons h4 {
+
+.menu-icons h4 {
   margin: 0 5px;
   display: inline;
 }
-header nav {
+
+nav {
   display: none;
   width: 100%;
   min-height: 100vh;
@@ -41,116 +60,120 @@ header nav {
   background-color: #fff;
   overflow-y: scroll;
 }
-header nav i.fa-times {
+
+nav .fa-times {
   position: absolute;
   z-index: 999;
   margin: 10px;
   font-size: 24px;
 }
-header nav ul.menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+
+.menu {
   text-align: center;
   padding-top: 6vh;
 }
-header nav ul.menu li.menu-item {
+
+.menu-item {
   margin: 7vh auto;
-  color: #000;
   text-decoration: none;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
-header nav ul.menu li.menu-item a {
-  color: #000;
+
+.menu-item a {
   text-decoration: none;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
 }
-header nav ul.menu li.menu-item ul.submenu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+
+.submenu {
   display: none;
 }
-header nav ul.menu li.menu-item ul.submenu li.submenu-item {
-  color: #000;
-  text-decoration: none;
-  font-size: 16px;
+
+.submenu-item {
   color: rgba(0, 0, 0, 0.6);
   margin: 2vh auto;
 }
-header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
-  color: #000;
-  text-decoration: none;
-  font-size: 16px;
+
+.submenu-item a {
   color: rgba(0, 0, 0, 0.6);
 }
+
 footer {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 4vh;
 }
-footer nav.media-links ul {
+
+.media-links ul {
+  margin: 0;
   padding: 0;
   list-style-type: none;
-  margin: 0;
+  // margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-footer nav.media-links ul li {
+
+.media-links li {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 4vw;
   border-radius: 50%;
+  // border: 1px solid #000;
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #000;
 }
-footer nav.media-links ul li a {
+
+.media-links a {
   font-size: 0;
   color: #fff;
 }
-footer nav.media-links ul li a i {
+
+.media-links i {
   font-size: 22px;
 }
-footer div.footer-text {
-  display: none;
+
+.footer-text {
+  text-align: center;
+  margin: 15px 0;  
 }
+
+.footer-text h6 {
+  margin: 0;  
+}
+
 @media only screen and (min-width: 800px) {
   header {
     display: flex;
     flex-direction: column-reverse;
   }
-  header div.titles img {
+  .titles img {
     border-style: none;
     height: 20vh;
     margin: 30vh auto;
   }
-  header div.titles div.menu-icons {
+  .menu-icons {
     display: none;
   }
-  header nav {
+  nav {
     display: block;
     min-height: 0;
     position: static;
     height: 10vh;
     background-color: transparent;
   }
-  header nav i.fa-times {
+  nav .fa-times {
     display: none;
   }
-  header nav ul.menu {
+  .menu {
     padding: 2vh;
     display: flex;
     position: fixed;
     right: 0;
   }
-  header nav ul.menu li.menu-item {
+  .menu-item {
     margin: 0;
     margin-left: 30px;
     display: flex;
@@ -158,28 +181,29 @@ footer div.footer-text {
     flex-direction: column;
     align-items: flex-end;
   }
-  header nav ul.menu li.menu-item a {
+  .menu-item a {
     font-size: 18px;
   }
-  header nav ul.menu li.menu-item ul.submenu {
+  .submenu {
     position: absolute;
     margin-top: 3vh;
   }
-  header nav ul.menu li.menu-item ul.submenu li.submenu-item {
+  .submenu-item {
     font-size: 16px;
     text-align: right;
   }
-  header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
+  .submenu-item a {
     font-size: 16px;
   }
-  footer nav.media-links ul li {
-    margin: 0 10px;
+
+  footer {
+    margin 3vh 0;
+  }
+
+  .media-links li {
+    margin 0 10px;
   }
 }
-@media only screen and (min-width: 800px), (orientation: landscape) {
-  body {
-    background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-desktop-1.jpg');
-    background-position: center bottom;
-  }
-}
+
+
 /*# sourceMappingURL=style.css.map */

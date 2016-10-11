@@ -129,7 +129,7 @@ section {
 .section-heading {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 40vh;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -137,7 +137,9 @@ section {
   align-items: center;
 }
 
-.section-heading h1 {}
+.section-heading h1 {
+  text-align: center;
+}
 
 .section-heading hr {}
 
@@ -368,6 +370,9 @@ footer {
     margin: 0 auto;
   }
 
+  .section-heading {
+    height: 70vh;
+  }
   #why-private-lessons {
     /*background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./assets/why-private-lessons.jpg');*/
   }

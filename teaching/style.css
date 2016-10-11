@@ -112,7 +112,9 @@ header nav i.fa-times {
   font-size: 16px;
 }
 
+
 /* Main styling */
+
 main {
   padding: 11vh 0 0;
   display: flex;
@@ -125,22 +127,22 @@ section {
 }
 
 .section-heading {}
+
 .section-heading h1 {}
+
 .section-heading hr {}
 
 #why-private-lessons {
-  background-image: -webkit-linear-gradient(0, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('why-private-lessons.jpg');
+  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('why-private-lessons.jpg');
   /*background-image: -o-linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
   background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));*/
   background-size: cover;
-  color: #fff;
+  color: #000;
 }
-#why-private-lessons .section-heading {
 
-}
-#why-private-lessons .text {
+#why-private-lessons .section-heading {}
 
-}
+#why-private-lessons .text {}
 
 #why-private-lessons .text a {
   /*color: #fff;*/
@@ -162,26 +164,68 @@ section {
 .opportunities button {
   width: 45%;
   height: 30vw;
-  margin:  5px 5px;
+  margin: 5px 5px;
   border-radius: 2px;
   border: none;
-  background-color: #eee;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*background-color: #eee;*/
 }
 
+.opportunities i {
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.weekly-lessons {
+  background-color: #73bec8;
+}
+
+.group-classes {
+  background-color: #e4ba3f;
+}
+
+.bi-annual {
+  background-color: #c384c5;
+}
+
+.parent-education {
+  background-color: #c85977;
+}
 
 #studio-policies {
   min-height: 30vh;
   /*background-image: -webkit-linear-gradient(0, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('studio-policies.jpg');
   background-size: cover;
   background-position: center;
-  */color: #000;
+  */
+  color: #000;
 }
 
 #suzuki {
-  background-image: -webkit-linear-gradient(0, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('suzuki.jpg');
+  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('suzuki.jpg');
 }
 
+#suzuki intro {
+
+}
+
+#suzuki ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#suzuki li {}
+#suzuki li h4 {}
+#suzuki li p {}
+
+
 /* Footer stylings */
+
 footer {
   margin: 4vh;
 }

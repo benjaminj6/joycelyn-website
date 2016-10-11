@@ -133,11 +133,11 @@ section {
 .section-heading hr {}
 
 #why-private-lessons {
-  background-image: -webkit-linear-gradient(0, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/why-private-lessons.jpg');
+  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./assets/why-private-lessons.jpg');
   /*background-image: -o-linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
   background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));*/
   background-size: cover;
-  color: #fff;
+  color: #000;
 }
 
 #why-private-lessons .section-heading {}

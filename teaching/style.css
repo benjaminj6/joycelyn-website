@@ -123,10 +123,19 @@ main {
 
 section {
   // min-height: 60vh;
-  padding: 40px 10px;
+  padding: 40px 0px;
 }
 
-.section-heading {}
+.section-heading {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .section-heading h1 {}
 
@@ -142,14 +151,14 @@ section {
 
 #why-private-lessons .section-heading {
   background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./assets/why-private-lessons.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // height: 70vh;
+  // color: #fff;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 }
 
 #why-private-lessons .text {}
@@ -230,14 +239,14 @@ section {
 
 #suzuki .section-heading {
   background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./assets/suzuki.jpg');
-  background-size: cover;
+  /*background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 
 #suzuki intro {

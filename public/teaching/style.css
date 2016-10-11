@@ -123,7 +123,7 @@ main {
 
 section {
   // min-height: 60vh;
-  padding: 0px 0px 40px;
+  padding: 0 0 40px;
 }
 
 .section-heading {
@@ -143,6 +143,10 @@ section {
 }
 
 .section-heading hr {}
+
+.wrapper {
+  padding: 0 10px;
+}
 
 #why-private-lessons {
 /*  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./assets/why-private-lessons.jpg');
@@ -174,6 +178,11 @@ section {
   // min-height: 0;
 }
 
+#student-opportunities .section-heading {
+  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./assets/violin-1085606_1920.jpg');
+
+}
+
 .opportunities {
   display: flex;
   flex-direction: row;
@@ -185,7 +194,7 @@ section {
 
 .button-wrapper {
   width: 48%;
-  height: 30vw;
+  height: 35vw;
   margin: 1% 1%;
   border-radius: 2px;
   /*background-color: #eee;*/
@@ -203,28 +212,56 @@ section {
 }
 
 .opportunities i {
-  padding-bottom: 10px;
-  font-size: 30px;
+  padding-bottom: 7px;
+  font-size: 24px;
+}
+
+.opportunities h4 {
+  font-size: 14px;
+  margin: 0;
+  vertical-align: center;
+}
+
+.see-more {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-more h6 {
+  margin: 0;
+}
+
+.see-more i {
+  font-size: inherit;
+  padding-bottom: inherit;
+  margin-left: 2px;
 }
 
 .weekly-lessons {
   background-color: #73bec8;
   background-color: #a2d9e0;
+  
 }
 
 .group-classes {
   background-color: #e4ba3f;
   background-color: #e2ce91;
+  
 }
 
 .bi-annual {
   background-color: #c384c5;
   background-color: #b093b1;
+  
 }
 
 .parent-education {
   background-color: #c85977;
   background-color: #d698a9;
+
 }
 
 #studio-policies {
@@ -236,6 +273,10 @@ section {
   color: #000;
 }
 
+#studio-policies .section-heading {
+  background-image: -webkit-linear-gradient(0, rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('./assets/piano-962995_1920.jpg');
+  background-position: center;
+}
 #suzuki {
   
 }
@@ -277,7 +318,7 @@ footer {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  // margin: 0;
+  /*margin: 0;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -288,8 +329,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 4vw;
-  border-radius: 50%;
-  // border: 1px solid @black;
+  border-radius: 50%; 
   width: 40px;
   height: 40px;
   background-color: #000;

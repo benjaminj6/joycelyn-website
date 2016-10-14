@@ -283,14 +283,6 @@ section {
 
 #suzuki .section-heading {
   background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./assets/suzuki.jpg');
-  /*background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;*/
 }
 
 #suzuki intro {

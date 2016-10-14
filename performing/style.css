@@ -197,6 +197,7 @@ main img {
 }
 
 @media only screen and (min-width: 800px) {
+
   .video-1 iframe {
     height: 80vh;
   }
@@ -246,7 +247,7 @@ footer {
 
 @media only screen and (min-width: 800px) {
   main {
-    max-width: 780px;
+    max-width: 950px;
     margin: 0 auto;
   }
 

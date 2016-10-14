@@ -187,13 +187,14 @@ main section div.text a {
     padding: 0 4%;
     height: 100%;
     overflow-y: scroll;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
   }
   main section div.section-heading {
     margin-bottom: 10px;
   }
-  main section div.text {
-    height: 90%;
-  }
+
   main section div.text p {
     font-size: 16px;
   }

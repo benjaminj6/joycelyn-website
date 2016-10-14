@@ -162,6 +162,8 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
 main {
   margin: 0 auto;
   padding: 11vh 0 0;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .wrapper {
@@ -180,7 +182,7 @@ main div.section-heading {
 .banner {
   width: 100vw;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
 main div.section-heading h1 {
@@ -191,6 +193,10 @@ main div.section-heading h1 {
   .wrapper {
     width: 80vw;
     margin: 0 auto;
+  }
+
+  .banner {
+    object-position: center;
   }
 }
 
@@ -204,7 +210,8 @@ main div.section-heading h1 {
   }
 
   .banner {
-    width: 60vw;
+    width: 50vw;
+    object-position: 0 -70px;
   }
 
   main .wrapper {
@@ -213,13 +220,13 @@ main div.section-heading h1 {
   }
 
   main section {
-    width: 40%;
-    padding: 0 4%;
+    /*width: 40%;*/
+    /*padding: 0 4%;*/
     height: 100%;
     overflow-y: scroll;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 15px;
+    padding: 30px;
   }
 
   main section div.section-heading {

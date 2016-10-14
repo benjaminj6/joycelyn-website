@@ -6,6 +6,7 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5vh 0;
 }
+
 header div.titles {
   display: flex;
   flex-direction: row;
@@ -13,9 +14,11 @@ header div.titles {
   align-items: center;
   height: 10vh;
 }
+
 header div.titles img {
   height: 80%;
 }
+
 header div.titles div.menu-icons {
   font-size: 24px;
   display: flex;
@@ -27,10 +30,12 @@ header div.titles div.menu-icons {
   position: absolute;
   right: 0;
 }
+
 header div.titles div.menu-icons h4 {
   margin: 0 5px;
   display: inline;
 }
+
 header nav {
   display: none;
   width: 100%;
@@ -43,12 +48,14 @@ header nav {
   background-color: #fff;
   overflow-y: scroll;
 }
+
 header nav i.fa-times {
   position: absolute;
   z-index: 999;
   margin: 10px;
   font-size: 24px;
 }
+
 header nav ul.menu {
   margin: 0;
   padding: 0;
@@ -56,6 +63,7 @@ header nav ul.menu {
   text-align: center;
   padding-top: 6vh;
 }
+
 header nav ul.menu li.menu-item {
   margin: 7vh auto;
   color: #000;
@@ -63,48 +71,58 @@ header nav ul.menu li.menu-item {
   font-size: 20px;
   cursor: pointer;
 }
+
 header nav ul.menu li.menu-item a {
   color: #000;
   text-decoration: none;
   font-size: 20px;
 }
+
 header nav ul.menu li.menu-item ul.submenu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: none;
 }
+
 header nav ul.menu li.menu-item ul.submenu li.submenu-item {
   color: #000;
   text-decoration: none;
   font-size: 16px;
   margin: 2vh auto;
 }
+
 header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
   color: #000;
   text-decoration: none;
   font-size: 16px;
 }
+
 @media only screen and (min-width: 800px) {
   header {
     display: flex;
     flex-direction: row;
   }
+
   header div.titles img {
     margin: 0 2vh;
   }
+
   header div.titles div.menu-icons {
     display: none;
   }
+
   header nav {
     display: inline;
     min-height: 0;
     position: static;
     background-color: transparent;
   }
+
   header nav i.fa-times {
     display: none;
   }
+
   header nav ul.menu {
     padding: 0 2vh;
     height: 10vh;
@@ -113,6 +131,7 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     align-items: center;
     justify-content: flex-end;
   }
+
   header nav ul.menu li.menu-item {
     margin: 0;
     margin-left: 30px;
@@ -121,24 +140,33 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     flex-direction: column;
     align-items: flex-end;
   }
+
   header nav ul.menu li.menu-item a {
     font-size: 18px;
   }
+
   header nav ul.menu li.menu-item ul.submenu {
     position: absolute;
     margin-top: 5vh;
     background-color: #fff;
   }
+
   header nav ul.menu li.menu-item ul.submenu li.submenu-item {
     font-size: 16px;
     text-align: right;
   }
 }
+
 main {
   padding: 11vh 0 0;
   display: flex;
   flex-direction: column;
 }
+
+fieldset {
+  border: none;
+}
+
 main section {
   min-height: 89vh;
   display: flex;
@@ -146,26 +174,31 @@ main section {
   width: 95%;
   margin: 0 auto;
 }
+
 main section form {
   display: flex;
   flex-direction: column;
 }
+
 main section form input {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 2px;
 }
-main section form input[type="text"],
-main section form input[type="email"] {
+
+main section form input[type="text"], main section form input[type="email"] {
   width: 90%;
 }
+
 main section form input[type="number"] {
   width: 40%;
 }
+
 main section form textarea {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 2px;
   width: 90%;
 }
+
 main section form button[type="submit"] {
   width: 60%;
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -175,10 +208,12 @@ main section form button[type="submit"] {
   margin: 20px 0;
   height: 10vh;
 }
+
 main section.form-choices h2 {
   padding-top: 30%;
   text-align: center;
 }
+
 main section.form-choices button {
   width: 70%;
   align-self: center;
@@ -188,66 +223,82 @@ main section.form-choices button {
   height: 10vh;
   border-radius: 2px;
 }
-main section#lessons ul.radio-buttons {
+
+#lessons ul.radio-buttons {
   padding-left: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-main section#lessons ul.radio-buttons li input[type="radio"] {
+
+#lessons ul.radio-buttons li input[type="radio"] {
   border: none;
   display: none;
 }
-main section#lessons ul.radio-buttons li input[type="radio"] + label {
+
+#lessons ul.radio-buttons li input[type="radio"] + label {
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
-main section#lessons ul.radio-buttons li input[type="radio"] + label.day-label {
+
+#lessons ul.radio-buttons li input[type="radio"] + label.day-label {
   width: 40%;
   border-radius: 2px;
   text-align: center;
 }
-main section#lessons ul.radio-buttons li input[type="radio"] + label.left-label {
+
+#lessons ul.radio-buttons li input[type="radio"] + label.left-label {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-main section#lessons ul.radio-buttons li input[type="radio"] + label.center-label {
+
+#lessons ul.radio-buttons li input[type="radio"] + label.center-label {
   border-radius: 0;
 }
-main section#lessons ul.radio-buttons li input[type="radio"] + label.right-label {
+
+#lessons ul.radio-buttons li input[type="radio"] + label.right-label {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-main section#lessons ul.radio-buttons li.day {
+
+#lessons ul.radio-buttons li.day {
   margin: 10px 0;
 }
-main section#lessons ul.radio-buttons.days-list {
+
+#lessons ul.radio-buttons.days-list {
   display: flex;
   flex-direction: column;
 }
-main section#lessons ul.radio-buttons.days-list li {
+
+#lessons ul.radio-buttons.days-list li {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-main section#lessons ul.radio-buttons.time {
+
+#lessons ul.radio-buttons.time {
   margin-left: 5px;
   border-radius: 2px;
 }
-main section#lessons ul.radio-buttons.time label {
+
+#lessons ul.radio-buttons.time label {
   padding: 0 10px;
 }
-main section#lessons ul.radio-buttons.switch li {
+
+#lessons ul.radio-buttons.switch li {
   width: 40%;
 }
-main section#lessons ul.radio-buttons.switch li label {
+
+#lessons ul.radio-buttons.switch li label {
   display: flex;
   justify-content: center;
 }
+
 footer {
   margin: 4vh;
 }
+
 footer nav.media-links ul {
   padding: 0;
   list-style-type: none;
@@ -256,6 +307,7 @@ footer nav.media-links ul {
   flex-direction: row;
   justify-content: center;
 }
+
 footer nav.media-links ul li {
   display: flex;
   align-items: center;
@@ -266,26 +318,31 @@ footer nav.media-links ul li {
   height: 40px;
   background-color: #000;
 }
+
 footer nav.media-links ul li a {
   font-size: 0;
   color: #fff;
 }
+
 footer nav.media-links ul li a i {
   font-size: 22px;
 }
+
 footer div.footer-text {
   text-align: center;
   margin: 15px 0;
 }
+
 footer div.footer-text h6 {
   margin: 0;
 }
+
 @media only screen and (min-width: 800px) {
   footer {
     margin: 3vh 0;
   }
+
   footer nav.media-links ul li {
     margin: 0 10px;
   }
 }
-/*# sourceMappingURL=style.css.map */

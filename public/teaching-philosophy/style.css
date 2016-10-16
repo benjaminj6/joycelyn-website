@@ -7,7 +7,7 @@ header {
   padding: 0.5vh 0;
 }
 
-header div.titles {
+.titles {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -15,11 +15,11 @@ header div.titles {
   height: 10vh;
 }
 
-header div.titles img {
+.titles img {
   height: 80%;
 }
 
-header div.titles div.menu-icons {
+.menu-icons {
   font-size: 24px;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@ header div.titles div.menu-icons {
   right: 0;
 }
 
-header div.titles div.menu-icons h4 {
+.menu-icons h4 {
   margin: 0 5px;
   display: inline;
 }
@@ -56,7 +56,7 @@ header nav i.fa-times {
   font-size: 24px;
 }
 
-header nav ul.menu {
+.menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -64,7 +64,7 @@ header nav ul.menu {
   padding-top: 6vh;
 }
 
-header nav ul.menu li.menu-item {
+.menu-item {
   margin: 7vh auto;
   color: #000;
   text-decoration: none;
@@ -72,27 +72,28 @@ header nav ul.menu li.menu-item {
   cursor: pointer;
 }
 
-header nav ul.menu li.menu-item a {
+.menu-item a {
   color: #000;
   text-decoration: none;
   font-size: 20px;
 }
 
-header nav ul.menu li.menu-item ul.submenu {
+.submenu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: none;
 }
 
-header nav ul.menu li.menu-item ul.submenu li.submenu-item {
+/* Submenu item style */
+.submenu-item {
   color: #000;
   text-decoration: none;
   font-size: 16px;
   margin: 2vh auto;
 }
 
-header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
+.submenu-item a {
   color: #000;
   text-decoration: none;
   font-size: 16px;
@@ -104,11 +105,11 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     flex-direction: row;
   }
 
-  header div.titles img {
+  .titles img {
     margin: 0 2vh;
   }
 
-  header div.titles div.menu-icons {
+  .menu-icons {
     display: none;
   }
 
@@ -123,7 +124,7 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     display: none;
   }
 
-  header nav ul.menu {
+  .menu {
     padding: 0 2vh;
     height: 10vh;
     display: flex;
@@ -132,7 +133,7 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     justify-content: flex-end;
   }
 
-  header nav ul.menu li.menu-item {
+  .menu-item {
     margin: 0;
     margin-left: 30px;
     display: flex;
@@ -141,17 +142,28 @@ header nav ul.menu li.menu-item ul.submenu li.submenu-item a {
     align-items: flex-end;
   }
 
-  header nav ul.menu li.menu-item a {
+  .menu-item a {
     font-size: 18px;
   }
 
-  header nav ul.menu li.menu-item ul.submenu {
+  .submenu {
     position: absolute;
-    margin-top: 5vh;
+    margin-top: 2vh;
+    padding-top: 3vh;
     background-color: #fff;
+    z-index: 999;
   }
 
-  header nav ul.menu li.menu-item ul.submenu li.submenu-item {
+  /* Display submenu on hover */
+  .menu-button:hover + .submenu {
+    display: block;
+  }
+
+  .submenu:hover {
+    display: block;
+  }
+
+  .submenu-item {
     font-size: 16px;
     text-align: right;
   }
@@ -171,7 +183,7 @@ main {
   margin: 0 auto;
 }
 
-main div.section-heading {
+.section-heading {
   /*margin: 5vh 0 0;*/
 /*  background: url('../assets/images/teaching-philosophy.jpg');
   background-size: cover;
@@ -185,7 +197,7 @@ main div.section-heading {
   object-position: top;
 }
 
-main div.section-heading h1 {
+.section-heading h1 {
   margin: 0;
 }
 
@@ -215,12 +227,12 @@ main div.section-heading h1 {
     object-position: 0 -70px;
   }
 
-  main .wrapper {
+  .wrapper {
     width: 100%;
     height: auto;
   }
 
-  main section {
+  section {
     /*width: 40%;*/
     /*padding: 0 4%;*/
     height: 100%;
@@ -230,11 +242,11 @@ main div.section-heading h1 {
     padding: 30px;
   }
 
-  main section div.section-heading {
+  .section-heading {
     margin-bottom: 10px;
   }
 
-  main section div.text p {
+  .text p {
     font-size: 16px;
   }
 }

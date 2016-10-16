@@ -2,9 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -112,7 +110,6 @@ header nav i.fa-times {
   font-size: 16px;
 }
 
-
 /* Main styling */
 
 main {
@@ -122,7 +119,7 @@ main {
 }
 
 section {
-  // min-height: 60vh;
+  //min-height: 60vh;
   padding: 0 0 40px;
 }
 
@@ -142,45 +139,44 @@ section {
   text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
 }
 
-.section-heading hr {}
+.section-heading hr {
+}
 
 .wrapper {
   padding: 0 10px;
 }
 
-#why-private-lessons {
-/*  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./assets/why-private-lessons.jpg');
-*/  /*background-image: -o-linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));*/
-/*  background-size: cover;*/
-  /*color: #000;*/
+#why-private-lessons {/*  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./assets/why-private-lessons.jpg');
+*//*background-image: -o-linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2));*//*  background-size: cover;*//*color: #000;*/
 }
 
 #why-private-lessons .section-heading {
-  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./assets/why-private-lessons.jpg');
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // height: 70vh;
-  // color: #fff;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+                      url('./assets/why-private-lessons.jpg');
+  /*background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
 }
 
-#why-private-lessons .text {}
+#why-private-lessons .text {
+}
 
-#why-private-lessons .text a {
-  /*color: #fff;*/
+#why-private-lessons .text a {/*color: #fff;*/
 }
 
 #student-opportunities {
-  // min-height: 0;
+  //min-height: 0;
 }
 
 #student-opportunities .section-heading {
-  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./assets/violin-1085606_1920.jpg');
-
+  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+                      url('./assets/violin-1085606_1920.jpg');
 }
 
 .opportunities {
@@ -243,25 +239,21 @@ section {
 .weekly-lessons {
   background-color: #73bec8;
   background-color: #a2d9e0;
-  
 }
 
 .group-classes {
   background-color: #e4ba3f;
   background-color: #e2ce91;
-  
 }
 
 .bi-annual {
   background-color: #c384c5;
   background-color: #b093b1;
-  
 }
 
 .parent-education {
   background-color: #c85977;
   background-color: #d698a9;
-
 }
 
 #studio-policies {
@@ -274,19 +266,20 @@ section {
 }
 
 #studio-policies .section-heading {
-  background-image: -webkit-linear-gradient(0, rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('./assets/piano-962995_1920.jpg');
+  background-image: -webkit-linear-gradient(0, rgba(255,255,255,0.2), rgba(255,255,255,0.2)),
+                      url('./assets/piano-962995_1920.jpg');
   background-position: center;
 }
+
 #suzuki {
-  
 }
 
 #suzuki .section-heading {
-  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./assets/suzuki.jpg');
+  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+                      url('./assets/suzuki.jpg');
 }
 
 #suzuki intro {
-
 }
 
 #suzuki ul {
@@ -295,10 +288,14 @@ section {
   list-style-type: none;
 }
 
-#suzuki li {}
-#suzuki li h4 {}
-#suzuki li p {}
+#suzuki li {
+}
 
+#suzuki li h4 {
+}
+
+#suzuki li p {
+}
 
 /* Footer stylings */
 
@@ -321,7 +318,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 4vw;
-  border-radius: 50%; 
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   background-color: #000;
@@ -345,7 +342,6 @@ footer {
   margin: 0;
 }
 
-
 /* Media Queries */
 
 @media only screen and (min-width: 800px) {
@@ -353,21 +349,26 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
   .titles img {
     margin: 0 2vh;
   }
+
   .menu-icons {
     display: none;
   }
+
   header nav {
     display: inline;
     min-height: 0;
     position: static;
     background-color: transparent;
   }
+
   header nav i.fa-times {
     display: none;
   }
+
   .menu {
     padding: 0 2vh;
     height: 10vh;
@@ -376,6 +377,7 @@ footer {
     align-items: center;
     justify-content: flex-end;
   }
+
   .menu-item {
     margin: 0;
     margin-left: 30px;
@@ -384,20 +386,34 @@ footer {
     flex-direction: column;
     align-items: flex-end;
   }
+
   .menu-item a {
     font-size: 18px;
   }
+
   .submenu {
     position: absolute;
     margin-top: 5vh;
     background-color: #fff;
   }
+
+  /* Display submenu on hover */
+  .menu-button:hover + .submenu {
+    display: block;
+  }
+
+  .submenu:hover {
+    display: block;
+  }
+
+  /* Submenu styles */
   .submenu-item {
     font-size: 16px;
     text-align: right;
   }
 
   /* Main styling */
+
   .wrapper {
     max-width: 700px;
     margin: 0 auto;
@@ -406,8 +422,8 @@ footer {
   .section-heading {
     height: 70vh;
   }
-  #why-private-lessons {
-    /*background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./assets/why-private-lessons.jpg');*/
+
+  #why-private-lessons {/*background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./assets/why-private-lessons.jpg');*/
   }
 
   .opportunities {
@@ -421,6 +437,7 @@ footer {
   footer {
     margin: 3vh 0;
   }
+
   .media-links li {
     margin: 0 10px;
   }

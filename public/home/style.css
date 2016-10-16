@@ -2,21 +2,19 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
-ul,
-li {
+ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 body {
-  background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-desktop-1.jpg');
+  background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                      url('../assets/images/home-desktop-1.jpg');
   background-size: cover;
   background-position: center bottom;
 }
@@ -108,7 +106,7 @@ footer {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  // margin: 0;
+  //margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -120,7 +118,7 @@ footer {
   justify-content: center;
   margin: 0 4vw;
   border-radius: 50%;
-  // border: 1px solid #000;
+  //border: 1px solid #000;
   width: 40px;
   height: 40px;
   background-color: #000;
@@ -137,11 +135,11 @@ footer {
 
 .footer-text {
   text-align: center;
-  margin: 15px 0;  
+  margin: 15px 0;
 }
 
 .footer-text h6 {
-  margin: 0;  
+  margin: 0;
 }
 
 @media only screen and (min-width: 800px) {
@@ -149,14 +147,17 @@ footer {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .titles img {
     border-style: none;
     height: 20vh;
     margin: 30vh auto;
   }
+
   .menu-icons {
     display: none;
   }
+
   nav {
     display: block;
     min-height: 0;
@@ -164,15 +165,18 @@ footer {
     height: 10vh;
     background-color: transparent;
   }
+
   nav .fa-times {
     display: none;
   }
+
   .menu {
     padding: 2vh;
     display: flex;
     position: fixed;
     right: 0;
   }
+
   .menu-item {
     margin: 0;
     margin-left: 30px;
@@ -181,29 +185,39 @@ footer {
     flex-direction: column;
     align-items: flex-end;
   }
+
   .menu-item a {
     font-size: 18px;
   }
+
   .submenu {
     position: absolute;
-    margin-top: 3vh;
+    padding-top: 3vh;
   }
+
+   /* Hover on the button -- show the submenu */
+  .menu-button:hover + .submenu {
+    display: block;
+  }
+
+  .submenu:hover {
+    display: block;
+  }
+
+
+  /* Submenu styling */
   .submenu-item {
     font-size: 16px;
     text-align: right;
   }
+
   .submenu-item a {
     font-size: 16px;
   }
 
   footer {
-    margin 3vh 0;
   }
 
   .media-links li {
-    margin 0 10px;
   }
 }
-
-
-/*# sourceMappingURL=style.css.map */

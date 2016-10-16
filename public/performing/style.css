@@ -103,21 +103,26 @@ header nav i.fa-times {
     display: flex;
     flex-direction: row;
   }
+
   .titles img {
     margin: 0 2vh;
   }
+
   .menu-icons {
     display: none;
   }
+
   header nav {
     display: inline;
     min-height: 0;
     position: static;
     background-color: transparent;
   }
+
   header nav i.fa-times {
     display: none;
   }
+
   .menu {
     padding: 0 2vh;
     height: 10vh;
@@ -126,6 +131,7 @@ header nav i.fa-times {
     align-items: center;
     justify-content: flex-end;
   }
+
   .menu-item {
     margin: 0;
     margin-left: 30px;
@@ -134,14 +140,25 @@ header nav i.fa-times {
     flex-direction: column;
     align-items: flex-end;
   }
+
   .menu-item a {
     font-size: 18px;
   }
+
   .submenu {
     position: absolute;
     margin-top: 5vh;
     background-color: #fff;
   }
+
+  .menu-button:hover + .submenu {
+    display: block;
+  }
+
+  .submenu:hover {
+    display: block;
+  }
+
   .submenu-item {
     font-size: 16px;
     text-align: right;
@@ -182,7 +199,6 @@ main img {
 .video {
   margin: 5vh auto 0;
   width: 100%;
-  
 }
 
 .video h3 {
@@ -197,7 +213,6 @@ main img {
 }
 
 @media only screen and (min-width: 800px) {
-
   .video-1 iframe {
     height: 80vh;
   }
@@ -252,8 +267,8 @@ footer {
   }
 
   .video {
-    // width: 70vw;
-    // height: 60vh;
+    //width: 70vw;
+    //height: 60vh;
   }
 
   .video iframe {
@@ -263,10 +278,8 @@ footer {
   footer {
     margin: 3vh 0;
   }
+
   .media-links ul li {
     margin: 0 10px;
   }
 }
-
-
-/*# sourceMappingURL=style.css.map */

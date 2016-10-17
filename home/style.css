@@ -192,7 +192,8 @@ footer {
 
   .submenu {
     position: absolute;
-    padding-top: 3vh;
+    margin-top: 18px;
+    padding-top: 1vh;
   }
 
    /* Hover on the button -- show the submenu */

@@ -120,7 +120,7 @@ main {
 
 section {
   //min-height: 60vh;
-  padding: 0 0 40px;
+  padding: 0;
 }
 
 .section-heading {
@@ -143,7 +143,7 @@ section {
 }
 
 .wrapper {
-  padding: 0 10px;
+  padding: 20px 10px;
 }
 
 #why-private-lessons {/*  background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./assets/why-private-lessons.jpg');
@@ -176,7 +176,7 @@ section {
 
 #student-opportunities .section-heading {
   background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
-                      url('./assets/violin-1085606_1920.jpg');
+                      url('./assets/student-oppurtunities.jpg');
 }
 
 .opportunities {
@@ -184,14 +184,14 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
-  margin: 20px auto 0;
+  margin: 0 auto;
   justify-content: center;
 }
 
 .button-wrapper {
   width: 48%;
   height: 35vw;
-  margin: 1% 1%;
+  margin: 3px;
   border-radius: 2px;
   /*background-color: #eee;*/
 }
@@ -218,7 +218,26 @@ section {
   vertical-align: center;
 }
 
-.see-more {
+.opp-view {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: papayawhip;
+  width: 100vw;
+  left: 0;
+  top: 12vh;
+  
+}
+.opp-view:not(:target) {
+  display: none;
+}
+
+/*.opportunities li:not(:target) {
+  background-color: peru;
+}*/
+
+/*.see-more {
   display: flex;
   flex-direction: row;
   font-size: 16px;
@@ -234,7 +253,7 @@ section {
   font-size: inherit;
   padding-bottom: inherit;
   margin-left: 2px;
-}
+}*/
 
 .weekly-lessons {
   background-color: #73bec8;
@@ -267,7 +286,7 @@ section {
 
 #studio-policies .section-heading {
   background-image: -webkit-linear-gradient(0, rgba(255,255,255,0.2), rgba(255,255,255,0.2)),
-                      url('./assets/piano-962995_1920.jpg');
+                      url('./assets/studio-policies.jpg');
   background-position: center;
 }
 
@@ -384,7 +403,7 @@ footer {
     display: flex;
     font-size: 18px;
     flex-direction: column;
-    align-items: flex-end;
+    align-items:  center;
   }
 
   .menu-item a {
@@ -393,37 +412,48 @@ footer {
 
   .submenu {
     position: absolute;
-    margin-top: 5vh;
+    margin-top: 18px;
+    padding-top: 3vh;
     background-color: #fff;
+    flex-direction: column;
+    width: 120px;
   }
 
   /* Display submenu on hover */
   .menu-button:hover + .submenu {
-    display: block;
+    display: flex;
   }
 
   .submenu:hover {
-    display: block;
+    display: flex;
   }
 
   /* Submenu styles */
   .submenu-item {
     font-size: 16px;
-    text-align: right;
+    /*text-align: right;*/
   }
 
   /* Main styling */
 
   .wrapper {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 40px auto;
   }
 
   .section-heading {
-    height: 70vh;
+    height: 80vh;
+  }
+
+  .section-heading h1 {
+    font-size: 50px;
   }
 
   #why-private-lessons {/*background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./assets/why-private-lessons.jpg');*/
+  }
+
+  #student-opportunities .section-heading {
+    background-position-y: 42%;
   }
 
   .opportunities {

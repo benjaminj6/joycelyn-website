@@ -142,7 +142,7 @@ header nav i.fa-times {
     display: flex;
     font-size: 18px;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .menu-item a {
@@ -154,20 +154,21 @@ header nav i.fa-times {
     margin-top: 18px;
     padding-top: 3vh;
     background-color: #fff;
-  }
+    flex-direction: column;
+    width: 120px;
+  }/* Display submenu on hover */
 
-  /* Display submenu on hover */
   .menu-button:hover + .submenu {
-    display: block;
+    display: flex;
   }
 
   .submenu:hover {
-    display: block;
-  }
+    display: flex;
+  }/* Submenu styles */
 
   .submenu-item {
     font-size: 16px;
-    text-align: right;
+    /*text-align: right;*/
   }
 }
 
@@ -224,12 +225,12 @@ button[type="submit"] {
   height: 10vh;
 }
 
-main section.form-choices h2 {
+.form-choices h2 {
   padding-top: 30%;
   text-align: center;
 }
 
-main section.form-choices button {
+.form-choices button {
   width: 70%;
   align-self: center;
   border: 1px solid #000;
@@ -311,17 +312,18 @@ input[type="radio"] + label.right-label {
 }
 
 @media only screen and (min-width: 800px) {
-
   main section {
     width: 70%;
-
     align-items: center;
     justify-content: center;
   }
 
+  .form-choices h2 {
+    padding-top: 10%;
+  }
+
   form {
     width: 100%;
-
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -338,6 +340,7 @@ input[type="radio"] + label.right-label {
   input {
     width: 100%;
   }
+
   fieldset {
     margin: 0 auto;
     width: 80%;
@@ -347,6 +350,7 @@ input[type="radio"] + label.right-label {
     margin: 0 auto;
     width: 70%;
   }
+
   .days-list {
     align-items: center;
   }

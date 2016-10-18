@@ -138,7 +138,7 @@ header nav i.fa-times {
     display: flex;
     font-size: 18px;
     flex-direction: column;
-    align-items: flex-end;
+    align-items:  center;
   }
 
   .menu-item a {
@@ -150,19 +150,23 @@ header nav i.fa-times {
     margin-top: 18px;
     padding-top: 3vh;
     background-color: #fff;
+    flex-direction: column;
+    width: 120px;
   }
 
+  /* Display submenu on hover */
   .menu-button:hover + .submenu {
-    display: block;
+    display: flex;
   }
 
   .submenu:hover {
-    display: block;
+    display: flex;
   }
 
+  /* Submenu styles */
   .submenu-item {
     font-size: 16px;
-    text-align: right;
+    /*text-align: right;*/
   }
 }
 

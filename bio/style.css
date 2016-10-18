@@ -90,6 +90,7 @@ header nav i.fa-times {
 }
 
 /* Submenu item style */
+
 .submenu-item {
   color: #000;
   text-decoration: none;
@@ -143,7 +144,7 @@ header nav i.fa-times {
     display: flex;
     font-size: 18px;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .menu-item a {
@@ -155,21 +156,20 @@ header nav i.fa-times {
     margin-top: 18px;
     padding-top: 3vh;
     background-color: #fff;
-  }
+    flex-direction: column;
+    width: 120px;
+  }/* Display submenu on hover */
 
-  /* Display submenu on hover */
   .menu-button:hover + .submenu {
     display: block;
   }
 
   .submenu:hover {
     display: block;
-  }
+  }/* Format submenu */
 
-  /* Format submenu */
   .submenu-item {
     font-size: 16px;
-    text-align: right;
   }
 }
 

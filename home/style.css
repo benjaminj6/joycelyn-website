@@ -183,7 +183,7 @@ footer {
     display: flex;
     font-size: 18px;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .menu-item a {
@@ -194,22 +194,24 @@ footer {
     position: absolute;
     margin-top: 18px;
     padding-top: 1vh;
+    flex-direction: column;
+    width: 120px;
+
   }
 
    /* Hover on the button -- show the submenu */
   .menu-button:hover + .submenu {
-    display: block;
+    display: flex;
   }
 
   .submenu:hover {
-    display: block;
+    display: flex;
   }
 
 
   /* Submenu styling */
   .submenu-item {
     font-size: 16px;
-    text-align: right;
   }
 
   .submenu-item a {

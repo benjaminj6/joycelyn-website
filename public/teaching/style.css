@@ -218,15 +218,26 @@ section {
   vertical-align: center;
 }
 
+.opp-close {
+  position: fixed;
+  top: 20vh;
+  width: 50px;
+  margin-right: 20%;
+  right: 0;
+  z-index: 999;
+}
+
 .opp-view {
   color: red;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   background-color: papayawhip;
   width: 100vw;
   left: 0;
-  top: 12vh;
+  height: 100vh;
+  top: 0;
+  padding: 20vh;
   
 }
 .opp-view:not(:target) {
@@ -234,7 +245,6 @@ section {
 }
 
 /*.opportunities li:not(:target) {
-  background-color: peru;
 }*/
 
 /*.see-more {

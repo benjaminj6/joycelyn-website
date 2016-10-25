@@ -17,6 +17,7 @@ body {
                       url('../assets/images/home-mobile-1.jpg');
   background-size: cover;
   background-position: center bottom;
+  height: 100vh;
 }
 
 .titles {
@@ -26,8 +27,8 @@ body {
 
 .titles img {
   border-style: none;
-  height: 20vh;
-  margin: 30vh auto;
+  height: 20vh;  
+  margin: 30vh auto 0;
 }
 
 .menu-icons {
@@ -98,9 +99,12 @@ header nav .fa-times {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/*footer {
-  margin: 4vh;
-}*/
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+}
 
 .media-links ul {
   margin: 0;
@@ -155,8 +159,8 @@ header nav .fa-times {
   .titles img {
     border-style: none;
     height: 20vh;
-    margin: 30vh auto;
-  }
+/*    margin: 30vh auto;
+*/  }
 
   .menu-icons {
     display: none;

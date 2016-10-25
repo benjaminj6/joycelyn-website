@@ -219,6 +219,10 @@ section {
 }
 
 .opp-close {
+  display: none;
+}
+:target ~ .opp-close {
+  display: block;
   position: fixed;
   top: 20vh;
   width: 50px;
@@ -243,6 +247,8 @@ section {
 .opp-view:not(:target) {
   display: none;
 }
+
+
 
 /*.opportunities li:not(:target) {
 }*/

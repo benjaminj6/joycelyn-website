@@ -242,7 +242,7 @@ section {
   left: 0;
   height: 100vh;
   top: 0;
-  padding-top: 15vh;
+  padding-top: 11vh;
   overflow-y: scroll;
 }
 
@@ -250,12 +250,13 @@ section {
   display: none;
 }
 
-.top-close {
+/*.top-close {
   float: right;
   margin: -35px 10px;
   color: rgba(255,255,255,0.8);
   font-size: 30px;
-}
+}*/
+
 .content {
   padding: 15px;
   background-color: #fff;
@@ -483,7 +484,7 @@ footer {
 
   .wrapper {
     max-width: 700px;
-    margin: 40px auto;
+    margin: 20px auto;
   }
 
   .section-heading {

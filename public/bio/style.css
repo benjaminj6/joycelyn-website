@@ -151,7 +151,9 @@ header nav i.fa-times {
 	.menu-item a {
 		font-size: 18px;
 	}
-	
+
+/*********  Changed styles for copy/paste ***********/
+
 	.submenu-wrapper {
 		position: absolute;
 		padding: 10px;
@@ -181,6 +183,8 @@ header nav i.fa-times {
 	.submenu:hover, .submenu-wrapper:hover .submenu {
 		opacity: 1;
 	}
+
+	/*********  Changed styles for copy/paste ***********/
 
 	/* Format submenu */
 

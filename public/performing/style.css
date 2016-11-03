@@ -82,7 +82,8 @@ header nav i.fa-times {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: none;
+  opacity: 1;
+/*  display: none;*/
 }
 
 .submenu-item {
@@ -145,22 +146,34 @@ header nav i.fa-times {
     font-size: 18px;
   }
 
-  .submenu {
+  .submenu-wrapper {
     position: absolute;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .submenu {
+    position: relative;
     margin-top: 18px;
-    padding-top: 3vh;
+    padding-top: 0;
     background-color: #fff;
     flex-direction: column;
     width: 120px;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    /*right: -58px;*/
   }
 
   /* Display submenu on hover */
-  .menu-button:hover + .submenu {
-    display: flex;
+
+  .menu-button:hover + .submenu-wrapper .submenu {
+    opacity: 1;
   }
 
-  .submenu:hover {
-    display: flex;
+  .submenu:hover, .submenu-wrapper:hover .submenu {
+    opacity: 1;
   }
 
   /* Submenu styles */

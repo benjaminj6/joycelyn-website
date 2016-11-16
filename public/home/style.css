@@ -175,7 +175,7 @@ footer {
 /*    margin: 30vh auto;
 */  }
 
-	.menu-icons {
+	.nav-trigger-open {
 		display: none;
 	}
 
@@ -214,18 +214,19 @@ footer {
 	.submenu {
 		position: absolute;
 		margin-top: 18px;
-		padding-top: 1vh;
+		padding-top: 15px;
 		flex-direction: column;
 		width: 120px;
-
+		top: 0;
+		left: 84px;
 	}
 
 	 /* Hover on the button -- show the submenu */
-	.menu-button:hover + .submenu {
+	.menu-button:hover + .submenu-wrapper {
 		display: flex;
 	}
 
-	.submenu:hover {
+	.submenu-wrapper:hover {
 		display: flex;
 	}
 

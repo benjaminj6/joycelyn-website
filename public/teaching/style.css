@@ -427,6 +427,7 @@ footer {
 		height: 25vh;
 	}
 }
+
 @media only screen and (min-width: 800px) {
 	header {
 		display: flex;
@@ -437,7 +438,7 @@ footer {
 		margin: 0 2vh;
 	}
 
-	.menu-icons {
+	.nav-trigger-open {
 		display: none;
 	}
 
@@ -490,19 +491,18 @@ footer {
 	width: 120px;
 	display: block;
 	border: 1px solid rgba(0, 0, 0, 0.5);
-	opacity: 0;
 	/*right: -58px;*/
 	left: -15px;
  }
 
  /* Display submenu on hover */
 
- .menu-button:hover + .submenu-wrapper .submenu {
-	opacity: 1;
+ .menu-button:hover + .submenu-wrapper {
+	display: block;
  }
 
- .submenu:hover, .submenu-wrapper:hover .submenu {
-	opacity: 1;
+ .submenu-wrapper:hover {
+	display: block;
  }
 
  /* Submenu styles */

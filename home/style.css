@@ -133,12 +133,11 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 4vw;
+	margin: 0 10px;
 	border-radius: 50%;
-	//border: 1px solid #000;
 	width: 40px;
 	height: 40px;
-	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .media-links a {
@@ -221,7 +220,6 @@ footer {
 		left: 84px;
 	}
 
-
 	 /* Hover on the button -- show the submenu */
 	.menu-button:hover + .submenu-wrapper {
 		display: flex;
@@ -230,7 +228,6 @@ footer {
 	.submenu-wrapper:hover {
 		display: flex;
 	}
-
 
 	/* Submenu styling */
 	.submenu-item {

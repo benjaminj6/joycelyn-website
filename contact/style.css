@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 header {
   position: fixed;
   z-index: 999;
@@ -23,21 +28,17 @@ header {
   height: 80%;
 }
 
-.menu-icons {
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  align-self: flex-start;
-  justify-content: flex-end;
-  padding: 0 1vh;
-  color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  right: 0;
+#nav-trigger {
+  display: none;
 }
 
-.menu-icons h4 {
-  margin: 0 5px;
-  display: inline;
+.nav-trigger-open {
+  font-size: 24px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
 header nav {
@@ -82,12 +83,19 @@ header nav i.fa-times {
   font-size: 20px;
 }
 
-.submenu {
+#about-submenu-trigger {
+  display: none;
+}
+
+.submenu-wrapper {
   margin: 0;
+  opacity: 1;
+  display: none;
+}
+
+.submenu {
   padding: 0;
   list-style-type: none;
-  opacity: 1;
-/*  display: none;*/
 }
 
 .submenu-item {
@@ -102,6 +110,18 @@ header nav i.fa-times {
   text-decoration: none;
   font-size: 16px;
 }
+
+/******* Open menus ******/
+
+#nav-trigger:checked ~ nav {
+  display: block;
+}
+
+#about-submenu-trigger:checked ~ .submenu-wrapper {
+  display: block;
+}
+
+/****** End Open menus section ******/
 
 @media only screen and (min-width: 800px) {
   header {

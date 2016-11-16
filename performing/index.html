@@ -12,27 +12,31 @@
 		<header>
 			<div class="titles">
 				<img src="../assets/images/logo-main.png" alt="Joycelyn Choo, Violinist | Teacher" />
-				<div class="menu-icons">
-					<i class="fa fa-bars"></i>
-				</div>
 			</div>
+			<input type="checkbox" id="nav-trigger">
+			<label for="nav-trigger" class="nav-trigger-open">
+				<i class="fa fa-bars"></i>
+			</label>
 			<nav>
-				<i class="fa fa-times"></i>
+				<label for="nav-trigger" class="nav-trigger-close">
+					<i class="fa fa-times"></i>
+				</label>
 				<ul class="menu">
 					<li class="menu-item">
 						<a href="../home">Home</a> 
 					</li>
 					<li class="menu-item">
-						<div class="menu-button">About
+						<input type="checkbox" id="about-submenu-trigger">
+						<label class="menu-button" for="about-submenu-trigger">About
 							<i class="fa fa-angle-down"></i>
-						</div class="menu-button">
+						</label class="menu-button">
 						<div class="submenu-wrapper">
 							<ul class="submenu">
 								<li class="submenu-item">
-									<a href="../bio">Bio</a> 
+									<a href="../bio">Bio</a>
 								</li>
 								<li class="submenu-item">
-									<a href="../teaching-philosophy">Teaching Philosophy</a> 
+									<a href="../teaching-philosophy">Teaching Philosophy</a>
 								</li>
 							</ul>
 						</div>
@@ -41,7 +45,7 @@
 						<a href="../teaching/">Teaching</a>
 					</li>
 					<li class="menu-item">
-						<a href=".">Performing</a> 
+						<a href="../performing">Performing</a> 
 					</li>
 					<li class="menu-item">
 						<a href="../blog">Blog</a> 
@@ -53,12 +57,12 @@
 			</nav>
 		</header>
 		<main>
- <!--      <div class="section-heading">
+			<div class="section-heading">
 				<h1>PERFORMING</h1>
 				<hr>
 			</div>
-			<!-- <img src="../assets/images/performing.jpg" alt="Performing Photo"> <-->
-			<section class="video video-1">
+			
+			<section class="video video-1"> 
 				<!-- <h3>Senior Recital</h3> -->
 				<iframe type="text/html" src="https://www.youtube.com/embed/4LE38D6sADw?color=white&theme=dark" frameborder="0" allowfullscreen></iframe>
 			</section>

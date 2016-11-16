@@ -21,8 +21,13 @@ body {
 }
 
 .titles {
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
-	flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	        flex-direction: column-reverse;
 }
 
 .titles img {
@@ -124,20 +129,31 @@ footer {
 	padding: 0;
 	list-style-type: none;
 	/*margin: 0;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-ms-flex-direction: row;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	        flex-direction: row;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
 }
 
 .media-links li {
+	display: -ms-flexbox;
+
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
 	margin: 0 10px;
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .media-links a {
@@ -159,88 +175,110 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
-	body {
-		background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-desktop-1.jpg');
-	}
+		body {
+			background-image: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-desktop-1.jpg');
+			background-image: linear-gradient(0, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/images/home-desktop-1.jpg');
+		}
 
-	header {
-		display: flex;
-		flex-direction: column-reverse;
-	}
+		header {
+			display: -ms-flexbox;
+			display: -webkit-box;
+			display: flex;
+			-ms-flex-direction: column-reverse;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: reverse;
+			        flex-direction: column-reverse;
+		}
 
-	.titles img {
-		border-style: none;
-		height: 20vh;
-/*    margin: 30vh auto;
-*/  }
+		.titles img {
+			border-style: none;
+			height: 20vh;
+	/*    margin: 30vh auto;
+	*/  }
 
-	.nav-trigger-open {
-		display: none;
-	}
+		.nav-trigger-open {
+			display: none;
+		}
 
-	header nav {
-		display: block;
-		min-height: 0;
-		position: static;
-		height: 9vh;
-		background-color: transparent;
-	}
+		header nav {
+			display: block;
+			min-height: 0;
+			position: static;
+			height: 9vh;
+			background-color: transparent;
+		}
 
-	header nav .fa-times {
-		display: none;
-	}
+		header nav .fa-times {
+			display: none;
+		}
 
-	.menu {
-		padding: 2vh;
-		display: flex;
-		position: fixed;
-		right: 0;
-	}
+		.menu {
+			padding: 2vh;
+			display: -ms-flexbox;
+			display: -webkit-box;
+			display: flex;
+			position: fixed;
+			right: 0;
+		}
 
-	.menu-item {
-		margin: 0;
-		margin-left: 30px;
-		display: flex;
-		font-size: 18px;
-		flex-direction: column;
-		align-items: center;
-	}
+		.menu-item {
+			margin: 0;
+			margin-left: 30px;
+			display: -ms-flexbox;
+			display: -webkit-box;
+			display: flex;
+			font-size: 18px;
+			-ms-flex-direction: column;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			        flex-direction: column;
+			-ms-flex-align: center;
+			    -webkit-box-align: center;
+			        align-items: center;
+		}
+		
+		.menu-item a {
+			font-size: 18px;
+		}
 
-	.menu-item a {
-		font-size: 18px;
-	}
+		.submenu {
+			position: absolute;
+			margin-top: 18px;
+			padding-top: 15px;
+			-ms-flex-direction: column;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			        flex-direction: column;
+			width: 120px;
+			top: 0;
+			left: 84px;
+		}
 
-	.submenu {
-		position: absolute;
-		margin-top: 18px;
-		padding-top: 15px;
-		flex-direction: column;
-		width: 120px;
-		top: 0;
-		left: 84px;
-	}
+		 /* Hover on the button -- show the submenu */
+		.menu-button:hover + .submenu-wrapper {
+			display: -ms-flexbox;
+			display: -webkit-box;
+			display: flex;
+		}
 
-	 /* Hover on the button -- show the submenu */
-	.menu-button:hover + .submenu-wrapper {
-		display: flex;
-	}
+		.submenu-wrapper:hover {
+			display: -ms-flexbox;
+			display: -webkit-box;
+			display: flex;
+		}
 
-	.submenu-wrapper:hover {
-		display: flex;
-	}
+		/* Submenu styling */
+		.submenu-item {
+			font-size: 16px;
+		}
 
-	/* Submenu styling */
-	.submenu-item {
-		font-size: 16px;
-	}
+		.submenu-item a {
+			font-size: 16px;
+		}
 
-	.submenu-item a {
-		font-size: 16px;
-	}
+		footer {
+		}
 
-	footer {
-	}
-
-	.media-links li {
-	}
+		.media-links li {
+		}
 }

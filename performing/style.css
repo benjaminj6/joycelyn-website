@@ -224,6 +224,7 @@ main {
 
 .section-heading {
 	padding-top: 4vh;
+	text-align: center;
 }
 
 .section-heading h1 {
@@ -243,8 +244,8 @@ main img {
 }
 
 .intro {
-	width: 95%;
-	margin: 0 auto;
+	width: 100%;
+	margin: 10px auto 0;
 }
 
 .video {

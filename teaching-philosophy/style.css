@@ -324,6 +324,7 @@ main {
 
   section {/*width: 40%;*//*padding: 0 4%;*/
     height: 100%;
+    width: 50%;
     overflow-y: scroll;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);

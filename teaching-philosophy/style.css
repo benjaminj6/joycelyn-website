@@ -1,3 +1,8 @@
+a {
+  color: #607d8b;
+  text-decoration: none;
+}
+
 header {
   position: fixed;
   background-color: #fff;
@@ -47,11 +52,12 @@ header {
 
 header nav {
   display: none;
-  width: 100%;
+  box-shadow: -1px 0px 300px rgba(0, 0, 0, 0.6);
+  width: 70%;
   min-height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   background-color: #fff;
   overflow-y: scroll;
@@ -143,6 +149,8 @@ header nav i.fa-times {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+
+    justify-content: space-between;
   }
 
   .titles img {
@@ -158,6 +166,7 @@ header nav i.fa-times {
     min-height: 0;
     position: static;
     background-color: transparent;
+    box-shadow: none;
   }
 
   header nav i.fa-times {

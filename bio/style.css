@@ -50,12 +50,13 @@ header {
 }
 
 header nav {
+	box-shadow: -1px 0px 300px rgba(0, 0, 0, 0.6);
 	display: none;
-	width: 100%;
+	width: 70%;
 	min-height: 100vh;
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	height: 100%;
 	background-color: #fff;
 	overflow-y: scroll;
@@ -150,6 +151,7 @@ header nav i.fa-times {
 		        flex-direction: row;
 
 		overflow-y: visible;
+		justify-content: space-between;
 	}
 
 	.titles img {
@@ -165,6 +167,7 @@ header nav i.fa-times {
 		min-height: 0;
 		position: static;
 		background-color: transparent;
+		box-shadow: none;
 	}
 
 	header nav i.fa-times {
@@ -325,7 +328,8 @@ main section div.text p {
 }
 
 main section div.text a {
-	color: #000;
+	color: #607d8b;
+	text-decoration: none;
 }
 
 @media only screen and (min-width: 800px) {

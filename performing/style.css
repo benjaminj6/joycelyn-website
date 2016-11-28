@@ -1,3 +1,8 @@
+a {
+	color: #607d8b;
+	text-decoration: none;
+}
+
 header {
 	position: fixed;
 	background-color: #fff;
@@ -37,12 +42,13 @@ header {
 }
 
 header nav {
+	box-shadow: -1px 0px 300px rgba(0, 0, 0, 0.6);
 	display: none;
-	width: 100%;
+	width: 70%;
 	min-height: 100vh;
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	height: 100%;
 	background-color: #fff;
 	overflow-y: scroll;
@@ -127,6 +133,7 @@ header nav i.fa-times {
 	header {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.titles img {
@@ -142,6 +149,7 @@ header nav i.fa-times {
 		min-height: 0;
 		position: static;
 		background-color: transparent;
+		box-shadow: none;
 	}
 
 	header nav i.fa-times {
@@ -216,6 +224,12 @@ header nav i.fa-times {
 	}
 }
 
+/***********
+
+BODY SECTION
+
+***********/
+
 main {
 	padding: 11vh 0 0;
 	display: flex;
@@ -246,6 +260,7 @@ main img {
 .intro {
 	width: 100%;
 	margin: 10px auto 0;
+	text-align: center;
 }
 
 .video {
@@ -273,6 +288,12 @@ main img {
 		height: 80vh;
 	}*/
 }
+
+/**********
+
+FOOTER SECTION
+
+**********/
 
 footer {
 	margin: 4vh;

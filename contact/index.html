@@ -75,15 +75,15 @@
       <form action="//formspree.io/benjamin.d.johnson@icloud.com" id="lessons-form" method="POST">
         <input type="hidden" name="REQUEST TYPE" value="Lessons Application">
         <fieldset>
-          <p>Name (Parent or Guardian)*</p>
+          <p class="required">Name (Parent or Guardian)*</p>
           <input type="text" required="true" name="Parent Name">
         </fieldset>
         <fieldset>
-          <p>Name (Prospective Student)*</p>
+          <p class="required">Name (Prospective Student)*</p>
           <input type="text" required="true" name="Student Name">
         </fieldset>
         <fieldset>
-          <p>Prospective Student's Age*</p>
+          <p class="required">Prospective Student's Age*</p>
           <input type="number" required="true" name="Student Age">
         </fieldset>
         <fieldset>
@@ -98,7 +98,7 @@
           <p>If you’ve taken violin lessons before, did you study with a Suzuki or Traditional teacher?</p>
           <ul class="radio-buttons switch">
             <li>
-              <input type="radio" value="suzuki" id="suzuki-option1" name="Student Suzuki Experience">
+              <input type="radio" checked="checked" value="suzuki" id="suzuki-option1" name="Student Suzuki Experience">
               <label for="suzuki-option1" class="left-label">Suzuki</label>
             </li>
             <li>
@@ -250,11 +250,11 @@
           <p>All students are required to enroll in a mandatory group class that meets once a week in addition to weekly lessons. Is this a commitment that your family is willing to make?</p>
           <ul class="radio-buttons switch">
             <li>
-              <input type="radio" id="group-classes-option1" value="yes" name="Group Class">
+              <input type="radio" checked="checked" id="group-classes-option1" value="Yes" name="Group Class">
               <label for="group-classes-option1" class="left-label">Yes</label>
             </li>
             <li>
-              <input type="radio" id="group-classes-option2" value="no" name="Group Class">
+              <input type="radio" id="group-classes-option2" value="No" name="Group Class">
               <label for="group-classes-option2" class="right-label">No</label>
             </li>
           </ul>
@@ -264,7 +264,7 @@
           <textarea id="lessons-extra-questions" cols="30" rows="10" name="Additional Questions"></textarea>
         </fieldset>
         <fieldset>
-          <p>Email*</p>
+          <p class="required">Email*</p>
           <input type="email" required="true" name="Reply Email">
         </fieldset>
         <button type="submit" class="btn-default">Submit</button>
@@ -280,15 +280,15 @@
       <form id="performing-form" action="//formspree.io/benjamin.d.johnson@icloud.com" method="POST">
         <input type="hidden" name="REQUEST TYPE" value="Performance Request">
         <fieldset>
-          <p>Name*</p>
+          <p class="required">Name*</p>
           <input type="text" required="true" name="Name">
         </fieldset>
         <fieldset>
-          <p>Phone Number*</p>
+          <p class="required">Phone Number*</p>
           <input type="text" required="true" name="Phone Number">
         </fieldset>
         <fieldset>
-          <p>Email*</p>
+          <p class="required">Email*</p>
           <input type="text" required="true" name="Reply Email Address">
         </fieldset>
         <fieldset>
@@ -304,11 +304,11 @@
           <input type="date" required="true" name="Date">
         </fieldset>
         <fieldset>
-          <p>Budget (Please expect at least $100 per person)*</p>
+          <p class="required">Budget (Please expect at least $100 per person)*</p>
           <input type="text" required="true" name="Budget">
         </fieldset>
         <fieldset>
-          <p>Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*</p>
+          <p class="required">Musicians desired (Quartet, Trio, Duo, Solo — Please specify what instruments you would like)*</p>
           <input type="text" required="true" name="Musicians desired">
         </fieldset>
         <fieldset>
@@ -346,9 +346,7 @@
     </nav>
     <div class="footer-text">
       <h6>joycelyn.a.choo@gmail.com | 714•501•5366</h6>
-      <h6>Website by
-					<a href="LINK TO PORTFOLIO" target="_blank">Benjamin Johnson</a> 
-				</h6>
+      <h6>Website by Benjamin Johnson</h6>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>

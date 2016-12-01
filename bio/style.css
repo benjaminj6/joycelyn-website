@@ -183,7 +183,7 @@ header nav i.fa-times {
 		box-shadow: none;
 	}
 
-	header nav i.fa-times {
+	header nav .nav-trigger-close {
 		display: none;
 	}
 
@@ -222,7 +222,7 @@ header nav i.fa-times {
 		font-size: 18px;
 	}
 
-/*********  Changed styles for copy/paste ***********/
+	/* ----------  Changed styles for copy/paste ---------- */
 
 	.submenu-wrapper {
 		position: absolute;
@@ -247,7 +247,7 @@ header nav i.fa-times {
 		/*right: -58px;*/
 	}
 
-	/* Display submenu on hover */
+	/* ---------- Display submenu on hover ---------- */
 
 	.menu-button:hover + .submenu-wrapper {
 		opacity: 1;
@@ -268,14 +268,16 @@ header nav i.fa-times {
     transform:translateZ(200);
 	}
 
-	/*********  Changed styles for copy/paste ***********/
-
-	/* Format submenu */
+	/* ---------- Format submenu ---------- */
 
 	.submenu-item {
 		font-size: 16px;
 	}
 }
+
+/* ----------------------------------------------------------------
+          MAIN STYLES
+---------------------------------------------------------------- */
 
 main {
 	padding: 11vh 0 0;
@@ -345,6 +347,8 @@ main section div.text a {
 	color: #607d8b;
 	text-decoration: none;
 }
+
+/* ---------- Main media query ---------- */
 
 @media only screen and (min-width: 800px) {
 	main {

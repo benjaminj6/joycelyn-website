@@ -1,7 +1,11 @@
+/* ---------- GLOBAL STYLES ---------- */
+
 a {
 	color: #607d8b;
 	text-decoration: none;
 }
+
+/* ---------- HEADER STYLES ---------- */
 
 header {
 	position: fixed;
@@ -224,6 +228,8 @@ header nav i.fa-times {
 	 /*text-align: right;*/
  }
 }
+
+/* ---------- MAIN STYLES ---------- */
 
 main {
 	padding: 11vh 0 0;

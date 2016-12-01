@@ -1,6 +1,23 @@
+/* ---------- GLOBAL STYLES ---------- */
+
 * {
 	font-weight: lighter;
 }
+
+a {
+	color: #607D8B;
+	text-decoration: none;
+}
+
+.menu-select {
+	color: rgba(0, 0, 0, 0.8)
+}
+
+.menu-select:hover {
+	color: rgba(0, 0, 0, 1);
+}
+
+/* ---------- HEADER STYLES ---------- */
 
 header {
 	position: fixed;
@@ -84,14 +101,12 @@ header nav i.fa-times {
 
 .menu-item {
 	margin: 7vh auto;
-	color: #000;
 	text-decoration: none;
 	font-size: 20px;
 	cursor: pointer;
 }
 
 .menu-item a {
-	color: #000;
 	text-decoration: none;
 	font-size: 20px;
 }
@@ -116,14 +131,12 @@ header nav i.fa-times {
 /* Submenu item style */
 
 .submenu-item {
-	color: #000;
 	text-decoration: none;
 	font-size: 16px;
 	margin: 2vh auto;
 }
 
 .submenu-item a {
-	color: #000;
 	text-decoration: none;
 	font-size: 16px;
 }
@@ -213,9 +226,10 @@ header nav i.fa-times {
 
 	.submenu-wrapper {
 		position: absolute;
-		padding: 10px;
+		padding: 5px 10px;
 		width: 120px;
 		height: 120px;
+		margin-top: 10px;
 	}
 
 	.submenu {
@@ -399,7 +413,7 @@ footer nav.media-links ul li {
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer nav.media-links ul li a {

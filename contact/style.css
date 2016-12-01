@@ -1,3 +1,7 @@
+/* ---------- GLOBAL STYLES ---------- */
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +10,29 @@ a {
   color: #607d8b;
   text-decoration: none;
 }
+
+.btn-default {
+  background-color: #90a4ae;
+  border-width: 0;
+  border-radius: 2px;
+  color: #FFF;
+  transition: background 0.3s linear; 
+}
+
+.btn-default:hover {
+  background-color: #607d8b;
+  cursor: pointer;
+}
+
+.btn-radio {
+
+}
+
+
+
+/* ---------- HEADER STYLES ---------- */
+
+
 
 header {
   position: fixed;
@@ -228,6 +255,12 @@ header nav i.fa-times {
   }
 }
 
+
+
+/* ---------- MAIN STYLES ---------- */
+
+
+
 main {
   padding: 0;
   display: flex;
@@ -273,9 +306,6 @@ textarea {
 
 button[type="submit"] {
   width: 60%;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 2px;
-  background-color: transparent;
   align-self: center;
   margin: 20px 0;
   height: 10vh;
@@ -289,15 +319,7 @@ button[type="submit"] {
 .form-choices button {
   width: 70%;
   align-self: center;
-  border: 0 solid #000;
-  background-color: #90a4ae;
   margin: 5px auto;
-  height: 10vh;
-  border-radius: 2px;
-}
-
-.form-choices button:hover {
-  background-color: #607d8b;
 }
 
 .form-choices a {
@@ -316,17 +338,17 @@ button[type="submit"] {
   justify-content: center;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
   border: none;
   display: none;
 }
 
-input[type="radio"] + label {
+input[type="radio"] + label, .day-checkbox + label {
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-input[type="radio"] + label.day-label {
+input[type="checkbox"] + label.day-label {
   width: 40%;
   border-radius: 2px;
   text-align: center;
@@ -428,6 +450,12 @@ input[type="radio"] + label.right-label {
   }
 }
 
+
+
+/* ---------- FOOTER STYLES ----------*/
+
+
+
 footer {
   margin: 4vh;
 }
@@ -449,7 +477,7 @@ footer nav.media-links ul li {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer nav.media-links ul li a {

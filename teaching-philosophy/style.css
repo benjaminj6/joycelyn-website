@@ -1,7 +1,19 @@
+/***********
+
+GLOBAL STYLES
+
+***********/
+
 a {
   color: #607d8b;
   text-decoration: none;
 }
+
+/***********
+
+HEADER STYLES
+
+***********/
 
 header {
   position: fixed;
@@ -256,16 +268,19 @@ header nav i.fa-times {
   }/* Main styling */
 }
 
+/***********
+
+BODY STYLES
+
+***********/
+
 main {
   margin: 0 auto;
   padding: 11vh 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -294,16 +309,12 @@ main {
   }
 
   .banner {
-    -o-object-position: center;
+    -o-object-position: top center;
        object-position: center;
-  }
-
-  .section-heading h1 {
-    margin: 0;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 750px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -337,7 +348,7 @@ main {
     overflow-y: scroll;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 20px 30px;
   }
 
   .section-heading {
@@ -349,11 +360,11 @@ main {
   }
 }
 
-@media (orientation: landscape) {
+/*@media (orientation: landscape) {
   .banner {
     height: 90vh;
   }
-}
+}*/
 
 footer {
   margin: 4vh;

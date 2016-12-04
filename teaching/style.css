@@ -1,3 +1,7 @@
+/* ----------------------------------------------------------------
+          GLOBAL STYLES
+---------------------------------------------------------------- */
+
 html {
 	box-sizing: border-box;
 }
@@ -10,6 +14,21 @@ a {
 	color: #607d8b;
 	text-decoration: none;
 }
+
+/* --- Manages all items that require a cursor on hover --- */
+.nav-trigger-open,
+.nav-trigger-close,
+.menu-button,
+.button-wrapper button:hover {
+	cursor: pointer;
+}
+
+/* ----------------------------------------------------------------
+          HEADER STYLES
+---------------------------------------------------------------- */
+
+
+
 
 header {
 	position: fixed;
@@ -67,10 +86,10 @@ header nav {
 	    transform:translateZ(5);
 }
 
-header nav i.fa-times {
+header nav .nav-trigger-close {
 	position: absolute;
 	z-index: 999;
-	margin: 10px;
+	margin: 5px;
 	font-size: 24px;
 }
 
@@ -126,7 +145,7 @@ header nav i.fa-times {
 	font-size: 16px;
 }
 
-/******* Open menus ******/
+/* --- Open menus --- */
 
 #nav-trigger:checked ~ nav {
 	display: block;
@@ -136,8 +155,16 @@ header nav i.fa-times {
 	display: block;
 }
 
-/****** End Open menus section ******/
-/* Main styling */
+/* --- End Open menus section --- */
+
+
+
+/* ----------------------------------------------------------------
+          MAIN STYLES
+---------------------------------------------------------------- */
+
+
+
 
 main {
 	padding: 11vh 0 0;
@@ -222,9 +249,9 @@ section {
 	text-decoration: none;
 }
 
-.opportunities i {
+.opportunity-btn-icon {
 	padding-bottom: 7px;
-	font-size: 24px;
+	font-size: 36px;
 }
 
 .opportunities h4 {
@@ -272,7 +299,7 @@ section {
 	color: rgba(255,255,255,0.8);
 	font-size: 30px;
 	position: absolute;
-	right: -30px;
+	right: -40px;
 
 }
 .opp-wrapper {
@@ -290,19 +317,26 @@ section {
 	width: 100%;
 }
 
+
 .text p {
 }
 
 .content button {
 	display: inherit;
 	margin: 0 auto;
-	padding: 10px 30px;
+	padding: 10px 0;
 	border-radius: 2px;
 	border: none;
-	background-color: #ffeeaa; /* Will insert an accent color here */
-
 }
 
+.content button a {
+	color: rgba(0, 0, 0, 0.7);
+	padding: 10px 30px;
+}
+
+.content button a:hover {
+	color: #000;
+}
 /*.opportunities li:not(:target) {
 }*/
 
@@ -324,26 +358,58 @@ section {
 	margin-left: 2px;
 }*/
 
-.weekly-lessons {
-	background-color: #73bec8;
+
+/* --- Handle button accent colors --- */
+
+.weekly-lessons,
+#weekly-lessons button {
 	background-color: #a2d9e0;
 }
 
-.group-classes {
-	background-color: #e4ba3f;
+.group-classes,
+#group-classes button {
 	background-color: #e2ce91;
 }
 
-.bi-annual {
-	background-color: #c384c5;
-	background-color: #b093b1;
+.bi-annual,
+#bi-annual button {
+	background-color: #a77ca9;
 }
 
-.parent-education {
-	background-color: #c85977;
+.parent-education,
+#parent-education button {
 	background-color: #d698a9;
 }
 
+/* --- Handle button accent hover effects --- */
+
+.weekly-lessons:hover,
+#weekly-lessons button:hover {
+	background-color: #73bec8;
+	color: #000;
+}
+
+.group-classes:hover,
+#group-classes button:hover {
+	background-color: #debe5d;
+	color: #000;
+}
+
+
+.bi-annual:hover,
+#bi-annual button:hover {
+	background-color: #a572a7;
+	color: #000;
+}
+
+.parent-education:hover,
+#parent-education button:hover {
+	background-color: #ca8296;
+	color: #000;
+}
+
+
+/* --- Studio Policies section --- */
 #studio-policies {
 	min-height: 30vh;
 	/*background-image: -webkit-linear-gradient(0, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('./assets/studio-policies.jpg');
@@ -385,7 +451,13 @@ section {
 #suzuki li p {
 }
 
-/* Footer stylings */
+
+
+/* ----------------------------------------------------------------
+          FOOTER STYLES
+---------------------------------------------------------------- */
+
+
 
 footer {
 	margin: 4vh;
@@ -409,7 +481,7 @@ footer {
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .media-links a {
@@ -430,7 +502,17 @@ footer {
 	margin: 0;
 }
 
-/* Media Queries */
+
+
+
+
+/* ----------------------------------------------------------------
+          MEDIA STYLES
+---------------------------------------------------------------- */
+
+
+
+
 @media only screen and (min-width: 500px) {
 	.button-wrapper {
 		width: 48%;
@@ -439,6 +521,8 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
+
+/* --- HEADER STYLES --- */
 	header {
 		display: flex;
 		flex-direction: row;
@@ -461,7 +545,7 @@ footer {
 		box-shadow: none;
 	}
 
-	header nav i.fa-times {
+	header nav .nav-trigger-close {
 		display: none;
 	}
 
@@ -534,6 +618,8 @@ footer {
 		/*text-align: right;*/
 	}/* Main styling */
 
+	/* --- MAIN STYLES --- */
+
 	.wrapper {
 		max-width: 700px;
 		margin: 30px auto;
@@ -557,6 +643,8 @@ footer {
 	.opportunities {
 		width: 100%;
 	}
+
+	/* --- FOOTER STYLES --- */
 
 	footer {
 		margin: 3vh 0;

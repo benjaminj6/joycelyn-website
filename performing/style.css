@@ -1,7 +1,33 @@
+/* ----------------------------------------------------------------
+          INFO
+---------------------------------------------------------------- */
+/*
+* Color directory
+* blue-grey (lighter shade): #90a4ae
+* blue-grey (darker shade): #607d8b
+* 
+*/
+
+
+
+/* ----------------------------------------------------------------
+          GLOBAL STYLES
+---------------------------------------------------------------- */
+
+
+
 a {
 	color: #607d8b;
 	text-decoration: none;
 }
+
+
+
+/* ----------------------------------------------------------------
+          HEADER STYLES
+---------------------------------------------------------------- */
+
+
 
 header {
 	position: fixed;
@@ -59,10 +85,10 @@ header nav {
 	    transform:translateZ(5);
 }
 
-header nav i.fa-times {
+header nav .nav-trigger-close {
 	position: absolute;
 	z-index: 999;
-	margin: 10px;
+	margin: 5px;
 	font-size: 24px;
 }
 
@@ -152,7 +178,7 @@ header nav i.fa-times {
 		box-shadow: none;
 	}
 
-	header nav i.fa-times {
+	header nav .nav-trigger-close {
 		display: none;
 	}
 
@@ -258,9 +284,9 @@ main img {
 }
 
 .intro {
-	width: 100%;
 	margin: 10px auto 0;
 	text-align: center;
+	padding: 0 15px;
 }
 
 .video {
@@ -279,6 +305,8 @@ main img {
 	height: 70vh;
 }
 
+
+
 @media only screen and (min-width: 800px) {
 	.video-1 {
 		margin-top: 15px;
@@ -289,11 +317,9 @@ main img {
 	}*/
 }
 
-/**********
-
-FOOTER SECTION
-
-**********/
+/* ----------------------------------------------------------------
+          FOOTER STYLES
+---------------------------------------------------------------- */
 
 footer {
 	margin: 4vh;
@@ -316,7 +342,7 @@ footer {
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .media-links ul li a {

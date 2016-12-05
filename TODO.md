@@ -19,20 +19,33 @@
 	1. [] Make submenu font-size smaller
 
 ### bio
+
+	1. [] Remove <a> tag from my attribution at the bottom
+	2. [] Fix bug where menu-close icon shows up on desktop
+	3. [] Change size of svg icon
+	4. [] Padding and color on menu-close icon
+	5. [] Choose fonts
+		* Header font:
+		* Body font:
+		* Smaller header font:
+	6. [] Nav menu hover effects
+	7. [] Fix submenu padding 
+
+
 ### teaching-philosophy
 
-	1. [] Footer icon colors
+	1. [X] Footer icon colors
 
-	2. [] Remove <a> tag from my attribution at the bottom
-	3. [] Fix bug where menu-close icon shows up on desktop
-	4. [] Change size of svg icon
-	5. [] Padding and color on menu-close icon
+	2. [X] Remove <a> tag from my attribution at the bottom
+	3. [X] Fix bug where menu-close icon shows up on desktop
+	4. [X] Change size of svg icon
+	5. [X] Padding and color on menu-close icon
 	6. [] Choose fonts
 		* Header font:
 		* Body font:
 		* Smaller header font:
-	7. [] Nav menu hover effects
-	8. [] Fix submenu padding
+	7. [X] Nav menu hover effects
+	8. [X] Fix submenu padding
 
 ### teaching
 
@@ -52,8 +65,8 @@
 		* Header font:
 		* Body font:
 		* Smaller header font:
-	11. [] Nav menu hover effects
-	12. [] Fix submenu padding
+	11. [X] Nav menu hover effects
+	12. [X] Fix submenu padding
 
 ### performing
 
@@ -67,8 +80,8 @@
 		* Header font:
 		* Body font:
 		* Smaller header font:
-	7. [] Nav menu hover effects
-	8. [] Fix submenu padding
+	7. [X] Nav menu hover effects
+	8. [X] Fix submenu padding
 
 ### blog (?)
 

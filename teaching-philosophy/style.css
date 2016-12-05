@@ -1,19 +1,23 @@
-/***********
+/* ------------------------------
+      GLOBAL STYLES
+------------------------------ */
 
-GLOBAL STYLES
 
-***********/
 
 a {
   color: #607d8b;
   text-decoration: none;
 }
 
-/***********
 
-HEADER STYLES
 
-***********/
+
+/* ------------------------------
+      HEADER STYLES
+------------------------------ */
+
+
+
 
 header {
   position: fixed;
@@ -80,10 +84,10 @@ header nav {
       transform:translateZ(5);
 }
 
-header nav i.fa-times {
+header nav .nav-trigger-close {
   position: absolute;
   z-index: 999;
-  margin: 10px;
+  margin: 5px;
   font-size: 24px;
 }
 
@@ -97,14 +101,12 @@ header nav i.fa-times {
 
 .menu-item {
   margin: 7vh auto;
-  color: #000;
   text-decoration: none;
   font-size: 20px;
   cursor: pointer;
 }
 
 .menu-item a {
-  color: #000;
   text-decoration: none;
   font-size: 20px;
 }
@@ -122,21 +124,19 @@ header nav i.fa-times {
 }
 
 .submenu {
-  padding: 0;
+  padding: 10px 0 0;
   list-style-type: none;
 }
 
 /* Submenu item style */
 
 .submenu-item {
-  color: #000;
   text-decoration: none;
   font-size: 16px;
   margin: 2vh auto;
 }
 
 .submenu-item a {
-  color: #000;
   text-decoration: none;
   font-size: 16px;
 }
@@ -151,7 +151,25 @@ header nav i.fa-times {
   display: block;
 }
 
-/****** End Open menus section ******/
+/* --- Nav menu colors --- */
+.nav-trigger-close svg {
+  fill: rgba(0, 0, 0, 0.6);
+  transition: fill 0.2s linear;
+}
+
+.nav-trigger-close:hover svg {
+  fill: rgba(0, 0, 0, 0.8);
+}
+
+.menu-select {
+  color: rgba(0, 0, 0, 0.6);
+  transition: color 0.2s linear;
+}
+
+.menu-select:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 @media only screen and (min-width: 800px) {
   header {
     display: -webkit-box;
@@ -181,7 +199,7 @@ header nav i.fa-times {
     box-shadow: none;
   }
 
-  header nav i.fa-times {
+  header nav .nav-trigger-close {
     display: none;
   }
 
@@ -268,11 +286,16 @@ header nav i.fa-times {
   }/* Main styling */
 }
 
-/***********
 
-BODY STYLES
 
-***********/
+
+
+/* ------------------------------
+      MAIN STYLES
+------------------------------ */
+
+
+
 
 main {
   margin: 0 auto;
@@ -366,6 +389,14 @@ main {
   }
 }*/
 
+
+
+/* ------------------------------
+      FOOTER STYLES
+------------------------------ */
+
+
+
 footer {
   margin: 4vh;
 }
@@ -400,7 +431,7 @@ footer nav.media-links ul li {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer nav.media-links ul li a {

@@ -16,6 +16,8 @@ a {
 }
 
 /* --- Manages all items that require a cursor on hover --- */
+
+.menu-select,
 .nav-trigger-open,
 .nav-trigger-close,
 .menu-button,
@@ -110,7 +112,6 @@ header nav .nav-trigger-close {
 }
 
 .menu-item a {
-	color: #000;
 	text-decoration: none;
 	font-size: 20px;
 }
@@ -128,19 +129,17 @@ header nav .nav-trigger-close {
 }
 
 .submenu {
-  padding: 0;
+  padding: 10px 0 0;
   list-style-type: none;
 }
 
 .submenu-item {
-	color: #000;
 	text-decoration: none;
 	font-size: 16px;
 	margin: 2vh auto;
 }
 
 .submenu-item a {
-	color: #000;
 	text-decoration: none;
 	font-size: 16px;
 }
@@ -157,6 +156,24 @@ header nav .nav-trigger-close {
 
 /* --- End Open menus section --- */
 
+
+/* --- Menu item colors --- */
+.menu-select {
+	color: rgba(0, 0, 0, 0.6);
+	transition: color 0.2s linear;
+}
+
+.menu-select:hover {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-trigger-close svg {
+	fill: rgba(0, 0, 0, 0.6);
+}
+
+.nav-trigger-close:hover svg {
+	fill: rgba(0, 0, 0, 0.8);
+}
 
 
 /* ----------------------------------------------------------------

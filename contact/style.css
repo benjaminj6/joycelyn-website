@@ -320,6 +320,14 @@ main section {
   margin: 0 auto;
 }
 
+/* --- Display / hide forms based on whether they are chosen or not --- */
+
+main .form-section:not(:target) {
+  display: none;
+}
+
+/* --- Form styling --- */
+
 form {
   display: flex;
   flex-direction: column;

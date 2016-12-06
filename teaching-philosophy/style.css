@@ -356,8 +356,6 @@ main {
   .banner {
     height: 90vh;
     width: 50vw;
-    -o-object-position: 0 -70px;
-       object-position: 0 -70px;
   }
 
   .wrapper {

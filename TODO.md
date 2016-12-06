@@ -16,6 +16,9 @@
 
 ### home
 
+	NEW PHOTOS
+		[] home desktop photos
+
 	1. [X] Make submenu font-size smaller
 
 	2. [X] Remove <a> tag from my attribution at the bottom
@@ -28,6 +31,8 @@
 		* Smaller header font:
 	7. [X] Nav menu hover effects
 	8. [X] Fix submenu padding 
+
+	[] ADD CAROUSAL
 
 ### bio
 
@@ -45,6 +50,9 @@
 
 ### teaching-philosophy
 
+	NEW PHOTOS
+		[] teaching-phil
+
 	1. [X] Footer icon colors
 
 	2. [X] Remove <a> tag from my attribution at the bottom
@@ -59,11 +67,16 @@
 	8. [X] Fix submenu padding
 
 ### teaching
+	NEW PHOTOS
+		[] bi-annual recitals
+		[] group-classes
+		[] parent education
+		[] weekly lessons
+
+
+	2. [X] disable body scrollbar when modals are open
 
 	1. [X] hover effect on opportunities boxes
-
-	2. [] disable body scrollbar when modals are open
-
 	3. [X] Match modal close buttons to the button color
 	4. [X] Make modal close icon more prominent
 	5. [X] Footer icon colors
@@ -99,6 +112,7 @@
 	1. [] Create on blogspot????
 
 ### contact
+	10. [X] Fix bug where day "time" selector is activated all the time. Make only active when the day is selected
 
 	1. [X] radio buttons colors for active/hover
 	2. [X] bold on required fields
@@ -114,7 +128,6 @@
 		* Smaller header font:
 	9. [X] Nav menu hover effects
 
-	10. [] Fix bug where day "time" selector is activated all the time. Make only active when the day is selected
 	11. [X] Fix submenu padding
 
 

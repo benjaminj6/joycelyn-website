@@ -10,6 +10,5 @@ $(document).ready(function() {
 		} else {
 			$button.attr('disabled', 'disabled');
 		}
-
 	});
 });

@@ -463,6 +463,18 @@ form input[type="checkbox"]:checked + label {
   color: #FFF;
 }
 
+/* ---------- Deactive label state ---------- */
+
+
+.time input[disabled] + label {
+  opacity: 0.3;
+}
+
+.time input[disabled] + label:hover {
+  cursor: default;
+  background-color: #FFF !important;
+  color: #000 !important;
+}
 
 
 /* ---------- Main desktop media ---------- */

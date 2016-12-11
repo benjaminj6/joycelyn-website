@@ -14,5 +14,5 @@ $(document).ready(function() {
 
 		$body.removeClass();
 		$body.addClass(classes[current]);
-	}, 7000);
+	}, 4000);
 });

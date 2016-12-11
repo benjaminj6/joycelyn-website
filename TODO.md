@@ -22,7 +22,7 @@
 		* Body font:
 		* Smaller header font:
 
-	2. [] ADD CAROUSAL
+	2. [X] ADD CAROUSAL
 
 ### bio
 
@@ -77,6 +77,8 @@
 		* remove group class field 
 		* remove exp. field
 		[X] make availability a textarea (but w/o borders)
+
+		[] Remove availability section and shorten the comments box
 
 
 

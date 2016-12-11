@@ -1,18 +1,19 @@
 $(document).ready(function() {
 	
-	var classes = ['bg-image-1', 'bg-image-2', 'bg-image-3', 'bg-image-4'];
-	var current = 0;
+	var classes = ['.bg-image-1', '.bg-image-2', '.bg-image-3', '.bg-image-4'];
+	var active = 0;
 
 	window.setInterval(function() {
-		if (current >= classes.length - 1) {
-			current = 0;
+		var prev = active;
+
+		if (active >= classes.length - 1) {
+			active = 0;
 		} else {
-			current += 1;
+			active += 1;
 		}
 
-		var $body = $('body');
+		$(classes[prev]).addClass('hidden');
+		$(classes[active]).removeClass('hidden');
 
-		$body.removeClass();
-		$body.addClass(classes[current]);
 	}, 4000);
 });

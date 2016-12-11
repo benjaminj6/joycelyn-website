@@ -10,6 +10,10 @@ html {
 	box-sizing: inherit;
 }
 
+* {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
 a {
 	color: #607d8b;
 	text-decoration: none;
@@ -30,6 +34,14 @@ a {
 	overflow-y: hidden;
 }
 
+.text {
+	line-height: 1.25;
+}
+
+.section-text {
+	font-size: 20px;
+	line-height: 1.4;
+}
 
 
 

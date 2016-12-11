@@ -17,10 +17,9 @@
           GLOBAL STYLES
 ---------------------------------------------------------------- */
 
-
-
 * {
   box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 a {
@@ -451,6 +450,14 @@ input[type="radio"] + label.right-label {
 .switch li label {
   display: flex;
   justify-content: center;
+}
+
+#trial-lesson {
+  border-width: 0 0 1px 0;
+}
+
+#trial-lesson:focus {
+  outline: none;
 }
 
 /* ---------- Form global styles ---------- */

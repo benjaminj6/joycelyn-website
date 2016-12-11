@@ -2,7 +2,9 @@
       GLOBAL STYLES
 ------------------------------ */
 
-
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
 
 a {
   color: #607d8b;
